@@ -1,0 +1,3853 @@
+{
+  "aspects" : [ {
+    "id" : "ability.exposed.bloodlines",
+    "label" : "受到血绦的影响",
+    "desc" : "[这种状态是因为接触血绦导致的。如果在治愈你的病症之前使用这张魂质阅读一本书，这本书可能会受到影响……]",
+    "imagePath" : "/assets/images/aspects/contamination.bloodlines.png"
+  }, {
+    "id" : "effective.contamination.theoplasma",
+    "label" : "可有效对抗神性流溢",
+    "desc" : "此技艺可用于清除书籍上的神性流溢。",
+    "imagePath" : "/assets/images/aspects/effective.contamination.theoplasma.png"
+  }, {
+    "id" : "contamination.curse.fifth.eye",
+    "label" : "第五目诅咒",
+    "desc" : "有人恶意地施加了一个会强行撕开灵魂之眼的诅咒。[这种咒术会污损你的灵躯和明识。如果提供至少7点<b>心</b>，你可以通过某种能够有效对抗诅咒的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.curse.fifth.eye.png"
+  }, {
+    "id" : "contamination.witchworms",
+    "label" : "巫蠹",
+    "desc" : "长着半人脸的小幼虫。幸运的是，它们鲜能发育为成虫；但即使是幼虫，它们的窃窃私语也能折磨感官，扭曲思想。[这种寄生会侵染你的辩闻和铭晓，还会蔓延到附近的物品上。如果提供至少7点<b>冬</b>，你可以通过某种能够有效对抗寄生的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.witchworms.png"
+  }, {
+    "id" : "contamination.winkwell",
+    "label" : "闪渊",
+    "desc" : "当我将书摆放到正确的角度后，就仿佛能看见那书页与封面间凝视着我的眼睛。它们会在黑暗里闭阖……可光亮最终总会将它们唤醒。[这种腐坏会侵蚀你的灵躯和铭晓，并且向周围的物品滋生，如果提供至少7点<b>月</b>，你可以通过某种能有效对抗腐坏的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.winkwell.png"
+  }, {
+    "id" : "ability.exposed.chionic",
+    "label" : "受到神寒流溢的影响",
+    "desc" : "[你暴露在一种神性流溢之下。如果在治愈你的病症之前使用这张魂质阅读一本书，这本书可能会受到影响……]",
+    "imagePath" : "/assets/images/aspects/contamination.chionic.png"
+  }, {
+    "id" : "contamination.chionic",
+    "label" : "神寒流溢",
+    "desc" : "这本书遭受了某位冰寒刺骨的具名者，甚至是虚源神的关注。[这种神性流溢会毒害你的悲恸和健康，还会蔓延到附近的物品上。如果提供至少7点<b>心</b>，你可以通过某种能够有效对抗神性流溢的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.chionic.png"
+  }, {
+    "id" : "effective.contamination.infestation",
+    "label" : "可有效对抗寄生",
+    "desc" : "此技艺可用于清除书籍上的寄生。",
+    "imagePath" : "/assets/images/aspects/effective.contamination.infestation.png"
+  }, {
+    "id" : "effective.contamination.curse",
+    "label" : "可有效对抗诅咒",
+    "desc" : "此技艺可用于清除书籍上的诅咒。",
+    "imagePath" : "/assets/images/aspects/effective.contamination.curse.png"
+  }, {
+    "id" : "ability.exposed.curse.fifth.eye",
+    "label" : "受到第五目诅咒的影响",
+    "desc" : "[你接触到了第五目诅咒。幸运的是，这并不会传染给另一本书。]",
+    "imagePath" : "/assets/images/aspects/contamination.curse.fifth.eye.png"
+  }, {
+    "id" : "contamination.bloodlines",
+    "label" : "血绦",
+    "desc" : "如果我把这本书翻到恰当的页码，我会发现缓慢渗血的文字，随着时间的推移，这些文字会越来越多。[这种寄生会侵染你的黯晦与脉律，还会蔓延到附近的物品上。如果提供至少7点<b>蛾</b>，你可以通过某种能够有效对抗寄生的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.bloodlines.png"
+  }, {
+    "id" : "ability.exposed.keeperskin",
+    "label" : "受到秘肤的影响",
+    "desc" : "[你接触到了秘肤。如果在治愈你的病症之前使用这张魂质阅读一本书，这本书可能会受到影响……]",
+    "imagePath" : "/assets/images/aspects/contamination.keeperskin.png"
+  }, {
+    "id" : "effective.contamination.corruption",
+    "label" : "可有效对抗腐坏",
+    "desc" : "此技艺可用于清除书籍上的腐坏。",
+    "imagePath" : "/assets/images/aspects/effective.contamination.corruption.png"
+  }, {
+    "id" : "ability.exposed.sthenic.taint",
+    "label" : "受到生猛污蚀的影响",
+    "desc" : "[你接触到了生猛污蚀。幸运的是，这并不会传染给另一本书。]",
+    "imagePath" : "/assets/images/aspects/contamination.sthenic.taint.png"
+  }, {
+    "id" : "ability.exposed.witchworms",
+    "label" : "受到巫蠹的影响",
+    "desc" : "[你接触到了巫蠹。如果在治愈你的病症之前使用这张魂质阅读一本书，这本书可能会受到影响……]",
+    "imagePath" : "/assets/images/aspects/contamination.witchworms.png"
+  }, {
+    "id" : "contamination.sthenic.taint",
+    "label" : "生猛污蚀",
+    "desc" : "毒素？诅咒？也许二者兼有。要小心处理这本书。[这种咒术会污损你的辩闻和健康。如果提供至少7点<b>启</b>，你可以通过某种能够有效对抗诅咒的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.sthenic.taint.png"
+  }, {
+    "id" : "ability.exposed.actinic",
+    "label" : "受到神辉流溢的影响",
+    "desc" : "[你暴露在一种神性流溢之下。如果在治愈你的病症之前使用这张魂质阅读一本书，这本书可能会受到影响……]",
+    "imagePath" : "/assets/images/aspects/contamination.actinic.png"
+  }, {
+    "id" : "contamination.keeperskin",
+    "label" : "秘肤",
+    "desc" : "这本书沾染了秘肤，一种生长在我们梦中所见的林地的发光真菌，当梦者吸入它们的孢子后，这种真菌就进入了我们的世界。[秘肤会侵蚀你的黯晦和脉律，还会蔓延到附近的物品上。如果提供至少7点<b>蜜</b>，你可以通过某种能够有效对抗腐坏的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.keeperskin.png"
+  }, {
+    "id" : "contamination.actinic",
+    "label" : "神辉流溢",
+    "desc" : "这本书遭受了某位明亮夺目的具名者，或光源神的关注。[这种神性流溢会毒害你的明识与悲恸，还会蔓延到附近的物品上。如果提供至少7点<b>铸</b>，你可以通过某种能够有效对抗神性流溢的技艺来将之去除。]",
+    "imagePath" : "/assets/images/aspects/contamination.actinic.png"
+  }, {
+    "id" : "ability.exposed.winkwell",
+    "label" : "受到闪渊的影响",
+    "desc" : "[你接触到了闪渊。如果在治愈你的病症之前使用这张魂质阅读一本书，这本书可能会受到影响……]",
+    "imagePath" : "/assets/images/aspects/contamination.winkwell.png"
+  }, {
+    "id" : "prefs.agdistis",
+    "label" : null,
+    "desc" : "阿格狄斯提斯偏好含有<sprite name=heart>的食物与饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.agdistis.png"
+  }, {
+    "id" : "egg",
+    "label" : "卵",
+    "desc" : "“卵未亡之时，某物或可孵出。卵已亡之时，某物或可置入。”——蒂尔扎·布雷克，噤声居屋第七任图书管理员",
+    "imagePath" : "/assets/images/aspects/egg.png"
+  }, {
+    "id" : "mystery.scale",
+    "label" : "奥秘：鳞",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.scale.png"
+  }, {
+    "id" : "inspiring.fear.ys",
+    "label" : "恐惧：伊苏",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/fear.ys.png"
+  }, {
+    "id" : "reading.grail",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.grail.png"
+  }, {
+    "id" : "carcass",
+    "label" : "畜体",
+    "desc" : "曾经不需我帮忙就能自行移动的东西。[可在尸检台上将其分解为兽骨。]",
+    "imagePath" : "/assets/images/aspects/carcass.png"
+  }, {
+    "id" : "w.aramaic",
+    "label" : "以亚兰语写就",
+    "desc" : "亚兰与她这三千多年以来所养育的众多孩子所使用的语言。[图书管理员读得懂亚兰语，但别假定其他人也能。]",
+    "imagePath" : "/assets/images/aspects/w.aramaic.png"
+  }, {
+    "id" : "mastery.moth",
+    "label" : "精通：蛾",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.moth.png"
+  }, {
+    "id" : "mystery.knock",
+    "label" : "奥秘：启",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.knock.png"
+  }, {
+    "id" : "cache.night.rarities",
+    "label" : "黑夜珍品",
+    "desc" : "何种午夜赠礼？",
+    "imagePath" : "/assets/images/aspects/cache.night.rarities.png"
+  }, {
+    "id" : "visitor.embarking",
+    "label" : "访客：登船",
+    "desc" : "这位来访者急于赶路，通常不会逗留交谈。",
+    "imagePath" : "/assets/images/aspects/visitor.embarking.png"
+  }, {
+    "id" : "persistent",
+    "label" : "存留",
+    "desc" : "存留的回忆能留过拂晓，但当名为闰时的时节离去时，它们会随之消失。平均每九个时节，闰时都会降临布兰库格岛——而其确切的时间仍不得知。可能经年累月，而闰时雾气却仍不得见。",
+    "imagePath" : "/assets/images/aspects/persistent.png"
+  }, {
+    "id" : "memories.cartographer",
+    "label" : "记忆：制图师",
+    "desc" : "“没有地图可以描绘太阳的居屋，那隐秘众神漫步之处。其内年年变化，却岁岁相同，怎能绘出？描绘起来确实棘手。但毫无可能吗？我看未必。”",
+    "imagePath" : "/assets/images/aspects/jm.nyctodromy.png"
+  }, {
+    "id" : "mystery.moon",
+    "label" : "奥秘：月",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.moon.png"
+  }, {
+    "id" : "reading.knock",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.knock.png"
+  }, {
+    "id" : "soaked",
+    "label" : "浸湿的",
+    "desc" : "它快要散架了！赶紧做点什么，但别慌张。",
+    "imagePath" : "/assets/images/aspects/soaked.png"
+  }, {
+    "id" : "prefs.serena",
+    "label" : null,
+    "desc" : "瑟雷娜偏好含有<sprite name=forge>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.serena.png"
+  }, {
+    "id" : "b.hushery",
+    "label" : "主题：静默术",
+    "desc" : "尤关寂静之经文。",
+    "imagePath" : "/assets/images/aspects/b.hushery.png"
+  }, {
+    "id" : "raw",
+    "label" : "生的",
+    "desc" : "这个大概能吃，但你可不会把它盛盘里端给客人。",
+    "imagePath" : "/assets/images/aspects/raw.png"
+  }, {
+    "id" : "opportunity",
+    "label" : "机遇",
+    "desc" : "一个远超预期的机会。",
+    "imagePath" : "/assets/images/aspects/opportunity.png"
+  }, {
+    "id" : "w.mandaic",
+    "label" : "以渊深曼达安语写就",
+    "desc" : "一门引发共鸣的语言。",
+    "imagePath" : "/assets/images/aspects/w.mandaic.png"
+  }, {
+    "id" : "inspired",
+    "label" : "受启发",
+    "desc" : "此人有着更崇高的计划。",
+    "imagePath" : "/assets/images/aspects/inspired.png"
+  }, {
+    "id" : "period.dawn",
+    "label" : "拂晓时期",
+    "desc" : "传统说法是，最初的修道院建立于公元599年，有时被称作黑鸽修道院，有时则是白鸦修道院……但三重绳结姐妹会在此建立他们庙宇的时间则比那早得多。",
+    "imagePath" : "/assets/images/aspects/period.dawn.png"
+  }, {
+    "id" : "cooperative",
+    "label" : "合作伙伴",
+    "desc" : "不会给我惹麻烦——至少现在还不会。",
+    "imagePath" : "/assets/images/aspects/cooperative.png"
+  }, {
+    "id" : "mystery.grail",
+    "label" : "奥秘：杯",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.grail.png"
+  }, {
+    "id" : "prefs.stanislav",
+    "label" : null,
+    "desc" : "斯坦尼斯拉夫偏好含有<sprite name=heart>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.stanislav.png"
+  }, {
+    "id" : "cache.unregarded.rarities",
+    "label" : "被忽视的珍品",
+    "desc" : "何种被忽视的美丽？",
+    "imagePath" : "/assets/images/aspects/cache.unregarded.rarities.png"
+  }, {
+    "id" : "reading.nectar",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.nectar.png"
+  }, {
+    "id" : "w.ithastry",
+    "label" : "盗火术",
+    "desc" : "炼金术、冶金学、烟火工艺：盗火术有时被称为改变之技艺。",
+    "imagePath" : "/assets/images/aspects/w.ithastry.png"
+  }, {
+    "id" : "u.sanskrit",
+    "label" : "了解梵语",
+    "desc" : "（如我一般。）",
+    "imagePath" : "/assets/images/aspects/u.sanskrit.png"
+  }, {
+    "id" : "skill.chandlery",
+    "label" : "制烛术",
+    "desc" : "一种可以用，合适的原料制作蜡烛的技艺。[最常用的原料是蜂蜡和草药；但为了迷惑村民和访客，在“合适”这个词之前要有一个意味深长的停顿。]",
+    "imagePath" : "/assets/images/aspects/skill.chandlery.png"
+  }, {
+    "id" : "sceptical",
+    "label" : "怀疑",
+    "desc" : "信任可以买到，也可以赢得。",
+    "imagePath" : "/assets/images/aspects/sceptical.png"
+  }, {
+    "id" : "agenda.secrecy",
+    "label" : "计划：守密",
+    "desc" : "此人认识到了知识的害处和根冠的益处。",
+    "imagePath" : "/assets/images/aspects/agenda.secrecy.png"
+  }, {
+    "id" : "b.illumination",
+    "label" : "主题：照明术",
+    "desc" : "关于净化自我及周遭之经文。",
+    "imagePath" : "/assets/images/aspects/b.illumination.png"
+  }, {
+    "id" : "w.nyctodromy",
+    "label" : "夜游术",
+    "desc" : "“夜间出行既不更快也不更安全。这就是我们这么做的原因。”关于超越世俗之道路与小径的学识。",
+    "imagePath" : "/assets/images/aspects/w.nyctodromy.png"
+  }, {
+    "id" : "inspiring.agenda.secrecy",
+    "label" : "计划：守密",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.secrecy.png"
+  }, {
+    "id" : "difficulty.oddities",
+    "label" : "难关：奇物",
+    "desc" : "[这一等级的相关性相会给你一个发现奇物的机会。]",
+    "imagePath" : "/assets/images/aspects/difficulty.oddities.png"
+  }, {
+    "id" : "difficulty.scholar",
+    "label" : "学者级挑战",
+    "desc" : "更艰深的技术既需要力量，又需要卓越的技艺。[具有挑战性的配方需要提供十点相关性相。每个学者级的配方也需要一份具有特定性相的原料。]",
+    "imagePath" : "/assets/images/aspects/difficulty.scholar.png"
+  }, {
+    "id" : "journal",
+    "label" : "日记",
+    "desc" : "后于我而存在，但将与我同日终结。",
+    "imagePath" : "/assets/images/aspects/journal.png"
+  }, {
+    "id" : "reading.scale",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.scale.png"
+  }, {
+    "id" : "u.cracktrack",
+    "label" : "了解解踪语",
+    "desc" : "此人了解这门原始的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.cracktrack.png"
+  }, {
+    "id" : "grateful",
+    "label" : "心满意足",
+    "desc" : "此人对我的服务心满意足。",
+    "imagePath" : "/assets/images/aspects/grateful.png"
+  }, {
+    "id" : "agenda.revelation",
+    "label" : "计划：揭示",
+    "desc" : "此人希望分享知识，即使受根冠的阻拦。",
+    "imagePath" : "/assets/images/aspects/agenda.revelation.png"
+  }, {
+    "id" : "w.hyksos",
+    "label" : "以希克索斯语写就",
+    "desc" : "一门诡谲的语言。",
+    "imagePath" : "/assets/images/aspects/w.hyksos.png"
+  }, {
+    "id" : "u.henavek",
+    "label" : "了解赫沃尔语",
+    "desc" : "此人了解这门被遗忘的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.henavek.png"
+  }, {
+    "id" : "malady.cure.heart",
+    "label" : "以心治愈",
+    "desc" : "该病症可以通过卧床及滋补身体的饮品治愈，与之同等级的<b>心</b>相将恢复虚弱的肉体。",
+    "imagePath" : "/assets/images/aspects/malady.cure.heart.png"
+  }, {
+    "id" : "b.bosk",
+    "label" : "主题：丛林学",
+    "desc" : "关于原始丛林谜团之经文。",
+    "imagePath" : "/assets/images/aspects/b.bosk.png"
+  }, {
+    "id" : "skill.language",
+    "label" : "语言",
+    "desc" : "一种可以用来阅读特定书籍的技艺，其他功能则没那么重要。",
+    "imagePath" : "/assets/images/aspects/skill.language.png"
+  }, {
+    "id" : "prefs.yvette",
+    "label" : null,
+    "desc" : "伊薇特什么都吃。她不喜欢小题大做。",
+    "imagePath" : "/assets/images/aspects/prefs.yvette.png"
+  }, {
+    "id" : "exalted.beverage",
+    "label" : "已强化：饮品",
+    "desc" : "享用饮品提高了助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.beverage.png"
+  }, {
+    "id" : "dissatisfying",
+    "label" : "失望而归",
+    "desc" : "例如劝说一位访客不值得他们花费时间。我们既可以用它来标记他们的吸取，也可以用它来进行满意度的评价。（内部文本？）",
+    "imagePath" : "/assets/images/aspects/resentment.png"
+  }, {
+    "id" : "zmoon",
+    "label" : "月[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>月</b>。]",
+    "imagePath" : "/assets/images/aspects/zmoon.png"
+  }, {
+    "id" : "brewable",
+    "label" : "可冲泡",
+    "desc" : "待沏泡，或温烫，或转化。[在壁炉或厨房区域内使用这个。]",
+    "imagePath" : "/assets/images/aspects/brewable.png"
+  }, {
+    "id" : "prefs.morgen",
+    "label" : null,
+    "desc" : "摩根偏好含有<sprite name=sky>的食物和饮品……至少在体面的场合如此。",
+    "imagePath" : "/assets/images/aspects/prefs.morgen.png"
+  }, {
+    "id" : "exalted.fabric",
+    "label" : "已强化：布料",
+    "desc" : "一件织就的物品提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.fabric.png"
+  }, {
+    "id" : "u.ericapaean",
+    "label" : "了解厄里卡帕奥语",
+    "desc" : "此人了解这门优雅的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.ericapaean.png"
+  }, {
+    "id" : "ductile",
+    "label" : "可塑的",
+    "desc" : "[可在工作台上加工为金属丝。]",
+    "imagePath" : "/assets/images/aspects/ductile.png"
+  }, {
+    "id" : "u.vak",
+    "label" : "了解伐诃语",
+    "desc" : "此人了解这门自满的语言。",
+    "imagePath" : "/assets/images/aspects/u.vak.png"
+  }, {
+    "id" : "period.nocturnal",
+    "label" : "夜勤时期",
+    "desc" : "20世纪伊始，一位图书管理员不明智的狂热使噤声居屋陷入贫困。夜勤处，即日后的防剿局——介入此地，并提供了一套债务解决方案。噤声居屋得到拨款，但每年都须接受审查，还要交出岛屿的一部分用作夜勤处的监狱。",
+    "imagePath" : "/assets/images/aspects/period.nocturnal.png"
+  }, {
+    "id" : "inspiring.agenda.better.gods",
+    "label" : "计划：更佳诸神",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.better.gods.png"
+  }, {
+    "id" : "fatigued",
+    "label" : "疲劳",
+    "desc" : "稍候片刻。[疲劳的能力总会在拂晓复原，除非你找到了更快的恢复途径。]",
+    "imagePath" : "/assets/images/aspects/fatigued.png"
+  }, {
+    "id" : "invitation",
+    "label" : "一封邀请函",
+    "desc" : "如果我把它送到邮局，如果我还有钱买邮票，如果收信人在家，如果此人没有其他事，如果此人没有恰巧正准备离开布兰库格，那么这份邀请函就会将之带到这里。",
+    "imagePath" : "/assets/images/aspects/invitation.png"
+  }, {
+    "id" : "inspiring.sympathy.ys",
+    "label" : "偏向：伊苏",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/sympathy.ys.png"
+  }, {
+    "id" : "count",
+    "label" : "计数",
+    "desc" : "如果你要确认数量，这就是你会数出的数字。",
+    "imagePath" : "/assets/images/aspects/count.png"
+  }, {
+    "id" : "state.cracked",
+    "label" : "Cracked（疑似未实装？）",
+    "desc" : "- cracked -（疑似未实装？）",
+    "imagePath" : "/assets/images/aspects/state.cracked.png"
+  }, {
+    "id" : "mystery.moth",
+    "label" : "奥秘：蛾",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.moth.png"
+  }, {
+    "id" : "knife",
+    "label" : "刀",
+    "desc" : "“这便是分裂的界线。”——沃尔夫",
+    "imagePath" : "/assets/images/aspects/knife.png"
+  }, {
+    "id" : "prefs.chaima",
+    "label" : null,
+    "desc" : "柴玛偏好含有<sprite name=edge>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.chaima.png"
+  }, {
+    "id" : "circumstance",
+    "label" : "境况",
+    "desc" : "某事境况如此——但只是现在。[境况会在闰时消失。]",
+    "imagePath" : "/assets/images/aspects/circumstance.png"
+  }, {
+    "id" : "mastery.knock",
+    "label" : "精通：启",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.knock.png"
+  }, {
+    "id" : "mastery.grail",
+    "label" : "精通：杯",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.grail.png"
+  }, {
+    "id" : "znectar",
+    "label" : "蜜[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>蜜</b>。]",
+    "imagePath" : "/assets/images/aspects/znectar.png"
+  }, {
+    "id" : "prefs.ehsan",
+    "label" : null,
+    "desc" : "埃桑偏好含有<sprite name=moon>的食物，以及含有<sprite name=sky>的饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.ehsan.png"
+  }, {
+    "id" : "cost.pence",
+    "label" : "以便士计价",
+    "desc" : "该价格可用王国的货币支付。",
+    "imagePath" : "/assets/images/aspects/cost.pence.png"
+  }, {
+    "id" : "blank",
+    "label" : "空白",
+    "desc" : "等待着友善的话语。",
+    "imagePath" : "/assets/images/aspects/blank.png"
+  }, {
+    "id" : "requesting",
+    "label" : "请求",
+    "desc" : "(recipe aspect) 从联系地址生成请求（内部文本？）",
+    "imagePath" : "/assets/images/aspects/requesting.png"
+  }, {
+    "id" : "reading.heart",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.heart.png"
+  }, {
+    "id" : "sleepytime",
+    "label" : "睡觉时间",
+    "desc" : "正派人应当上床盖好被子；不义者可能还在做他们不义的勾当。",
+    "imagePath" : "/assets/images/aspects/sleepytime.png"
+  }, {
+    "id" : "spicing",
+    "label" : "香料",
+    "desc" : "可用于增添奇异滋味的工具，或知识。",
+    "imagePath" : "/assets/images/aspects/spicing.png"
+  }, {
+    "id" : "instrument",
+    "label" : "乐器",
+    "desc" : "音乐于此静待。",
+    "imagePath" : "/assets/images/aspects/instrument.png"
+  }, {
+    "id" : "lens",
+    "label" : "透镜",
+    "desc" : "人称“沉默男爵”的托马斯·德沃尔夫，建造了布兰库格的天文台。众所周知，他不吝丰厚的酬劳，但他的要求非常苛刻，以致于没有任何磨镜师愿意和他再次共事。",
+    "imagePath" : "/assets/images/aspects/lens.png"
+  }, {
+    "id" : "inspiring.sympathy.carapace",
+    "label" : "偏向：介壳种",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/sympathy.carapace.png"
+  }, {
+    "id" : "kitchenware",
+    "label" : "厨具",
+    "desc" : "很适合放在炖锅旁。",
+    "imagePath" : "/assets/images/aspects/kitchenware.png"
+  }, {
+    "id" : "uncatalogued",
+    "label" : "未编目",
+    "desc" : "“没有什么比无知更安全——或者更危险。”——尼罗·沃尔夫",
+    "imagePath" : "/assets/images/aspects/uncatalogued.png"
+  }, {
+    "id" : "prefs.connie",
+    "label" : null,
+    "desc" : "康妮偏好含有<sprite name=sky>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.connie.png"
+  }, {
+    "id" : "skill",
+    "label" : "技艺",
+    "desc" : "万物皆可习得；万物皆可忘却。",
+    "imagePath" : "/assets/images/aspects/skill.png"
+  }, {
+    "id" : "root",
+    "label" : "根",
+    "desc" : "植物之足。",
+    "imagePath" : "/assets/images/aspects/root.png"
+  }, {
+    "id" : "appointment.treasurer",
+    "label" : "司库",
+    "desc" : "司库负责学会的财政事务。",
+    "imagePath" : "/assets/images/aspects/appointment.treasurer.png"
+  }, {
+    "id" : "wisdom.committed",
+    "label" : "呈递",
+    "desc" : "你已确定这一技艺在理解的广袤王国中应所属何处。[这一技艺已经呈递于卡上标注的智慧。]",
+    "imagePath" : "/assets/images/aspects/wisdom.committed.png"
+  }, {
+    "id" : "inspiring.agenda.corrivality",
+    "label" : "计划：角争",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.corrivality.png"
+  }, {
+    "id" : "mastery.moon",
+    "label" : "精通：月",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.moon.png"
+  }, {
+    "id" : "numen",
+    "label" : "闰识",
+    "desc" : "把真理写进一本没人读的书，然后见鬼去吧。没人知道你写了什么——除非那个真理是<i>闰识</i>。[闰识是一类如此强大的真理，以致于它们或许能够实现自己。你可以在合适的书桌上使用闰识书写新的历史……只要你能凑齐25级与之匹配的性相。]",
+    "imagePath" : "/assets/images/aspects/numen.png"
+  }, {
+    "id" : "sympathy.chandler",
+    "label" : "偏向：制烛人",
+    "desc" : "此人认可制烛人许下的金色承诺。",
+    "imagePath" : "/assets/images/aspects/sympathy.chandler.png"
+  }, {
+    "id" : "mastery.winter",
+    "label" : "精通：冬",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.winter.png"
+  }, {
+    "id" : "campable",
+    "label" : "虚位以待",
+    "desc" : "[可将有此性相的访客或魂质安置于一张客床上，以占用它一段时间。]",
+    "imagePath" : "/assets/images/aspects/mybed.png"
+  }, {
+    "id" : "material",
+    "label" : "材料",
+    "desc" : "如果我把它加入某样东西里，这种物质就有变成另一种物质的潜力。",
+    "imagePath" : "/assets/images/aspects/material.png"
+  }, {
+    "id" : "w.fucine",
+    "label" : "以富奇诺语写就",
+    "desc" : "一门令人干渴的语言。",
+    "imagePath" : "/assets/images/aspects/w.fucine.png"
+  }, {
+    "id" : "w.horomachistry",
+    "label" : "司辰学",
+    "desc" : "此种智慧与司辰（及其化身）所布法则（与分歧）有关。",
+    "imagePath" : "/assets/images/aspects/w.horomachistry.png"
+  }, {
+    "id" : "camping",
+    "label" : "安营扎寨",
+    "desc" : "我已经选择此处作为我的憩所——眼下如此。",
+    "imagePath" : "/assets/images/aspects/camping.png"
+  }, {
+    "id" : "reading.grail.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.grail.intro.png"
+  }, {
+    "id" : "period.solar",
+    "label" : "太阳哥特时期",
+    "desc" : "11世纪到16世纪早期，圣布伦丹教堂的修女与修士们居住在该岛上。这里曾是圣地，宝地与学术中心——尽管仅限于那些晦涩得出奇的知识。之后，在1534年，青铜王亨利解散了修道院，遣散了众教友，将该岛赏赐给德沃尔夫家族。",
+    "imagePath" : "/assets/images/aspects/period.solar.png"
+  }, {
+    "id" : "curated.busts",
+    "label" : "展览：噤声居屋的诸位图书管理员",
+    "desc" : "我把此物放在了该放的地方。",
+    "imagePath" : "/assets/images/aspects/curated.busts.png"
+  }, {
+    "id" : "b.nyctodromy",
+    "label" : "主题：夜游术",
+    "desc" : "关于超越俗世的道路与小径之经文。",
+    "imagePath" : "/assets/images/aspects/b.nyctodromy.png"
+  }, {
+    "id" : "malady.cure.moth",
+    "label" : "以蛾治愈",
+    "desc" : "该病症可通过卧床及合适的饮品治愈，与之同等级的<b>蛾</b>相将迷惑附着于我灵魂中的存在。",
+    "imagePath" : "/assets/images/aspects/malady.cure.moth.png"
+  }, {
+    "id" : "tablet",
+    "label" : "碑文",
+    "desc" : "一本页数很少的书。",
+    "imagePath" : "/assets/images/aspects/tablet.png"
+  }, {
+    "id" : "reading.sky.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.sky.intro.png"
+  }, {
+    "id" : "exalted.omen",
+    "label" : "已强化：预兆",
+    "desc" : "一个适时的征兆提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.omen.png"
+  }, {
+    "id" : "appointment.vigilant",
+    "label" : "警戒理事",
+    "desc" : "警戒理事保证学会的安全。",
+    "imagePath" : "/assets/images/aspects/appointment.vigilant.png"
+  }, {
+    "id" : "agenda.autarchy",
+    "label" : "计划：自治",
+    "desc" : "此人认为，重要的是人类——以及保护他们的学会——能够在没有司辰庇护的情况下生存。",
+    "imagePath" : "/assets/images/aspects/agenda.autarchy.png"
+  }, {
+    "id" : "sky",
+    "label" : "穹",
+    "desc" : "轻风，暴风，回响，歌咏；数学的复杂，飞行的原理。法则的碰触有时比我们想象的要轻。[平衡，和谐与必然性。]",
+    "imagePath" : "/assets/images/aspects/sky.png"
+  }, {
+    "id" : "inspiring.fear.devourers",
+    "label" : "恐惧：吞噬者",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/fear.devourers.png"
+  }, {
+    "id" : "mastery.nectar",
+    "label" : "精通：蜜",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.nectar.png"
+  }, {
+    "id" : "inspiring.sympathy.reckoners",
+    "label" : "偏向：清算人",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/sympathy.reckoners.png"
+  }, {
+    "id" : "metal",
+    "label" : "金属",
+    "desc" : "这就是岩石严肃起来时会产生的东西。",
+    "imagePath" : "/assets/images/aspects/metal.png"
+  }, {
+    "id" : "course.first",
+    "label" : "前菜",
+    "desc" : "通常作为小吃，或在主菜前享用。",
+    "imagePath" : "/assets/images/aspects/course.first.png"
+  }, {
+    "id" : "zforge",
+    "label" : "铸[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>铸</b>。]",
+    "imagePath" : "/assets/images/aspects/zforge.png"
+  }, {
+    "id" : "fear.ys",
+    "label" : "恐惧：伊苏",
+    "desc" : "此人知晓伊苏诱惑的危害。",
+    "imagePath" : "/assets/images/aspects/fear.ys.png"
+  }, {
+    "id" : "w.phrygian",
+    "label" : "以弗里吉亚语写就",
+    "desc" : "弗里吉亚人崇拜的“伟大母亲”就是我们所称的圣杯。他们的土地曾见证过绳结姐妹会的诞生，而这门语言便是轰雷之皮飞升时用于恳求的语言。[图书管理员读得懂弗里吉亚语，但几乎没有其他人能读懂。]",
+    "imagePath" : "/assets/images/aspects/w.phrygian.png"
+  }, {
+    "id" : "mystery.winter",
+    "label" : "奥秘：冬",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.winter.png"
+  }, {
+    "id" : "mystery.nectar",
+    "label" : "奥秘：蜜",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.nectar.png"
+  }, {
+    "id" : "ability",
+    "label" : "魂质",
+    "desc" : "人类的灵魂由九种元素构成，这便是其中之一。其他事物的灵魂大多更为简单。[每张魂质在每天可以使用一次，用于那些需要你劳心费力的事情；这通常意味着“与人交谈”或“制作”。]",
+    "imagePath" : "/assets/images/aspects/ability.png"
+  }, {
+    "id" : "bread",
+    "label" : "面包",
+    "desc" : "谷物历经磨难，方可进入我们的内里，并成为我们的一部分。",
+    "imagePath" : "/assets/images/aspects/bread.png"
+  }, {
+    "id" : "pence",
+    "label" : "便士",
+    "desc" : "衰落帝国的古怪货币。一便士是四法寻，十二便士是一先令，以此类推。",
+    "imagePath" : "/assets/images/aspects/pence.png"
+  }, {
+    "id" : "distributable",
+    "label" : "用于分装",
+    "desc" : "可以被倒入玻璃杯或茶杯里。",
+    "imagePath" : "/assets/images/aspects/distributable.png"
+  }, {
+    "id" : "w.latin",
+    "label" : "以拉丁语写就",
+    "desc" : "一门死去的语言：如金刚石般了无生机。[图书管理员读得懂拉丁语，但别假定其他人也能。]",
+    "imagePath" : "/assets/images/aspects/w.latin.png"
+  }, {
+    "id" : "mybed",
+    "label" : "我的床",
+    "desc" : "我安息的地方，虽然我希望这不是我<i>最后</i>安息的地方。[如果你想换张床休息，就用一张健康的魂质卡来整理床褥并把你的东西搬出去。]",
+    "imagePath" : "/assets/images/aspects/mybed.png"
+  }, {
+    "id" : "lantern",
+    "label" : "灯",
+    "desc" : "“生命是束纯净的火焰，我们内心都拥有一颗无形的太阳。”——托马斯·布朗。[<b>灯</b>是有“太阳之居屋”之称的隐秘场所与其上光芒的准则。]",
+    "imagePath" : "/assets/images/aspects/lantern.png"
+  }, {
+    "id" : "comfort",
+    "label" : "慰藉",
+    "desc" : "有人形容噤声居屋“荒凉惨淡”，但一般只有那些从未进入其中的人才会这样说。",
+    "imagePath" : "/assets/images/aspects/comfort.png"
+  }, {
+    "id" : "w.sanskrit",
+    "label" : "以梵语写就",
+    "desc" : "次大陆的神圣语言。通向四千年的诗歌、典仪和奥秘的大门如今对你敞开，只要你能从它如同莲花般卷曲的词汇中挣出一条路。[图书管理员读得懂梵语，但别假定其他人也能。]",
+    "imagePath" : "/assets/images/aspects/w.sanskrit.png"
+  }, {
+    "id" : "reading.scale.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.scale.intro.png"
+  }, {
+    "id" : "decamping",
+    "label" : "暂歇结束",
+    "desc" : "我得走了。",
+    "imagePath" : "/assets/images/aspects/decamping.png"
+  }, {
+    "id" : "wooden",
+    "label" : "木制品",
+    "desc" : "[可在工作台上加工为废木料。]",
+    "imagePath" : "/assets/images/aspects/wooden.png"
+  }, {
+    "id" : "reading.edge",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.edge.png"
+  }, {
+    "id" : "candle",
+    "label" : "蜡烛",
+    "desc" : "蜡烛烧得更亮，而我们烧得更久。",
+    "imagePath" : "/assets/images/aspects/candle.png"
+  }, {
+    "id" : "appointment.enigmatic",
+    "label" : "隐秘理事",
+    "desc" : "隐秘理事主管隐藏或揭示学会的秘密。",
+    "imagePath" : "/assets/images/aspects/appointment.enigmatic.png"
+  }, {
+    "id" : "rose",
+    "label" : "引",
+    "desc" : "“指引一切的罗盘玫瑰”。通向新视界的九重引导。[探索？启迪？希望？]",
+    "imagePath" : "/assets/images/aspects/rose.png"
+  }, {
+    "id" : "zwinter",
+    "label" : "冬[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>冬</b>。]",
+    "imagePath" : "/assets/images/aspects/zwinter.png"
+  }, {
+    "id" : "fuel",
+    "label" : "燃料",
+    "desc" : "“司辰各有其色彩。火焰各有其燃料。不要相信你的梦。”——乔治·科勒斯，布兰库格监狱第一位也是最后一位典狱长",
+    "imagePath" : "/assets/images/aspects/fuel.png"
+  }, {
+    "id" : "codex",
+    "label" : "典籍",
+    "desc" : "内页、封皮、书脊、知识，都像器官一样被妥善地收纳于其中。",
+    "imagePath" : "/assets/images/aspects/codex.png"
+  }, {
+    "id" : "edge",
+    "label" : "刃",
+    "desc" : "一切征服都在<b>刃</b>处开始。有一位居于此处之人目盲且不受创伤。而另一位，则是强力无匹，且越战越强。[<b>刃</b>是战斗与抗争的准则。]",
+    "imagePath" : "/assets/images/aspects/edge.png"
+  }, {
+    "id" : "mystery.heart",
+    "label" : "奥秘：心",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.heart.png"
+  }, {
+    "id" : "b.preservation",
+    "label" : "主题：保存术",
+    "desc" : "关于治愈与修复之经文。",
+    "imagePath" : "/assets/images/aspects/b.preservation.png"
+  }, {
+    "id" : "cost.tally",
+    "label" : "以账筹计价",
+    "desc" : "无形世界用于计价的面额；只能以不同寻常的货币支付，例如被称作<i>斯宾特里亚</i>的古币。",
+    "imagePath" : "/assets/images/aspects/cost.tally.png"
+  }, {
+    "id" : "period.curia",
+    "label" : "决议会时期",
+    "desc" : "18世纪，一群研究隐秘学识的学者们成立了“岛屿决议会”以管理噤声居屋，使之成为知识的庇护所，直到1896年，某位名声扫地的图书管理员使噤声居屋陷入贫困。",
+    "imagePath" : "/assets/images/aspects/period.curia.png"
+  }, {
+    "id" : "malady.cure.grail",
+    "label" : "以杯治愈",
+    "desc" : "此病症可以通过卧床及适意诱人的饮品治愈，与之同等级的<b>杯</b>相将使人回想起肉体的真实。",
+    "imagePath" : "/assets/images/aspects/malady.cure.grail.png"
+  }, {
+    "id" : "grail",
+    "label" : "杯",
+    "desc" : "食、色、性，有溺而无还者也。[<b>杯</b>是生育与飨宴的准则。]",
+    "imagePath" : "/assets/images/aspects/grail.png"
+  }, {
+    "id" : "fear.devourers",
+    "label" : "恐惧：吞噬者",
+    "desc" : "此人知晓隐秘世界中的种种危险：吸血阿卢卡，漫宿灵体，饥饿幽魂……",
+    "imagePath" : "/assets/images/aspects/fear.devourers.png"
+  }, {
+    "id" : "u.latin",
+    "label" : "了解拉丁语",
+    "desc" : "（如我一般。）",
+    "imagePath" : "/assets/images/aspects/u.latin.png"
+  }, {
+    "id" : "agenda.better.gods",
+    "label" : "计划：更佳诸神",
+    "desc" : "此人希望创造司辰的替代品。",
+    "imagePath" : "/assets/images/aspects/agenda.better.gods.png"
+  }, {
+    "id" : "reading.lantern",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.lantern.png"
+  }, {
+    "id" : "malady.inflicting",
+    "label" : "病症：罹患！",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/malady.inflicting.png"
+  }, {
+    "id" : "film",
+    "label" : "胶卷",
+    "desc" : "这让你想到<i>书籍</i>是可燃的。[这件物品只在广义上是“可读的”。找一台投影仪来播放它。]",
+    "imagePath" : "/assets/images/aspects/film.png"
+  }, {
+    "id" : "w.greek",
+    "label" : "以希腊语写就",
+    "desc" : "一门属于哲学家、神学家和英雄的语言。[图书管理员读得懂希腊语，但别假定其他人也能。]",
+    "imagePath" : "/assets/images/aspects/w.greek.png"
+  }, {
+    "id" : "tool",
+    "label" : "工具",
+    "desc" : "猿猴得以击败甲虫的原因之一。",
+    "imagePath" : "/assets/images/aspects/tool.png"
+  }, {
+    "id" : "heart",
+    "label" : "心",
+    "desc" : "为了保护我们所知世界的表皮，不息之心无尽地搏动着。[<b>心</b>是长存与延续的准则。]",
+    "imagePath" : "/assets/images/aspects/heart.png"
+  }, {
+    "id" : "agenda.stone.consumed",
+    "label" : "计划：吞噬石神",
+    "desc" : "此人将焚烧或粉碎石源神的残余，从而为自身的目的添柴加薪。",
+    "imagePath" : "/assets/images/aspects/agenda.stone.consumed.png"
+  }, {
+    "id" : "reading.winter.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.winter.intro.png"
+  }, {
+    "id" : "exalted.flower",
+    "label" : "已强化：花",
+    "desc" : "一瞬的灵感提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.flower.png"
+  }, {
+    "id" : "w.birdsong",
+    "label" : "鸟鸣学",
+    "desc" : "音乐、谜语、杂记。一位对此嗤之以鼻的学者曾言：“与其说是智慧，不如说是在漫长岁月中圣化的流言蜚语。”",
+    "imagePath" : "/assets/images/aspects/w.birdsong.png"
+  }, {
+    "id" : "memories.executioner",
+    "label" : "记忆：处刑者",
+    "desc" : "“我曾受雇于防剿局，消灭那些行走于黑夜之物，以保护白昼的世界。多年来，我始终忠于职守……但有时我的猎物会在我屠戮它们时鸣泣。因此，最终我放下屠刀，来到此地，来到这个我无法再伤害它们的地方。或许我甚至能偿赎罪孽。”",
+    "imagePath" : "/assets/images/aspects/jm.preservation.png"
+  }, {
+    "id" : "u.mandaic",
+    "label" : "了解渊深曼达安语",
+    "desc" : "此人了解这门引发共鸣的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.mandaic.png"
+  }, {
+    "id" : "memories.revolutionary",
+    "label" : "记忆：革命者",
+    "desc" : "“‘知识是压迫者的噩梦。’我已推翻我那份世俗的压迫，但根冠是永恒的暴君。只有当我们最终能够直呼其名且活下来时——我们才可宣称自己是自由的。”",
+    "imagePath" : "/assets/images/aspects/jm.horomachistry.png"
+  }, {
+    "id" : "mastery.scale",
+    "label" : "精通：鳞",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.scale.png"
+  }, {
+    "id" : "fruit",
+    "label" : "果实",
+    "desc" : "植物之子宫？",
+    "imagePath" : "/assets/images/aspects/fruit.png"
+  }, {
+    "id" : "sympathy.carapace",
+    "label" : "偏向：介壳种",
+    "desc" : "此人了解介壳种的可能性：结盟，觉醒。",
+    "imagePath" : "/assets/images/aspects/sympathy.carapace.png"
+  }, {
+    "id" : "fear.carapace",
+    "label" : "恐惧：介壳种",
+    "desc" : "此人知晓介壳种或会吞噬人类……或将其转变的面目全非。",
+    "imagePath" : "/assets/images/aspects/fear.carapace.png"
+  }, {
+    "id" : "appointment.persistent",
+    "label" : "存续理事",
+    "desc" : "存续理事担负着维持护学会存在的最高责任。",
+    "imagePath" : "/assets/images/aspects/appointment.persistent.png"
+  }, {
+    "id" : "numatic",
+    "label" : "……？",
+    "desc" : "这是来自闰时的某物或某人——在闰时，“似然”和“确然”在“历史”和“永恒”间交锋。",
+    "imagePath" : "/assets/images/aspects/numatic.png"
+  }, {
+    "id" : "considerable",
+    "label" : "可研究",
+    "desc" : "我可以通过<b>研究</b>这件物品来收集更多有关信息。",
+    "imagePath" : "/assets/images/aspects/considerable.png"
+  }, {
+    "id" : "w.sabazine",
+    "label" : "以萨巴佐因语写就",
+    "desc" : "一门神秘的语言。",
+    "imagePath" : "/assets/images/aspects/w.sabazine.png"
+  }, {
+    "id" : "exalted.collaboration",
+    "label" : "协作",
+    "desc" : "今天你和这名助手合作。",
+    "imagePath" : "/assets/images/aspects/exalted.collaboration.png"
+  }, {
+    "id" : "w.henavek",
+    "label" : "以赫沃尔语写就",
+    "desc" : "一门被遗忘的语言。",
+    "imagePath" : "/assets/images/aspects/w.henavek.png"
+  }, {
+    "id" : "agenda.stone.remembered",
+    "label" : "计划：铭记石神",
+    "desc" : "此人将忆起或保护石源神的残余。",
+    "imagePath" : "/assets/images/aspects/agenda.stone.remembered.png"
+  }, {
+    "id" : "appointment.salvant",
+    "label" : "护理理事",
+    "desc" : "护理理事主管学会的治愈与修复工作。",
+    "imagePath" : "/assets/images/aspects/appointment.salvant.png"
+  }, {
+    "id" : "reading.rose",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.rose.png"
+  }, {
+    "id" : "u.greek",
+    "label" : "了解希腊语",
+    "desc" : "（如我一般。）",
+    "imagePath" : "/assets/images/aspects/u.greek.png"
+  }, {
+    "id" : "run.day",
+    "label" : "一日欢宴",
+    "desc" : "[这位访客正忙于解决手头的要务。明天再来吧。]",
+    "imagePath" : "/assets/images/aspects/run.day.png"
+  }, {
+    "id" : "satisfying",
+    "label" : "令人满意",
+    "desc" : "例如帮助一位访客。我们既可以用它来标记他们的登船，也可以用它来进行满意度的评价。（内部文本？）",
+    "imagePath" : "/assets/images/aspects/satisfying.png"
+  }, {
+    "id" : "employable",
+    "label" : "可雇佣",
+    "desc" : "可雇佣此人一日。",
+    "imagePath" : "/assets/images/aspects/employable.png"
+  }, {
+    "id" : "prefs.dagmar",
+    "label" : null,
+    "desc" : "妲格玛偏好含有<sprite name=knock>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.dagmar.png"
+  }, {
+    "id" : "reading.edge.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.edge.intro.png"
+  }, {
+    "id" : "manuscript",
+    "label" : "手稿",
+    "desc" : "是我写成了它；我无法靠阅读它学到任何新知识，但访客们可以。",
+    "imagePath" : "/assets/images/aspects/manuscript.png"
+  }, {
+    "id" : "infinitereadable",
+    "label" : "并非孤本",
+    "desc" : "[这本书有许多版本。每个版本都可以阅读；一旦某个时代的书籍全部编目完毕，你就会开始发现它们。]",
+    "imagePath" : "/assets/images/aspects/infinitereadable.png"
+  }, {
+    "id" : "zlantern",
+    "label" : "灯[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>灯</b>。]",
+    "imagePath" : "/assets/images/aspects/zlantern.png"
+  }, {
+    "id" : "inspiring.agenda.autarchy",
+    "label" : "计划：自治",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.autarchy.png"
+  }, {
+    "id" : "zmoth",
+    "label" : "蛾[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>蛾</b>。是的它会。不对它不会。是的它会。是的它可能会。]",
+    "imagePath" : "/assets/images/aspects/zmoth.png"
+  }, {
+    "id" : "incident",
+    "label" : "事件",
+    "desc" : "访客感兴趣的事项。[一个事件通常会持续数个时节；访客们将在下次事件发生前的间隙继续来访。]",
+    "imagePath" : "/assets/images/aspects/incident.png"
+  }, {
+    "id" : "difficulty.prentice",
+    "label" : "入门级挑战",
+    "desc" : "简单的技术仅需技艺本身。[基础的配方需要提供五点相关性相。]",
+    "imagePath" : "/assets/images/aspects/difficulty.prentice.png"
+  }, {
+    "id" : "prefs.azita",
+    "label" : null,
+    "desc" : "阿齐塔偏好含有<sprite name=edge>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.azita.png"
+  }, {
+    "id" : "reading.rose.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.rose.intro.png"
+  }, {
+    "id" : "b.birdsong",
+    "label" : "主题：鸟鸣学",
+    "desc" : "关于音乐、谜语、杂记之经文。",
+    "imagePath" : "/assets/images/aspects/b.birdsong.png"
+  }, {
+    "id" : "zheart",
+    "label" : "心[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>心</b>。]",
+    "imagePath" : "/assets/images/aspects/zheart.png"
+  }, {
+    "id" : "skillingup",
+    "label" : "技艺",
+    "desc" : "万物皆可习得；万物皆可忘却。",
+    "imagePath" : "/assets/images/aspects/skillingup.png"
+  }, {
+    "id" : "friend",
+    "label" : "朋友",
+    "desc" : "一个很了解你而足以信任你的人。",
+    "imagePath" : "/assets/images/aspects/friend.png"
+  }, {
+    "id" : "sympathy.ys",
+    "label" : "偏向：伊苏",
+    "desc" : "此人了解与伊苏结盟的薄弱优势。",
+    "imagePath" : "/assets/images/aspects/sympathy.ys.png"
+  }, {
+    "id" : "cache",
+    "label" : "藏存之物",
+    "desc" : "这里面肯定封存着什么有意思的东西！[对此物进行<b>研究</b>。]",
+    "imagePath" : "/assets/images/aspects/cache.png"
+  }, {
+    "id" : "zrose",
+    "label" : "引[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>引</b>。]",
+    "imagePath" : "/assets/images/aspects/zrose.png"
+  }, {
+    "id" : "reading.sky",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.sky.png"
+  }, {
+    "id" : "prefs.arun",
+    "label" : null,
+    "desc" : "阿伦偏好含有<sprite name=moon>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.arun.png"
+  }, {
+    "id" : "sustenance",
+    "label" : "食物",
+    "desc" : "“愚者会为吃喝而生存，智者会为生存而吃喝。”——苏格拉底",
+    "imagePath" : "/assets/images/aspects/sustenance.png"
+  }, {
+    "id" : "pigment",
+    "label" : "颜料",
+    "desc" : "唤作色彩，唤作渍染，唤作待琢之珠玉。",
+    "imagePath" : "/assets/images/aspects/pigment.png"
+  }, {
+    "id" : "mastery.edge",
+    "label" : "精通：刃",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.edge.png"
+  }, {
+    "id" : "zgrail",
+    "label" : "杯[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>杯</b>。]",
+    "imagePath" : "/assets/images/aspects/zgrail.png"
+  }, {
+    "id" : "device",
+    "label" : "装置",
+    "desc" : "只能运行一次的机器。倘若它是个<i>暴脾气</i>的装置，这就意味着它会爆炸，所以要小心。",
+    "imagePath" : "/assets/images/aspects/device.png"
+  }, {
+    "id" : "seed",
+    "label" : "种子",
+    "desc" : "一颗种子在某个花园中可能比在其他花园里长势差，而在某个时节中可能比在其他时节里长势好。",
+    "imagePath" : "/assets/images/aspects/seed.png"
+  }, {
+    "id" : "record.phonograph",
+    "label" : "唱片",
+    "desc" : "纹路的迷宫正热切地等待着唱针到来。[这件物品只在广义上是“可读的”。找一台留声机来播放它。]",
+    "imagePath" : "/assets/images/aspects/record.phonograph.png"
+  }, {
+    "id" : "scrutiny",
+    "label" : "研究",
+    "desc" : "某物正在被查验或揭示。",
+    "imagePath" : "/assets/images/aspects/scrutiny.png"
+  }, {
+    "id" : "period.baronial",
+    "label" : "男爵时期",
+    "desc" : "16世纪，德沃尔夫家族被封为布兰库格男爵，他们将这座岛屿作为私人地产统治——直至1759年，他们的血脉在疯狂与死亡中终结。",
+    "imagePath" : "/assets/images/aspects/period.baronial.png"
+  }, {
+    "id" : "workstationhasaspect",
+    "label" : "圣所",
+    "desc" : "[此地是某种意义上的圣所，这意味着它本身就能提供性相。]",
+    "imagePath" : "/assets/images/aspects/workstationhasaspect.png"
+  }, {
+    "id" : "beverage",
+    "label" : "饮品",
+    "desc" : "有些饮品适合在早上饮用……有些则更适合在晚上。",
+    "imagePath" : "/assets/images/aspects/beverage.png"
+  }, {
+    "id" : "zsky",
+    "label" : "穹[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>穹</b>。]",
+    "imagePath" : "/assets/images/aspects/zsky.png"
+  }, {
+    "id" : "key",
+    "label" : "钥匙",
+    "desc" : "“灵魂中被称为<i>辩闻</i>的部分被留在漫宿的纯白之门外，如同留在门上的钥匙。”（若按照高贵之举社团的说法，也可将其比作留在国王宫殿外的利剑。）",
+    "imagePath" : "/assets/images/aspects/key.png"
+  }, {
+    "id" : "ingredient",
+    "label" : "食材",
+    "desc" : "它将成为更伟大之物的一部分。[拥有《光之居屋》后，可以在厨房里用食材烹饪或制作食物。]",
+    "imagePath" : "/assets/images/aspects/ingredient.png"
+  }, {
+    "id" : "correspondence",
+    "label" : "来信",
+    "desc" : "我可以在书桌前回信。",
+    "imagePath" : "/assets/images/aspects/correspondence.png"
+  }, {
+    "id" : "mastery.rose",
+    "label" : "精通：引",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.rose.png"
+  }, {
+    "id" : "w.hushery",
+    "label" : "静默术",
+    "desc" : "伟大之术中的静默术理解沉默，及其分离之美。",
+    "imagePath" : "/assets/images/aspects/w.hushery.png"
+  }, {
+    "id" : "b.skolekosophy",
+    "label" : "主题：蠕虫学",
+    "desc" : "关于不应成文之经文。",
+    "imagePath" : "/assets/images/aspects/b.skolekosophy.png"
+  }, {
+    "id" : "unsociable",
+    "label" : "不愿交际",
+    "desc" : "[带有“不愿交际”标签的访客会对其他访客保持警惕。他们不会参加常规沙龙。]",
+    "imagePath" : "/assets/images/aspects/unsociable.png"
+  }, {
+    "id" : "inspiring.agenda.peace",
+    "label" : "计划：和平",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.peace.png"
+  }, {
+    "id" : "flower",
+    "label" : "花",
+    "desc" : "植物之发。",
+    "imagePath" : "/assets/images/aspects/flower.png"
+  }, {
+    "id" : "u.fucine",
+    "label" : "了解富奇诺语",
+    "desc" : "此人了解这门令人干渴的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.fucine.png"
+  }, {
+    "id" : "openair",
+    "label" : "露天",
+    "desc" : "群鸟与时节都可自由造访此地。",
+    "imagePath" : "/assets/images/aspects/openair.png"
+  }, {
+    "id" : "inspiring.fear.nowhere",
+    "label" : "恐惧：虚界",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/fear.nowhere.png"
+  }, {
+    "id" : "thing",
+    "label" : "物品",
+    "desc" : "“君子役物，小人役于物。”——荀子",
+    "imagePath" : "/assets/images/aspects/thing.png"
+  }, {
+    "id" : "reading.moth.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.moth.intro.png"
+  }, {
+    "id" : "malady.cure.winter",
+    "label" : "以冬治愈",
+    "desc" : "该病症可通过卧床及合适的（也许是寒冷彻骨的）饮品治愈，与之同等级的<b>冬</b>相将缓和敏感脆弱的灵魂。",
+    "imagePath" : "/assets/images/aspects/malady.cure.winter.png"
+  }, {
+    "id" : "spencer",
+    "label" : "斯宾塞",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/spencer.png"
+  }, {
+    "id" : "memories.archaeologist",
+    "label" : "记忆：考古学家",
+    "desc" : "“我曾掘开一座坟墓，却寻得一座监牢——但我发现得太迟了。如今，我所释放的瘟疫成了我的影子——亦或我才是它的倒影。纠正事态为时已晚，但保护未来免受过去的伤害永远不算迟。我在噤声居屋无法伤害他者。或许，我还能偿赎罪孽。”",
+    "imagePath" : "/assets/images/aspects/jm.skolekosophy.png"
+  }, {
+    "id" : "state.torn",
+    "label" : "Torn（疑似未实装？）",
+    "desc" : "- torn - （疑似未实装？）",
+    "imagePath" : "/assets/images/aspects/state.torn.png"
+  }, {
+    "id" : "remains",
+    "label" : "遗骸",
+    "desc" : "凭此可辨何者终有一死。",
+    "imagePath" : "/assets/images/aspects/remains.png"
+  }, {
+    "id" : "agenda.corrivality",
+    "label" : "计划：角争",
+    "desc" : "此人认为纷争对于世界的存续是必要的。",
+    "imagePath" : "/assets/images/aspects/agenda.corrivality.png"
+  }, {
+    "id" : "prefs.olympe",
+    "label" : null,
+    "desc" : "奥兰普偏好含有<sprite name=forge>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.olympe.png"
+  }, {
+    "id" : "w.killasimi",
+    "label" : "以夜魄语写就",
+    "desc" : "一门织就的语言。",
+    "imagePath" : "/assets/images/aspects/w.killasimi.png"
+  }, {
+    "id" : "u.aramaic",
+    "label" : "了解亚兰语",
+    "desc" : "（如我一般。）",
+    "imagePath" : "/assets/images/aspects/u.aramaic.png"
+  }, {
+    "id" : "difficulty.keeper",
+    "label" : "秘授级挑战",
+    "desc" : "仅容聪慧之人、伟大之人和那些最幸运的蠢货通过。[最具挑战性的配方需要提供十五点相关性相。每个秘授级配方还需要一份特定的原料——理想的原料可能意味着更低的性相需求。]。",
+    "imagePath" : "/assets/images/aspects/difficulty.keeper.png"
+  }, {
+    "id" : "wood",
+    "label" : "木材",
+    "desc" : "对某些人来说是天空的支柱，对另一些人来说则是将制的纸张。",
+    "imagePath" : "/assets/images/aspects/wood.png"
+  }, {
+    "id" : "reluctant",
+    "label" : "勉勉强强",
+    "desc" : "此人会提供帮助……但只是<i>基本的</i>帮助。",
+    "imagePath" : "/assets/images/aspects/reluctant.png"
+  }, {
+    "id" : "glass",
+    "label" : "玻璃",
+    "desc" : "透亮而脆弱。即便是沙子，有朝一日也能成为石之眼眸。",
+    "imagePath" : "/assets/images/aspects/glass.png"
+  }, {
+    "id" : "prefs.corso",
+    "label" : null,
+    "desc" : "科尔索偏好含有<sprite name=grail>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.corso.png"
+  }, {
+    "id" : "memories.symurgist",
+    "label" : "记忆：鸟慧者",
+    "desc" : "“我偷听了鸟形司辰的歌声。我曾被警告过：我会失去我的思想，我的灵魂，我的表皮。这并无半点虚假，但从未有人告诫过你侥幸逃脱后会发生什么……也就是说，从那之后，就再也没有什么值得倾听的事了。”",
+    "imagePath" : "/assets/images/aspects/jm.birdsong.png"
+  }, {
+    "id" : "encaustum",
+    "label" : "终刻墨",
+    "desc" : "“历史必将善待于我，因为我将要书写它。”——丘吉尔[使用终刻墨来做出会产生深远影响的决定。]",
+    "imagePath" : "/assets/images/aspects/encaustum.png"
+  }, {
+    "id" : "agenda.peace",
+    "label" : "计划：和平",
+    "desc" : "此人认为对抗与战争可能为世界毁灭的原因。",
+    "imagePath" : "/assets/images/aspects/agenda.peace.png"
+  }, {
+    "id" : "forge",
+    "label" : "铸",
+    "desc" : "我曾经看到过这样一句话，“火是严冬，却是带有温度。火是暖春，却会耗尽一切。”[<b>铸</b>是变换与毁灭的准则。]",
+    "imagePath" : "/assets/images/aspects/forge.png"
+  }, {
+    "id" : "w.ramsund",
+    "label" : "以拉姆桑德语写就",
+    "desc" : "一门生动的语言。",
+    "imagePath" : "/assets/images/aspects/w.ramsund.png"
+  }, {
+    "id" : "fixed",
+    "label" : "位置固定",
+    "desc" : "不用足以损坏它的力量，我就没法把这东西取下来……而居屋的图书管理员不会如此粗鲁。",
+    "imagePath" : "/assets/images/aspects/fixed.png"
+  }, {
+    "id" : "memory",
+    "label" : "回忆",
+    "desc" : "所铭记的或许就是所理解的。[回忆可以帮助完成配方或升级技艺。回忆会在每天拂晓消失——除了那些存留的回忆。]",
+    "imagePath" : "/assets/images/aspects/memory.png"
+  }, {
+    "id" : "knock",
+    "label" : "启",
+    "desc" : "被称作<b>启</b>的准则不允许封闭和孤立存在。它欢快地将我们推出无知的庇护。[<b>启</b>是开启与拆解的准则。]",
+    "imagePath" : "/assets/images/aspects/knock.png"
+  }, {
+    "id" : "b.ithastry",
+    "label" : "主题：盗火术",
+    "desc" : "关于炼金术、冶金学、烟火工艺之经文。",
+    "imagePath" : "/assets/images/aspects/b.ithastry.png"
+  }, {
+    "id" : "memories.magnate",
+    "label" : "记忆：富豪",
+    "desc" : "“我已活过漫长岁月，但我仍未准备好逝去。我已品尝过世间百味，可我仍未因此满足。给我静默；给我安宁；给我雪一般的安宁。”",
+    "imagePath" : "/assets/images/aspects/jm.hushery.png"
+  }, {
+    "id" : "prefs.aladim",
+    "label" : null,
+    "desc" : "阿迪姆偏好含有<sprite name=scale>的食物，并且绝不会碰酒精饮料。",
+    "imagePath" : "/assets/images/aspects/prefs.aladim.png"
+  }, {
+    "id" : "w.skolekosophy",
+    "label" : "蠕虫学",
+    "desc" : "对那些不应研究的事物的研究。有些人称它为一种智慧。",
+    "imagePath" : "/assets/images/aspects/w.skolekosophy.png"
+  }, {
+    "id" : "beast",
+    "label" : "兽类",
+    "desc" : "它会动，但既不是风，也不是人。",
+    "imagePath" : "/assets/images/aspects/beast.png"
+  }, {
+    "id" : "assistance",
+    "label" : "协助",
+    "desc" : "图书管理员离群索居。但你也不必因此羞于向他人寻求帮助。[助手可以帮你开启新的房间或帮助研究。助手卡在使用后或拂晓来临时会消失。]",
+    "imagePath" : "/assets/images/aspects/assistance.png"
+  }, {
+    "id" : "reading.forge.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.forge.intro.png"
+  }, {
+    "id" : "mystery.rose",
+    "label" : "奥秘：引",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.rose.png"
+  }, {
+    "id" : "prefs.coquille",
+    "label" : null,
+    "desc" : "科基尔偏好含有<sprite name=grail>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.coquille.png"
+  }, {
+    "id" : "mystery.forge",
+    "label" : "奥秘：铸",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.forge.png"
+  }, {
+    "id" : "fear.chandler",
+    "label" : "恐惧：制烛人",
+    "desc" : "此人知晓制烛人降临将带来的危险。",
+    "imagePath" : "/assets/images/aspects/fear.chandler.png"
+  }, {
+    "id" : "zknock",
+    "label" : "启[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>启</b>。]",
+    "imagePath" : "/assets/images/aspects/zknock.png"
+  }, {
+    "id" : "reading.nectar.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.nectar.intro.png"
+  }, {
+    "id" : "delivery",
+    "label" : "快递",
+    "desc" : "给我的？",
+    "imagePath" : "/assets/images/aspects/delivery.png"
+  }, {
+    "id" : "ability.setup",
+    "label" : "魂质？",
+    "desc" : "人类的灵魂由九种元素构成……[借助你的日记，忆起你的身份。]",
+    "imagePath" : "/assets/images/aspects/ability.png"
+  }, {
+    "id" : "wallart",
+    "label" : "墙饰",
+    "desc" : "你可以将整栋房子描述成一本书，虽然给它编目会很麻烦。",
+    "imagePath" : "/assets/images/aspects/wallart.png"
+  }, {
+    "id" : "u.hyksos",
+    "label" : "了解希克索斯语",
+    "desc" : "此人了解这门诡谲的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.hyksos.png"
+  }, {
+    "id" : "restorative",
+    "label" : "促进复元",
+    "desc" : "有益休息与恢复。[此物可以帮助你治愈病症。你可以在床上使用它并配以合适的力量性相，不过如果它本身就具备足够的力量性相，后者就并非必要。]",
+    "imagePath" : "/assets/images/aspects/restorative.png"
+  }, {
+    "id" : "stone",
+    "label" : "岩石",
+    "desc" : "“寻求耐心者，此为尔等之导师。”",
+    "imagePath" : "/assets/images/aspects/stone.png"
+  }, {
+    "id" : "reading.lantern.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.lantern.intro.png"
+  }, {
+    "id" : "reading.heart.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.heart.intro.png"
+  }, {
+    "id" : "exalted.wood",
+    "label" : "已强化：木材",
+    "desc" : "一种有用的材料提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.wood.png"
+  }, {
+    "id" : "mark",
+    "label" : "印迹",
+    "desc" : "一抹脆弱的，不稳定的痕迹。",
+    "imagePath" : "/assets/images/aspects/mark.png"
+  }, {
+    "id" : "sympathy.reckoners",
+    "label" : "偏向：清算人",
+    "desc" : "此人了解与年岁商人合作的益处。",
+    "imagePath" : "/assets/images/aspects/sympathy.reckoners.png"
+  }, {
+    "id" : "woven",
+    "label" : "织物",
+    "desc" : "[可在工作台上加工为碎布。]",
+    "imagePath" : "/assets/images/aspects/woven.png"
+  }, {
+    "id" : "u.sabazine",
+    "label" : "了解萨巴佐因语",
+    "desc" : "此人了解这门神秘的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.sabazine.png"
+  }, {
+    "id" : "mystery.sky",
+    "label" : "奥秘：穹",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.sky.png"
+  }, {
+    "id" : "reading.forge",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.forge.png"
+  }, {
+    "id" : "course.side",
+    "label" : "配菜",
+    "desc" : "通常作为小吃，或与主菜搭配享用。",
+    "imagePath" : "/assets/images/aspects/course.side.png"
+  }, {
+    "id" : "memories.twiceborn",
+    "label" : "记忆：二度降生者",
+    "desc" : "“我记得，我曾作为没有实体的不朽者漫步于太阳的居屋，但有件事只有我重获肉身才能解决。如今，若我重返太阳的居屋，我将被追捕并遭惩罚；若我仍留存于肉身，我将被追捕并遭吞噬。我需要第三种选择。作为图书管理员，留在噤声居屋，就是第三种选择。但或许不止于此。”",
+    "imagePath" : "/assets/images/aspects/jm.illumination.png"
+  }, {
+    "id" : "inspiring.agenda.stone.remembered",
+    "label" : "计划：铭记石神",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.stone.remembered.png"
+  }, {
+    "id" : "reading.moth",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.moth.png"
+  }, {
+    "id" : "inspiring.fear.chandler",
+    "label" : "恐惧：制烛人",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/fear.chandler.png"
+  }, {
+    "id" : "inspiring.agenda.revelation",
+    "label" : "计划：揭示",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.revelation.png"
+  }, {
+    "id" : "weather",
+    "label" : "天气",
+    "desc" : "每种天气都会带来不同的影响。我可以将其作为回忆使用。",
+    "imagePath" : "/assets/images/aspects/weather.png"
+  }, {
+    "id" : "memories.prodigal",
+    "label" : "记忆：浪子",
+    "desc" : "“我的父母是长生者，也就是不朽的存在，而长生者禁止生育子嗣。他们所受的惩罚即为：既然知道我还存活，就只能无休止地追逐，直到将我吞噬。在噤声居屋中，我是安全的。我甚至可能学会造出足以自卫的武器。”",
+    "imagePath" : "/assets/images/aspects/jm.ithastry.png"
+  }, {
+    "id" : "season",
+    "label" : "时节",
+    "desc" : "时日往复。",
+    "imagePath" : "/assets/images/aspects/season.png"
+  }, {
+    "id" : "payment",
+    "label" : "付款",
+    "desc" : "目前这只会移除整个硬币。若有了一些额外的行动，它应会有所改变。（内部文本？）",
+    "imagePath" : "/assets/images/aspects/payment.png"
+  }, {
+    "id" : "mastery.sky",
+    "label" : "精通：穹",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.sky.png"
+  }, {
+    "id" : "exalted.metal",
+    "label" : "已强化：金属",
+    "desc" : "一种有用的金属提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.metal.png"
+  }, {
+    "id" : "visitor.villager",
+    "label" : "访客：村民",
+    "desc" : "某位布兰库格人接受了来自居屋的邀请。[你一次只能邀请一位村民来居屋。]",
+    "imagePath" : "/assets/images/aspects/visitor.villager.png"
+  }, {
+    "id" : "reading.moon.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.moon.intro.png"
+  }, {
+    "id" : "lesson",
+    "label" : "教诲",
+    "desc" : "智慧阶梯上的一小步。[使用它来习得或提升技艺。]",
+    "imagePath" : "/assets/images/aspects/lesson.png"
+  }, {
+    "id" : "scroll",
+    "label" : "卷轴",
+    "desc" : "一本书页很长的书。",
+    "imagePath" : "/assets/images/aspects/scroll.png"
+  }, {
+    "id" : "difficulty.rarities",
+    "label" : "难关：珍品",
+    "desc" : "[这一等级的相关性相会给你一个发现珍品的机会。]",
+    "imagePath" : "/assets/images/aspects/difficulty.rarities.png"
+  }, {
+    "id" : "w.illumination",
+    "label" : "照明术",
+    "desc" : "照明术学者净化自我及其周遭。最终，人们往往看不出两者之间的任何区别。",
+    "imagePath" : "/assets/images/aspects/w.illumination.png"
+  }, {
+    "id" : "exalted.candle",
+    "label" : "已强化：蜡烛",
+    "desc" : "这名助手有一盏照亮黑暗的明灯，这能提高他们今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.candle.png"
+  }, {
+    "id" : "outofbounds",
+    "label" : "边境之外",
+    "desc" : "此地坐落于居屋的边境之外。",
+    "imagePath" : "/assets/images/aspects/outofbounds.png"
+  }, {
+    "id" : "moon",
+    "label" : "月",
+    "desc" : "秘密轻柔；夜柔更甚；大海低语。而倾听未必总是明智。[行于夜者，被遗忘者。]",
+    "imagePath" : "/assets/images/aspects/moon.png"
+  }, {
+    "id" : "omen",
+    "label" : "预兆",
+    "desc" : "知者能见，见者方知。",
+    "imagePath" : "/assets/images/aspects/omen.png"
+  }, {
+    "id" : "malady.cure.nectar",
+    "label" : "以蜜治愈",
+    "desc" : "该病症可以通过卧床及合适的（也许是翠绿而使人镇静的）饮品治愈，与之同等级的<b>蜜</b>相将使狂热的灵魂重回清醒。",
+    "imagePath" : "/assets/images/aspects/malady.cure.nectar.png"
+  }, {
+    "id" : "light",
+    "label" : "光源",
+    "desc" : "因此我们得以见物，或者说，因此我们得以庆祝。",
+    "imagePath" : "/assets/images/aspects/light.png"
+  }, {
+    "id" : "fabric",
+    "label" : "布料与丝缕",
+    "desc" : "夜魄语，“织就的语言”，以丝线织就而非用墨水书写。当然了，丝线也有其他乏味一点的用途。内饰这个话题能比听上去的更新奇。",
+    "imagePath" : "/assets/images/aspects/fabric.png"
+  }, {
+    "id" : "reading.knock.intro",
+    "label" : "正在阅读……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.knock.intro.png"
+  }, {
+    "id" : "w.preservation",
+    "label" : "保存术",
+    "desc" : "治愈和恢复。一种不起眼的智慧，至少对那些从不怀疑世界为何仍然存续的人来说。",
+    "imagePath" : "/assets/images/aspects/w.preservation.png"
+  }, {
+    "id" : "mystery.edge",
+    "label" : "奥秘：刃",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.edge.png"
+  }, {
+    "id" : "gem",
+    "label" : "宝石",
+    "desc" : "时而闪亮；总是珍稀。",
+    "imagePath" : "/assets/images/aspects/gem.png"
+  }, {
+    "id" : "intoxicating",
+    "label" : "含酒精",
+    "desc" : "“快，给我杯酒，让我能润润脑子，讲些聪明话。”——阿里斯托芬",
+    "imagePath" : "/assets/images/aspects/intoxicating.png"
+  }, {
+    "id" : "malady.cure.forge",
+    "label" : "以铸治愈",
+    "desc" : "此病症可以通过卧床及令人振奋的饮品治愈，与之同等级的<b>铸</b>相将从灵魂中升腾起丛丛蒸汽。",
+    "imagePath" : "/assets/images/aspects/malady.cure.forge.png"
+  }, {
+    "id" : "malady.cure.lantern",
+    "label" : "以灯治愈",
+    "desc" : "此病症可以通过卧床及合适的（也许是明亮而充满生机的）饮品治愈，与之同等级的<b>灯</b>相将重新点亮灵魂之光。",
+    "imagePath" : "/assets/images/aspects/malady.cure.lantern.png"
+  }, {
+    "id" : "leaf",
+    "label" : "叶",
+    "desc" : "植物之手。",
+    "imagePath" : "/assets/images/aspects/leaf.png"
+  }, {
+    "id" : "mastery.heart",
+    "label" : "精通：心",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.heart.png"
+  }, {
+    "id" : "liquid",
+    "label" : "液体",
+    "desc" : "“何物去往低处，逃离高处，且不受任何铸造的锁链束缚？”",
+    "imagePath" : "/assets/images/aspects/liquid.png"
+  }, {
+    "id" : "hanging",
+    "label" : "帷幔",
+    "desc" : "装饰大厅。",
+    "imagePath" : "/assets/images/aspects/hanging.png"
+  }, {
+    "id" : "w.ericapaean",
+    "label" : "以厄里卡帕奥语写就",
+    "desc" : "一门优雅的语言。",
+    "imagePath" : "/assets/images/aspects/w.ericapaean.png"
+  }, {
+    "id" : "kod",
+    "label" : "未发布",
+    "desc" : "这里需要的东西没有人有。[这标志着此材料只能在以后使用或完成；在这个早期版本中没有。]",
+    "imagePath" : "/assets/images/aspects/pentiment.png"
+  }, {
+    "id" : "exalted.pigment",
+    "label" : "已强化：颜料",
+    "desc" : "一抹奇异的颜料提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.pigment.png"
+  }, {
+    "id" : "sound",
+    "label" : "声音",
+    "desc" : "寂静之前，寂静之后。",
+    "imagePath" : "/assets/images/aspects/sound.png"
+  }, {
+    "id" : "fee",
+    "label" : "费用",
+    "desc" : "雇佣此人工作一天的价格。",
+    "imagePath" : "/assets/images/aspects/pence.png"
+  }, {
+    "id" : "malady.cure.sky",
+    "label" : "以穹治愈",
+    "desc" : "该病症可通过卧床及合适的（也许是起泡的）饮品治愈，与之同等级的<b>穹</b>相将振奋忧虑不安的灵魂。",
+    "imagePath" : "/assets/images/aspects/malady.cure.sky.png"
+  }, {
+    "id" : "w.vak",
+    "label" : "以伐诃语写就",
+    "desc" : "一门自满的语言。",
+    "imagePath" : "/assets/images/aspects/w.vak.png"
+  }, {
+    "id" : "memories.artist",
+    "label" : "记忆：艺术家",
+    "desc" : "“达达主义只是开始。超现实主义者的宣言？那是前进路上的一步，但仅仅只是一步。这条路要么通往无处，要么就必然通往林地。这是一条我们只能在黑暗中前行的路。不，等下，不是‘在黑暗中’。是‘在鲜血中’，‘<i>深及髋部</i>的鲜血中’。啊闭嘴。把笔给我，我来写——”",
+    "imagePath" : "/assets/images/aspects/jm.bosk.png"
+  }, {
+    "id" : "course.pudding",
+    "label" : "甜点",
+    "desc" : "“你要是不把碗里的肉吃完，就别想吃甜点。肉都没吃完还想吃甜点？”——罗格·沃特斯",
+    "imagePath" : "/assets/images/aspects/course.pudding.png"
+  }, {
+    "id" : "exalted.tool",
+    "label" : "已强化：工具",
+    "desc" : "借用工具提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.tool.png"
+  }, {
+    "id" : "reading.moon",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.moon.png"
+  }, {
+    "id" : "reading.correspondence",
+    "label" : "信上写着……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.knock.png"
+  }, {
+    "id" : "lyterion",
+    "label" : "莱特里昂",
+    "desc" : "与莱特里昂有关的知识可以放入此处。",
+    "imagePath" : "/assets/images/aspects/r.insects.nectars.png"
+  }, {
+    "id" : "mystery.lantern",
+    "label" : "奥秘：灯",
+    "desc" : "更艰深的挑战需要更强力的技艺。",
+    "imagePath" : "/assets/images/aspects/mystery.lantern.png"
+  }, {
+    "id" : "mastery.forge",
+    "label" : "精通：铸",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.forge.png"
+  }, {
+    "id" : "prefs.arthur",
+    "label" : null,
+    "desc" : "亚瑟偏好含有<sprite name=lantern>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.arthur.png"
+  }, {
+    "id" : "mastery.lantern",
+    "label" : "精通：灯",
+    "desc" : "我对这些文本相当熟悉了。",
+    "imagePath" : "/assets/images/aspects/mastery.lantern.png"
+  }, {
+    "id" : "inspiring.agenda.stone.consumed",
+    "label" : "计划：吞噬石神",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/agenda.stone.consumed.png"
+  }, {
+    "id" : "readable",
+    "label" : "可读",
+    "desc" : "世上总有更不堪入目的东西。",
+    "imagePath" : "/assets/images/aspects/readable.png"
+  }, {
+    "id" : "zscale",
+    "label" : "鳞[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>鳞</b>。]",
+    "imagePath" : "/assets/images/aspects/zscale.png"
+  }, {
+    "id" : "moth",
+    "label" : "蛾",
+    "desc" : "我知道有一个人会将蛾子捉来关在玻璃罩下。然后在如今夜一般的夜晚，将它们逐个放出，令其死于火烛。[<b>蛾</b>，狂野又凶险，是混沌与渴慕的准则。]",
+    "imagePath" : "/assets/images/aspects/moth.png"
+  }, {
+    "id" : "inspiring.sympathy.chandler",
+    "label" : "偏向：制烛人",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/sympathy.chandler.png"
+  }, {
+    "id" : "finished",
+    "label" : "已完成",
+    "desc" : "至少从某种意义上讲，这是完成；结束；终结。",
+    "imagePath" : "/assets/images/aspects/finished.png"
+  }, {
+    "id" : "history",
+    "label" : "历史",
+    "desc" : "历史不是已然发生之事；是已知发生之事。[你做出了将改变世界进程的决定。在闰时把你的日记带到<b>树</b>下。]",
+    "imagePath" : "/assets/images/aspects/history.png"
+  }, {
+    "id" : "prefs.hokobald",
+    "label" : null,
+    "desc" : "霍科博尔德只享用含<sprite name=forge>的食物与饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.hokobald.png"
+  }, {
+    "id" : "w.bosk",
+    "label" : "丛林学",
+    "desc" : "原始丛林之智慧；鲜少书写，常被感知。",
+    "imagePath" : "/assets/images/aspects/w.bosk.png"
+  }, {
+    "id" : "visitor",
+    "label" : "访客",
+    "desc" : "书籍进入与离开图书馆的主要途径。访客的到来可能会导致各种各样的影响。",
+    "imagePath" : "/assets/images/aspects/visitor.png"
+  }, {
+    "id" : "w.cracktrack",
+    "label" : "以解踪语写就",
+    "desc" : "一门原始的语言。",
+    "imagePath" : "/assets/images/aspects/w.cracktrack.png"
+  }, {
+    "id" : "u.ramsund",
+    "label" : "了解拉姆桑德语",
+    "desc" : "此人了解这门生动的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.ramsund.png"
+  }, {
+    "id" : "reading.winter",
+    "label" : "我读到……",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/reading.winter.png"
+  }, {
+    "id" : "cache.bright.rarities",
+    "label" : "闪耀珍品",
+    "desc" : "何种闪耀珍宝？",
+    "imagePath" : "/assets/images/aspects/cache.bright.rarities.png"
+  }, {
+    "id" : "winter",
+    "label" : "冬",
+    "desc" : "……[<b>冬</b>是静默、终结和不尽然逝去之物的准则。]",
+    "imagePath" : "/assets/images/aspects/winter.png"
+  }, {
+    "id" : "scale",
+    "label" : "鳞",
+    "desc" : "坚于表，固于里；难唤醒，更难抑。[此为大地深处原始力量的残余。]",
+    "imagePath" : "/assets/images/aspects/scale.png"
+  }, {
+    "id" : "exalted.memory",
+    "label" : "已强化：回忆",
+    "desc" : "一段分享的回忆提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.memory.png"
+  }, {
+    "id" : "zedge",
+    "label" : "刃[疲劳]",
+    "desc" : "[当这张卡恢复时，它将再次拥有这一等级的<b>刃</b>。]",
+    "imagePath" : "/assets/images/aspects/zedge.png"
+  }, {
+    "id" : "exalted.sustenance",
+    "label" : "已强化：食物",
+    "desc" : "享用食物提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.sustenance.png"
+  }, {
+    "id" : "fear.nowhere",
+    "label" : "恐惧：虚界",
+    "desc" : "此人了解虚源诸神吞噬一切的恐怖。",
+    "imagePath" : "/assets/images/aspects/fear.nowhere.png"
+  }, {
+    "id" : "soiled",
+    "label" : "脏污的",
+    "desc" : "需要清洗的东西。",
+    "imagePath" : "/assets/images/aspects/soiled.png"
+  }, {
+    "id" : "b.horomachistry",
+    "label" : "主题：司辰学",
+    "desc" : "关于司辰（及其化身）所布法则（与分歧）之经文。",
+    "imagePath" : "/assets/images/aspects/b.horomachistry.png"
+  }, {
+    "id" : "malady",
+    "label" : "病症",
+    "desc" : "有什么东西缠上了我的灵魂，或是让其染病。[暴露在危险的影响下——作业失败时偶有发生——会使魂质卡被病症污染。染上病症的魂质不会枯竭，但会发生转变或弱化，若不及时处理将导致严重的后果。]",
+    "imagePath" : "/assets/images/aspects/malady.png"
+  }, {
+    "id" : "inert",
+    "label" : "未启动的",
+    "desc" : "一样装置；但不会随便摆弄两下就启动。[将之用于<b>研究</b>不会消耗它；尽管其在用于制作时依然会被消耗。]",
+    "imagePath" : "/assets/images/aspects/inert.png"
+  }, {
+    "id" : "u.killasimi",
+    "label" : "了解夜魄语",
+    "desc" : "此人了解这门织就的语言，足以阅读此语或教授他人。",
+    "imagePath" : "/assets/images/aspects/u.killasimi.png"
+  }, {
+    "id" : "prefs.zachary",
+    "label" : null,
+    "desc" : "扎迦利偏好含有<sprite name=winter>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.zachary.png"
+  }, {
+    "id" : "undiscovered",
+    "label" : "未发现",
+    "desc" : "[一旦你发现了这一配方，它的需求就会在这里显示。]",
+    "imagePath" : "/assets/images/aspects/undiscovered.png"
+  }, {
+    "id" : "introduction",
+    "label" : "引见",
+    "desc" : "即使在这个偏远的地方，人也能交到新的朋友，亦或是树立新的敌人。",
+    "imagePath" : "/assets/images/aspects/introduction.png"
+  }, {
+    "id" : "ink",
+    "label" : "墨水",
+    "desc" : "若行笔不畅，混匀就好。",
+    "imagePath" : "/assets/images/aspects/ink.png"
+  }, {
+    "id" : "post.ready",
+    "label" : "准备寄送",
+    "desc" : "一旦信箱之力应许，这封信就会找到它的目的地……[把这份文件，以及用于邮票或汇票的现金一同带到邮局。]",
+    "imagePath" : "/assets/images/aspects/post.ready.png"
+  }, {
+    "id" : "nectar",
+    "label" : "蜜",
+    "desc" : "世界脉络中的常绿珍宝；时节轮转的跃动脉搏。[很久以前，一些人把该准则称作“血”。]",
+    "imagePath" : "/assets/images/aspects/nectar.png"
+  }, {
+    "id" : "posting",
+    "label" : "寄送中",
+    "desc" : "这是用来在发送内容时引起评论的，因为“递送”于幕后。（内部文本？）",
+    "imagePath" : "/assets/images/aspects/posting.png"
+  }, {
+    "id" : "u.phrygian",
+    "label" : "了解弗里吉亚语",
+    "desc" : "（如我一般。）",
+    "imagePath" : "/assets/images/aspects/u.phrygian.png"
+  }, {
+    "id" : "appointment.nunciant",
+    "label" : "通讯理事",
+    "desc" : "通讯理事负责与其他组织沟通及洽谈。",
+    "imagePath" : "/assets/images/aspects/appointment.nunciant.png"
+  }, {
+    "id" : "exalted.fuel",
+    "label" : "已强化：燃料",
+    "desc" : "一些燃料提高了这名助手今天的能力。",
+    "imagePath" : "/assets/images/aspects/exalted.fuel.png"
+  }, {
+    "id" : "prefs.douglas",
+    "label" : null,
+    "desc" : "道格拉斯偏好含有<sprite name=lantern>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.douglas.png"
+  }, {
+    "id" : "inspiring.fear.carapace",
+    "label" : "恐惧：介壳种",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/fear.carapace.png"
+  }, {
+    "id" : "course.main",
+    "label" : "主菜",
+    "desc" : "一顿美餐的核心与支柱。",
+    "imagePath" : "/assets/images/aspects/course.main.png"
+  }, {
+    "id" : "tally",
+    "label" : "账筹",
+    "desc" : "无形世界的公认货币。十分之非官方，永是一贯如此。",
+    "imagePath" : "/assets/images/aspects/tally.png"
+  }, {
+    "id" : "cache.sovereign.rarities",
+    "label" : "王者珍品",
+    "desc" : "何种王者瑰宝？",
+    "imagePath" : "/assets/images/aspects/cache.sovereign.rarities.png"
+  }, {
+    "id" : "prefs.fraser",
+    "label" : null,
+    "desc" : "弗雷泽偏好含有<sprite name=scale>的食物和饮品。",
+    "imagePath" : "/assets/images/aspects/prefs.fraser.png"
+  }, {
+    "id" : "arun.likes.yvette",
+    "label" : null,
+    "desc" : "据传，噤声居屋的沙龙结束后，阿伦带着伊薇特回家了。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "coquille.likes.douglas",
+    "label" : null,
+    "desc" : "科基尔对道格拉斯怀有恶作剧般的热情。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "yvette.likes.azita",
+    "label" : null,
+    "desc" : "阿齐塔和伊薇特擦出了某种火花。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "arun.likes.denzil",
+    "label" : null,
+    "desc" : "据传，噤声居屋的沙龙结束后，阿伦和邓齐尔一起回家了。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "douglas.likes.arthur",
+    "label" : null,
+    "desc" : "道格拉斯喜欢上了新认的叔祖父，亚瑟。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "aladim.likes.connie",
+    "label" : null,
+    "desc" : "阿迪姆邀请康妮与他共进晚餐。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "yvette.likes.arun",
+    "label" : null,
+    "desc" : "据传，噤声居屋的沙龙结束后，伊薇特和阿伦一起回家了。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "agdistis.likes.chaima",
+    "label" : null,
+    "desc" : "阿格狄斯提斯享受柴玛的陪伴。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "zachary.likes.chaima",
+    "label" : null,
+    "desc" : "扎迦利对柴玛表现出了几近爱慕的感情……",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "arthur.likes.douglas",
+    "label" : null,
+    "desc" : "亚瑟喜欢上了他新结识的侄孙道格拉斯。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "douglas.likes.coquille",
+    "label" : null,
+    "desc" : "道格拉斯暗中恋慕科基尔，可若有一日必须将她绳之以法，他定能毫不犹豫地将这份感情弃置一旁。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "chaima.likes.agdistis",
+    "label" : null,
+    "desc" : "柴玛喜欢上了阿格狄斯提斯。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "morgen.likes.zachary",
+    "label" : null,
+    "desc" : "摩根对扎迦利产生了暂时的喜爱——或许甚至称得上是柔情。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "azita.likes.yvette",
+    "label" : null,
+    "desc" : "阿齐塔和伊薇特擦出了某种火花。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "douglas.likes.hokobald",
+    "label" : null,
+    "desc" : "道格拉斯对霍科博尔德秉持着不情不愿的敬意。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "arun.likes.coquille",
+    "label" : null,
+    "desc" : "阿伦对科基尔生出了一种谨慎的亲情。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "zachary.likes.morgen",
+    "label" : null,
+    "desc" : "扎迦利阴郁的热情已经被摩根点燃。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "coquille.likes.arun",
+    "label" : null,
+    "desc" : "科基尔开始对阿伦产生了一种警惕的亲情。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "connie.likes.aladim",
+    "label" : null,
+    "desc" : "康妮已经接受了阿迪姆私下共进晚餐的邀约。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "chaima.likes.zachary",
+    "label" : null,
+    "desc" : "柴玛对扎迦利生出了一种奇怪的眷恋。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "hokobald.likes.douglas",
+    "label" : null,
+    "desc" : "霍科博尔德对道格拉斯产生了一种居高临下的青睐。",
+    "imagePath" : "/assets/images/aspects/befriend.png"
+  }, {
+    "id" : "e.bosk",
+    "label" : "以丛林学进阶",
+    "desc" : "我可以使用丛林学与之配合来进阶我的魂质。[一旦你将一项技艺呈递至丛林学智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.bosk.png"
+  }, {
+    "id" : "a.xtri",
+    "label" : "已调和：悲恸",
+    "desc" : "此技艺已与我的悲恸调和。[当你将此技艺呈递给树时，你获得了悲恸。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张悲恸卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xtri.png"
+  }, {
+    "id" : "a.xsha",
+    "label" : "已调和：辩闻",
+    "desc" : "此技艺已与我的辩闻调和。[当你将此技艺呈递给树时，你获得了辩闻。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张辩闻卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xsha.png"
+  }, {
+    "id" : "a.xpho",
+    "label" : "已调和：明识",
+    "desc" : "此技艺已与我的明识调和。[当你将此技艺呈递给树时，你获得了明识。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张明识卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xpho.png"
+  }, {
+    "id" : "a.xere",
+    "label" : "已调和：黯晦",
+    "desc" : "此技艺已与我的黯晦调和。[当你将此技艺呈递给树时，你获得了黯晦。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张黯晦卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xere.png"
+  }, {
+    "id" : "e.hushery",
+    "label" : "以静默术进阶",
+    "desc" : "我可以使用静默术与之配合来进阶我的魂质。[一旦你将一项技艺呈递至静默术智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.hushery.png"
+  }, {
+    "id" : "a.xfet",
+    "label" : "已调和：灵躯",
+    "desc" : "此技艺已与我的灵躯调和。[当你将此技艺呈递给树时，你获得了灵躯。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张灵躯卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xfet.png"
+  }, {
+    "id" : "e.ithastry",
+    "label" : "以盗火术进阶",
+    "desc" : "我可以使用盗火术与之配合来进阶我的魂质。[一旦你将一项技艺呈递至盗火术智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.ithastry.png"
+  }, {
+    "id" : "e.illumination",
+    "label" : "以照明术进阶",
+    "desc" : "我可以使用照明术与之配合来进阶我的魂质。[一旦你将一项技艺呈递至照明术智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.illumination.png"
+  }, {
+    "id" : "a.xwis",
+    "label" : "已调和：铭晓",
+    "desc" : "此技艺已与我的铭晓调和。[当你将此技艺呈递给树时，你获得了铭晓。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张铭晓卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xwis.png"
+  }, {
+    "id" : "a.xhausted",
+    "label" : "调和完毕",
+    "desc" : "这项技艺已被用于一种魂质的进阶。",
+    "imagePath" : "/assets/images/aspects/a.xhausted.png"
+  }, {
+    "id" : "e.skolekosophy",
+    "label" : "以蠕虫学进阶",
+    "desc" : "我可以使用蠕虫学与之配合来进阶我的魂质。[一旦你将一项技艺呈递至蠕虫学智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.skolekosophy.png"
+  }, {
+    "id" : "e.birdsong",
+    "label" : "以鸟鸣学进阶",
+    "desc" : "我可以使用鸟鸣学与之配合来进阶我的魂质。[一旦你将一项技艺呈递至鸟鸣学智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.birdsong.png"
+  }, {
+    "id" : "a.xmet",
+    "label" : "已调和：刚毅",
+    "desc" : "此技艺已与我的刚毅调和。[当你将此技艺呈递给树时，你获得了刚毅。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张刚毅卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xmet.png"
+  }, {
+    "id" : "a.xcho",
+    "label" : "已调和：脉律",
+    "desc" : "此技艺已与我的脉律调和。[当你将此技艺呈递给树时，你获得了脉律。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张脉律卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xcho.png"
+  }, {
+    "id" : "e.horomachistry",
+    "label" : "以司辰学进阶",
+    "desc" : "我可以使用司辰学与之配合来进阶我的魂质。[一旦你将一项技艺呈递至司辰学智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.horomachistry.png"
+  }, {
+    "id" : "e.preservation",
+    "label" : "以保存术进阶",
+    "desc" : "我可以使用保存术与之配合来进阶我的魂质。[一旦你将一项技艺呈递至保存术智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调合过的技艺，且调合仅生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.preservation.png"
+  }, {
+    "id" : "e.nyctodromy",
+    "label" : "以夜游术进阶",
+    "desc" : "我可以使用夜游术与之配合来进阶我的魂质。[一旦你将一项技艺呈递至夜游术智慧中，就可以用该技艺与之配合将两张相同的魂质卡合成为一张更强力的魂质卡。但你必须使用一项与该智慧调和过的技艺，且调和仅会生效一次。]",
+    "imagePath" : "/assets/images/aspects/w.nyctodromy.png"
+  }, {
+    "id" : "a.xhea",
+    "label" : "已调和：健康",
+    "desc" : "此技艺已与我的健康调和。[当你将此技艺呈递给树时，你获得了健康。找到一个匹配进阶性相的地方，你就可以使用这一技艺——仅此一回——将两张健康卡组合成一张更强的卡。]",
+    "imagePath" : "/assets/images/aspects/a.xhea.png"
+  }, {
+    "id" : "group6_exaltation",
+    "label" : "强化",
+    "desc" : "[你今天与这位帮手合作的方式。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "group4_visitors",
+    "label" : "访客",
+    "desc" : "[噤声居屋访客们的天性与兴趣。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "groupzzz",
+    "label" : "型相",
+    "desc" : "[有形与无形之物的本质。型相能使你明白自己能用它们做哪些事。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "workstation",
+    "label" : "工作台",
+    "desc" : "[“做好一件事的报酬，就是做完这件事。”——爱默生]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "group2_challenges",
+    "label" : "挑战",
+    "desc" : "[你需要应对的困难或代价。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "group7_histories",
+    "label" : "历史",
+    "desc" : "[当噤声居屋的图书管理员考虑一重新的历史，即便是司辰也可能会注目。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "group1_primary",
+    "label" : "力量",
+    "desc" : "[无形之术学者所认可的，力量的基本门类。在魂质、技艺、回忆、物品中找寻它们；在研习与制作时的挑战里利用它们。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "group3_me",
+    "label" : "专长",
+    "desc" : "[能力，技艺，以及其他自身的资源。]",
+    "imagePath" : "/assets/images/aspects/sortgroup.png"
+  }, {
+    "id" : "contains.wire.copper",
+    "label" : "内藏圆硬之物",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.oil.moth",
+    "label" : "颤油（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.ham.canned",
+    "label" : "内藏方硬之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.beef",
+    "label" : "订购牛肉",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.almonds",
+    "label" : "订购杏仁",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.dripping",
+    "label" : "订购烤肉滴油",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.coffee.dawnlion",
+    "label" : "淡淡的水果咖啡香。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.tea.lapsang",
+    "label" : "淡淡的烟熏味",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.sugar",
+    "label" : "内藏硬实之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.packet.cocoa",
+    "label" : "可可（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.bottle.strathcoyne",
+    "label" : "斯特拉思科因威士忌（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.oil.forge",
+    "label" : "内藏晃动的液体。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.bottle.raveline",
+    "label" : "拉维林酒庄产酒（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.parchment.nivine",
+    "label" : "内藏方硬之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.bottle.armagnac",
+    "label" : "雅文邑（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.oil.moon",
+    "label" : "暗油（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.tea.assam",
+    "label" : "阿萨姆茶（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.potatoes",
+    "label" : "内藏沉重之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.glue",
+    "label" : "胶水（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.flour",
+    "label" : "订购面粉",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.witchworms.desiccated",
+    "label" : "包裹贴有警告标识。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.bottle.jannings",
+    "label" : "内藏易碎之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.tea.lapsang",
+    "label" : "正山小种（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.wire.copper",
+    "label" : "铜丝（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.plums",
+    "label" : "内藏湿软之物",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.pheasant",
+    "label" : "内藏软塌之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.quire.paper",
+    "label" : "纸（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.milk",
+    "label" : "订购牛奶",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.bottle.roscraggan",
+    "label" : "罗斯克拉根威士忌（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.pheasant",
+    "label" : "订购野鸡",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.coffee.eveningisles",
+    "label" : "薄暮群屿咖啡（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.butter",
+    "label" : "内藏湿软之物",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.bottle.lambig",
+    "label" : "苹果酒（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.coffee.dawnlion",
+    "label" : "晨狮牌咖啡（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.glue",
+    "label" : "内藏湿软之物",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.coffee.eveningisles",
+    "label" : "淡淡的明亮咖啡香。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.almonds",
+    "label" : "内藏嗒嗒作响之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.oil.moon",
+    "label" : "内藏轻柔晃动的液体。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.bottle.lambig",
+    "label" : "内藏易碎之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.bottle.armagnac",
+    "label" : "内藏易碎之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.tea.assam",
+    "label" : "淡淡的芳香。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.dripping",
+    "label" : "内藏油腻之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.flour",
+    "label" : "内藏粉状之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.bottle.raveline",
+    "label" : "内藏易碎之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.parchment.nivine",
+    "label" : "素洁羊皮纸（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.bottle.jannings",
+    "label" : "雅宁斯古堡产酒（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.milk",
+    "label" : "内藏黏软之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.sugar",
+    "label" : "订购糖",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.bottle.strathcoyne",
+    "label" : "内藏易碎之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.packet.cocoa",
+    "label" : "一股浓郁的巧克力香。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.witchworms.desiccated",
+    "label" : "巫蠹干（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.potatoes",
+    "label" : "订购土豆",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.ham.canned",
+    "label" : "火腿罐头（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.arsenic",
+    "label" : "砒霜（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.arsenic",
+    "label" : "包裹贴有警告标识。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.plums",
+    "label" : "订购西梅",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.bottle.roscraggan",
+    "label" : "内藏易碎之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.quire.paper",
+    "label" : "内藏方硬之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "contains.beef",
+    "label" : "内藏软塌之物。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "orderplaced.oil.forge",
+    "label" : "烁油（订购）",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "orderplaced.butter",
+    "label" : "订购黄油",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/orderplaced.png"
+  }, {
+    "id" : "contains.oil.moth",
+    "label" : "内藏狡黠晃动的液体。",
+    "desc" : null,
+    "imagePath" : "/assets/images/aspects/contains.png"
+  }, {
+    "id" : "h.nectar.feas",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>销魂盛宴</i>，我已将石源诸神得以重生的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.moth.desc",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>日之瑕玷</i>，我已将未建之城仍旧<i>潜存于可能性中</i>的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.lantern",
+    "label" : "我们来自辉光",
+    "desc" : "我们最初的自我之火花来自悬于世界之上的光芒，我们称其为辉光。若无辉光，我们便仍是黑暗中的野兽，且这来自我们过去的赠礼照亮了我们的未来，那就是永恒。[这一决断由<b>灯</b>做出；它提供<b>灯</b>与<b>蛾</b>。]",
+    "imagePath" : "/assets/images/aspects/de.lantern.png"
+  }, {
+    "id" : "de.edge",
+    "label" : "言辞，一柄利刃",
+    "desc" : "语言乃是一柄武器。我们曾靠语言攻破漫宿；若无语言，我们便无力征战；若无语言，我们便仍是猿猴、甲虫、顽石。[这一决断由<b>刃</b>做出；它提供<b>刃</b>与<b>杯</b>。]",
+    "imagePath" : "/assets/images/aspects/de.edge.png"
+  }, {
+    "id" : "h.rose.bell",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>伊苏之钟</i>，我已将伊苏成为未建之城的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.moth.loop",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>永恒罅隙</i>，我已将未建之城仍旧<i>潜存于可能性中</i>的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.knock.conf",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>永陷囹圄</i>，我已将石源诸神将其复仇付诸实行的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.moth.thre",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>三者律法</i>，我已将未建之城仍旧<i>潜存于可能性中</i>的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.nectar.secr",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>欺世赝身</i>，我已将石源诸神得以重生的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.rose",
+    "label" : "言辞，一把钥匙",
+    "desc" : "语言乃是一把钥匙。是语言开启了漫宿的众门扉；若无语言，我们便无法安享和平；若无语言，我们便仍是野兽、蠕虫、污泥。[这一决断由<b>引</b>做出；它提供<b>引</b>与<b>穹</b>。]",
+    "imagePath" : "/assets/images/aspects/de.rose.png"
+  }, {
+    "id" : "h.knock.loop",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>永恒罅隙</i>，我已将石源诸神将其复仇付诸实行的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.grail.desc",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>日之瑕玷</i>，我已将石源诸神被吞食殆尽的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.forge",
+    "label" : "红色，首要之花",
+    "desc" : "守夜人之树是禁止向人类传播知识的盟约，但它允许知识在此树的盟约之屋内传播……比如布兰库格岛。根冠的红花——“焚真之火”便是它的第一道防御。火燃尽知识……但火亦给予光芒。此树根植于悖论。[这一决断由<b>铸</b>做出；它提供<b>铸</b>与<b>引</b>。]",
+    "imagePath" : "/assets/images/aspects/de.forge.png"
+  }, {
+    "id" : "h.sky.oldl",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>失落古调</i>，我已将午港成为未建之城所在地的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.heart.worl",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>编织世界</i>，我已将石源诸神被铭记的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.edge.alte",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>无情变革</i>，我已将第二拂晓会于众神陨落，唯余一者时降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.lantern.desc",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>日之瑕玷</i>，我已将第二拂晓即将降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.forge.asce",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>日之道途</i>，我已将钢源诸神带来第二拂晓的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.rose.unde",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>终焉之悟</i>，我已将伊苏成为未建之城的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.nectar.worl",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>编织世界</i>，我已将石源诸神得以重生的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.heart",
+    "label" : "双角斧，最古老者",
+    "desc" : "双角斧两面双刃；因时允行；待于门关。双角斧，她不容矛盾，乃是现存司辰中最古老者。别的司辰可能看似更为古老。但祂们并非如此。[这一决断由<b>心</b>做出；它提供<b>心</b>与<b>启</b>。]",
+    "imagePath" : "/assets/images/aspects/de.heart.png"
+  }, {
+    "id" : "de.winter",
+    "label" : "白色，首要之花",
+    "desc" : "守夜人之树是禁止向人类传播知识的盟约，但它允许知识在此树的盟约之屋内传播……比如布兰库格岛。根冠的白花——“受施之默”便是它的第一道防御。当禁忌的知识被知晓，就必需被遗忘；但要将其遗忘，就必先被知晓。此树根植于悖论。[这一决断由<b>冬</b>做出；它提供<b>冬</b>与<b>刃</b>。]",
+    "imagePath" : "/assets/images/aspects/de.winter.png"
+  }, {
+    "id" : "h.moon.secr",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>欺世赝身</i>，我已将未建之城于漫宿崛起的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.scale.conf",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>永陷囹圄</i>，我已将第二拂晓为一个更加古老赤红的太阳而起的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.heart.thre",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>三者律法</i>，我已将石源诸神被铭记的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.winter.conf",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>永陷囹圄</i>，我已将第二拂晓永不降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.grail.feas",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>销魂盛宴</i>，我已将石源诸神被吞食殆尽的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.nectar",
+    "label" : "我们源于林地之污",
+    "desc" : "我们的先祖从林地的根系中赤身裸体地降生，我们所有的前身都起于那片黑暗。我们曾靠双手与口舌将污泥塑造为言语，我们也将靠口舌与双手塑造我们的未来。[这一决断由<b>蜜</b>做出；它提供<b>蜜</b>与<b>月</b>。]",
+    "imagePath" : "/assets/images/aspects/de.nectar.png"
+  }, {
+    "id" : "de.knock",
+    "label" : "言辞，一道伤口",
+    "desc" : "语言乃是一道伤疤。是语言将漫宿撕裂；若无语言，我们本可不必征战；若无语言，我们便仍是烈火、天空、大地。[这一决断由<b>启</b>做出；它提供<b>启</b>与<b>冬</b>。]",
+    "imagePath" : "/assets/images/aspects/de.knock.png"
+  }, {
+    "id" : "de.moon",
+    "label" : "黑色，首要之花",
+    "desc" : "守夜人之树是禁止向人类传播知识的盟约，但它允许知识在此树的盟约之屋内传播……比如布兰库格岛。根冠的黑花——“无伤之夜”便是它的第一道防御。禁忌的知识禁止言说；禁止书写；禁止知晓。树根植于这黑夜中。[这一决断由<b>月</b>做出；它提供<b>月</b>与<b>鳞</b>。]",
+    "imagePath" : "/assets/images/aspects/de.moon.png"
+  }, {
+    "id" : "h.edge.bell",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>伊苏之钟</i>，我已将第二拂晓会于众神陨落，唯余一者时降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.scale.oldl",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>失落古调</i>，我已将第二拂晓为一个更加古老赤红的太阳而起的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.moon.loop",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>永恒罅隙</i>，我已将未建之城于漫宿崛起的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.scale",
+    "label" : "我们孵自卵壳",
+    "desc" : "介壳种是混种，而我们曾是介壳种。从镰齿族那里，我们继承了如今我们称之为语言的东西。我们渴求着过去的自己；而历史亦如我们一般混杂。[这一决断由<b>鳞</b>做出，它提供<b>鳞</b>与<b>心</b>。]",
+    "imagePath" : "/assets/images/aspects/de.scale.png"
+  }, {
+    "id" : "h.scale.thre",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>三者律法</i>，我已将第二拂晓为一个更加古老赤红的太阳而起的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.sky.bala",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>重返平衡</i>，我已将午港成为未建之城所在地的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.lantern.asce",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>日之道途</i>，我已将第二拂晓即将降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.forge.bell",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>伊苏之钟</i>，我已将钢源诸神带来第二拂晓的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.forge.alte",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>无情变革</i>，我已将钢源诸神带来第二拂晓的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.knock.asce",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>日之道途</i>，我已将石源诸神将其复仇付诸实行的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.grail",
+    "label" : "圣杯，最古老者",
+    "desc" : "赤杯给予生命；夺取生命；永无餍足。圣杯，她蔑视矛盾，乃是现存司辰中最古老者。一切看似更古老的，都终将浸没于圣杯的潮水之中。[这一决断由<b>杯</b>做出；它提供<b>杯</b>与<b>蜜</b>。]",
+    "imagePath" : "/assets/images/aspects/de.grail.png"
+  }, {
+    "id" : "h.rose.oldl",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>失落古调</i>，我已将伊苏成为未建之城的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.moth",
+    "label" : "飞蛾，最古老者",
+    "desc" : "飞蛾于颅内振翅；于林地的树间寻觅；通体斑驳。飞蛾，他乐见矛盾，乃是现存司辰中最古老者。一切看似更古老的，当其曾是，飞蛾都曾是。[这一决断由<b>蛾</b>做出；它提供<b>蛾</b>与<b>灯</b>。]",
+    "imagePath" : "/assets/images/aspects/de.moth.png"
+  }, {
+    "id" : "h.winter.bala",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>重返平衡</i>，我已将第二拂晓永不降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.lantern.secr",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>欺世赝身</i>，我已将第二拂晓即将降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.moon.worl",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>编织世界</i>，我已将未建之城于漫宿崛起的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.sky.unde",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>终焉之悟</i>，我已将午港成为未建之城所在地的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.heart.bala",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>重返平衡</i>，我已将石源诸神被铭记的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.winter.unde",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>终焉之悟</i>，我已将第二拂晓永不降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "h.grail.alte",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>无情变革</i>，我已将石源诸神被吞食殆尽的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "de.sky",
+    "label" : "我们来自虚界",
+    "desc" : "介壳种的合卅族曾梦见它们自黑玻璃中解放，成为它们自己的君王。如果我们继承了这空荡的王座，便也会在未来夜夜梦睹我们自己。[这一决断由<b>穹</b>做出；它提供<b>穹</b>与<b>铸</b>。]",
+    "imagePath" : "/assets/images/aspects/de.sky.png"
+  }, {
+    "id" : "h.edge.feas",
+    "label" : "我的历史",
+    "desc" : "通过闰识<i>销魂盛宴</i>，我已将第二拂晓会于众神陨落，唯余一者时降临的历史写就。[如果你已决定要结束游戏，就在闰时将你的日记带到树下吧。]",
+    "imagePath" : "/assets/images/aspects/h.png"
+  }, {
+    "id" : "acted.olympe.project.solar.forge",
+    "label" : "已阅读：奥兰普",
+    "desc" : "在拜访了噤声居屋后，贝谢女士开始相信“王室之举”与第二拂晓存在某种关联……她认为，比起战争，她更喜欢“第二拂晓”。",
+    "imagePath" : "/assets/images/aspects/olympe.png"
+  }, {
+    "id" : "acted.connie.rite.renewal.moon",
+    "label" : "已阅读：康妮",
+    "desc" : "副警监李在噤声居屋研究了某种“对策”，希望能限制住仪式造成的可能危害。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.dagmar.box.knock",
+    "label" : "已阅读：妲格玛",
+    "desc" : "“日魇”带着自己的计划离开了噤声居屋，以确保“圣米哈尔”能待在他的灵柩里——不论他的真面目可能为何。",
+    "imagePath" : "/assets/images/aspects/dagmar.png"
+  }, {
+    "id" : "acted.corso.opera.wings.grail",
+    "label" : "已阅读：科尔索",
+    "desc" : "科尔索找到了一份足够的贿赂，足以说服某个人替自己“坐在剧场的后排”，并帮他鉴定一本可能是剧本副本的作品。",
+    "imagePath" : "/assets/images/aspects/corso.png"
+  }, {
+    "id" : "acted.coquille.opera.apollo.grail",
+    "label" : "已阅读：科基尔",
+    "desc" : "贵胄科基尔确信自己将会是观众席上打扮得最漂亮的女人。",
+    "imagePath" : "/assets/images/aspects/coquille.png"
+  }, {
+    "id" : "acted.serena.project.solar.forge",
+    "label" : "已阅读：瑟雷娜",
+    "desc" : "布莱克伍德博士担心“王室之举”或许在某些方面上是“兰开斯特家族的炼金术”的再现……在某种意义上，甚至可能是受控之火君王时代的回归。",
+    "imagePath" : "/assets/images/aspects/serena.png"
+  }, {
+    "id" : "acted.yvette.curse.winter",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士买了件格吕内瓦尔德的物品。她在噤声居屋的所学所见让她确信该去把它处理掉。",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.arun.rising.moon",
+    "label" : "已阅读：褪皮",
+    "desc" : "褪皮博士提出了某种晦涩的理论，关于可能在黄昏或拂晓时分与太阳的血之圣餐；然后自顾自地离开了。",
+    "imagePath" : "/assets/images/aspects/arun.png"
+  }, {
+    "id" : "acted.arthur.project.solar.lantern",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉一度为自己的侄孙在“王室之举”中扮演的角色而担心——但在拜访过噤声居屋后，他的疑虑有所缓解。",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.fraser.omen.dawn.lantern",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "带着些许遗憾，弗雷泽·斯特拉思科认定，在墨萨拿发生的那些事与反反复复纠缠着他的眼之梦并无干系……",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.azita.revolution.edge",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "阿齐塔为门关军团急需的镍纹石小刀找到了一种“可接受的替代品”。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.agdistis.curse.heart",
+    "label" : "已阅读：阿格狄斯提斯",
+    "desc" : "阿格狄斯提斯先生决定尽他所能去帮助那位不慎购买了被诅咒藏品的朋友。",
+    "imagePath" : "/assets/images/aspects/agdistis.png"
+  }, {
+    "id" : "acted.corso.opera.apollo.grail",
+    "label" : "已阅读：科尔索",
+    "desc" : "科尔索增进了他对所谓“污渍”的认识……并希望这足以让他在巴黎辨认出那本他想要搞到手的关于“滋味技艺”的书。",
+    "imagePath" : "/assets/images/aspects/corso.png"
+  }, {
+    "id" : "acted.agdistis.wound.heart",
+    "label" : "已阅读：阿格狄斯提斯",
+    "desc" : "阿格狄斯提斯先生明白了“开启牧师”与他侍奉的神灵并无关联。",
+    "imagePath" : "/assets/images/aspects/agdistis.png"
+  }, {
+    "id" : "acted.yvette.mystical.winter",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士拒绝了一个叫做“骨白拂晓”的教派的邀请……她怀疑，他们之所以如此崇拜她，是因为她的祖先里有位“准不朽者”。",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.hokobald.revolution.grail",
+    "label" : "已阅读：霍科博尔德",
+    "desc" : "霍科博尔德找到了他所需要的“系谱学，或烹饪，或相关主题”，尽管他不愿意透露它们与边境正在发生的革命有何联系。",
+    "imagePath" : "/assets/images/aspects/hokobald.png"
+  }, {
+    "id" : "acted.arun.box.moon",
+    "label" : "已阅读：褪皮",
+    "desc" : "褪皮博士认为圣米哈尔之棺里的住客很快就会逃脱；他也同样相信届时会有某人或某物被某物或某人吃掉。他似乎为此感到相当快活。",
+    "imagePath" : "/assets/images/aspects/arun.png"
+  }, {
+    "id" : "acted.morgen.opera.wings.grail",
+    "label" : "已阅读：摩根",
+    "desc" : "平旦女士去了威尼斯，并准备好迎接歌剧开幕时的“灾难”。她同样提到“大地浓于血”——这可能与安泰俄斯的血脉有关？",
+    "imagePath" : "/assets/images/aspects/morgen.png"
+  }, {
+    "id" : "acted.rowena.numa.wood.grail",
+    "label" : "已阅读：罗威娜",
+    "desc" : "“当我还在这里的时候——第一次——我的第一场献祭是献给圣杯的。没有那场献祭，就根本不会有噤声居屋。噢，还有那盟约石，还有那紫杉树，所有的那些，也许吧。但请记住，一切都始于生诞。”",
+    "imagePath" : "/assets/images/aspects/rowena.png"
+  }, {
+    "id" : "acted.aladim.stalk.rose",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "阿勒颇人还是不确定美杜莎的谜语“何物不得见？”该如何回答。他自嘲地提议道，最好的答案应该是他自己。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.dagmar.lost.find.rose",
+    "label" : "已阅读：妲格玛",
+    "desc" : "斑驳玫瑰的故事中的某些东西触动了“日魇”，让她开始犹豫，自己是否应该再次回到弥阿……",
+    "imagePath" : "/assets/images/aspects/dagmar.png"
+  }, {
+    "id" : "acted.chaima.mob.edge",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛毫无热情地出发了，去考纳斯的下水道里完成一位清算人领主的委托。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.arthur.mob.edge",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉找到了可用来干掉考纳斯的清算人的武器。",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.yvette.rite.renewal.moon",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士的一位患者相信他将在月光下的格拉德温湖得到重生——在拜访了噤声居屋后，她认为阻止他的尝试只会是徒劳。“浪潮依旧……”",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.azita.stalk.edge",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "阿齐塔出发去往布达佩斯，为了和她的孪敌迈哈德玩他们那“愚蠢的游戏”……比赛谁能先从美杜莎的袍子上剪下一小块布。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.franklin.numa.grail.a.grail",
+    "label" : "已阅读：班克罗夫特",
+    "desc" : "“……指望一个诗人去……骗子。我们的女儿……”",
+    "imagePath" : "/assets/images/aspects/franklin.png"
+  }, {
+    "id" : "acted.azita.project.ingenious.sky",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "阿齐塔相信齐达内是被谋杀的——在调查了凶手可能的动机后，她推测他曾“通过天界的钥匙孔偷听”。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.corso.revolution.grail",
+    "label" : "已阅读：科尔索",
+    "desc" : "科尔索去边境寻找一本哈廷顿未公开的著作——并希望自己能找到适合向那位持有它的“女士”行贿的东西。",
+    "imagePath" : "/assets/images/aspects/corso.png"
+  }, {
+    "id" : "acted.hokobald.project.ingenious.forge",
+    "label" : "已阅读：霍科博尔德",
+    "desc" : "霍科博尔德大师计划在齐达内的遗作（如他所愿）差点被当废品卖掉时出面“补救”它。",
+    "imagePath" : "/assets/images/aspects/hokobald.png"
+  }, {
+    "id" : "acted.morgen.opera.apollo.sky",
+    "label" : "已阅读：摩根",
+    "desc" : "平旦女士确信自己将会是观众席上打扮得最漂亮的女人……尽管她已经决定背离自己一向的风格。",
+    "imagePath" : "/assets/images/aspects/morgen.png"
+  }, {
+    "id" : "acted.arthur.revolution.edge",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉对边境的叛军感到同情……但他们是否坦诚让他倍感压力。",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.zachary.curse.winter",
+    "label" : "已阅读：扎迦利",
+    "desc" : "扎迦利·韦克菲尔德晦涩地总结道，在格吕内瓦尔德这件事中，他也许有足够的能力理解清晰，传导，以及“卵态”的可能性了。",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.julian.numa.winter.a.winter",
+    "label" : "已阅读：科赛利",
+    "desc" : "“……终结就像是苍白拂晓前的苍白微光。我们总可以确定第一次——我们总不能确定最后一次……”",
+    "imagePath" : "/assets/images/aspects/julian.png"
+  }, {
+    "id" : "acted.fraser.observe.scaly.scale",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "弗雷泽·斯特拉思科因渴望去西方旅行，以此拥抱他潜在的第二天性。",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.fraser.rising.scale",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "弗雷泽·斯特拉思科因来到布兰库格，希望能理解他在“冉升之时”得到的神谕；并逐渐确信自己是辉诞族——“辉翼”的后裔。",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.dagmar.omen.horizon.rose",
+    "label" : "已阅读：妲格玛",
+    "desc" : "“日魇”决定不去寻找伊苏。绝对不。无论怎样都不。",
+    "imagePath" : "/assets/images/aspects/dagmar.png"
+  }, {
+    "id" : "acted.zachary.wound.winter",
+    "label" : "已阅读：扎迦利",
+    "desc" : "扎迦利·韦克菲尔德为“开启牧师”只向外敞开感到惋惜……但也对“他的痛苦不必再拖延下去”而感到宽慰。",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.franklin.numa.wood.grail",
+    "label" : "已阅读：班克罗夫特",
+    "desc" : "“……乐观？如果你把这称作乐观的话！我无意否定司辰。但除了我们之外，还有谁能直面辉光之光，创造出这诸史呢？如果……”",
+    "imagePath" : "/assets/images/aspects/franklin.png"
+  }, {
+    "id" : "acted.dagmar.heist.knock",
+    "label" : "已阅读：妲格玛",
+    "desc" : "“日魇”显然担心自己可能会被指认为某场盗窃案的罪魁祸首，不论她是否真做了这件事——她在噤声居屋的研究结果都给了她洗清嫌疑的希望。",
+    "imagePath" : "/assets/images/aspects/dagmar.png"
+  }, {
+    "id" : "acted.olympe.heist.forge",
+    "label" : "已阅读：奥兰普",
+    "desc" : "贝谢女士认为，她在奥里弗拉姆对其安全措施的描述中发现了一些奇怪之处……而她在噤声居屋的发现给了她进一步调查此事的动力。",
+    "imagePath" : "/assets/images/aspects/olympe.png"
+  }, {
+    "id" : "acted.coquille.intrusion.knock",
+    "label" : "已阅读：科基尔",
+    "desc" : "贵胄科基尔认为克拉科夫的蠕虫入侵，似乎与艾布雷赫剑有某种联系。",
+    "imagePath" : "/assets/images/aspects/coquille.png"
+  }, {
+    "id" : "acted.arthur.stalk.edge",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉正准备接触美杜莎，但他开始担心她的谜语“何物不得见？”的答案，并不是自己原先一直以为的“光”。",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.zachary.intrusion.knock",
+    "label" : "已阅读：扎迦利",
+    "desc" : "扎迦利·韦克菲尔德认为，他的朋友霍布森，现在可能已经是他的朋友们了。在“向外”和“向下”的选择上，他选择了“向外”。",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.yvette.mob.moon",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士开始怀疑，清算人们对岁月的买卖大概可以解释她在布兰库格的某位先人是如何在如此高龄育有一子……",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.olympe.lost.find.moth",
+    "label" : "已阅读：奥兰普",
+    "desc" : "贝谢女士不打算亲自去弥阿……但在居屋里研究过相关的事件后，她想起一位熟人也许可以代她前去。",
+    "imagePath" : "/assets/images/aspects/olympe.png"
+  }, {
+    "id" : "acted.stanislav.rite.renewal.nectar",
+    "label" : "已阅读：斯坦尼斯拉夫神父",
+    "desc" : "沙勒神父前来噤声居屋调查该仪式是否可能是吸器设下的陷阱……并且大概只是顺口一提，他设法完成了特蕾莎·加尔米耶的“受肉”。",
+    "imagePath" : "/assets/images/aspects/stanislav.png"
+  }, {
+    "id" : "acted.aladim.lost.find.rose",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "在他的庇护者浪游旅人的要求下，阿勒颇人前去荒沙中寻找那座斑驳的花园……但他对此忧虑重重。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.arun.mob.moon",
+    "label" : "已阅读：褪皮",
+    "desc" : "褪皮博士打算去考纳斯收集刀具，或是制造困惑和混乱，或是带去和平。或是别的什么。",
+    "imagePath" : "/assets/images/aspects/arun.png"
+  }, {
+    "id" : "acted.serena.project.ingenious.forge",
+    "label" : "已阅读：瑟雷娜",
+    "desc" : "不论布莱克伍德博士在噤声居屋发现了什么，这都使她确信齐达内在他的作品中使用了“伊苏金属”。",
+    "imagePath" : "/assets/images/aspects/serena.png"
+  }, {
+    "id" : "acted.serena.project.solar.lantern",
+    "label" : "已阅读：瑟雷娜",
+    "desc" : "布莱克伍德博士确信“王室之举”从根本上讲与光有关……但它也可能与那位矛盾而危险的、被称为制烛人的司辰有关。",
+    "imagePath" : "/assets/images/aspects/serena.png"
+  }, {
+    "id" : "acted.stanislav.curse.heart",
+    "label" : "已阅读：斯坦尼斯拉夫神父",
+    "desc" : "沙勒神父带着一件“不安分的蜡像”去了翠仙苑——在他前来噤声居屋，找到了能在旅途中控制住那东西的方法之后。",
+    "imagePath" : "/assets/images/aspects/stanislav.png"
+  }, {
+    "id" : "acted.zachary.box.knock",
+    "label" : "已阅读：扎迦利",
+    "desc" : "扎迦利·韦克菲尔德似乎认为自己在噤声居屋找到了棺柩钥匙的名字。",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.hokobald.heist.forge",
+    "label" : "已阅读：霍科博尔德",
+    "desc" : "霍科博尔德大师，受奥里弗拉姆的雇佣去改造他们的金库，认为自己可能已经在噤声居屋找到了有用的信息……尽管他也谨慎地指出那并不是<i>非常地</i>有用。",
+    "imagePath" : "/assets/images/aspects/hokobald.png"
+  }, {
+    "id" : "acted.chaima.lost.find.rose",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛从防剿局那接到了一项位于弥阿的委托。至于是要她找到斑驳花园，亦或是将它藏匿，就不清楚了。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.connie.project.ingenious.sky",
+    "label" : "已阅读：康妮",
+    "desc" : "副警监李着手于追踪某个实体——她认为是它谋杀了齐达内，“一个来自下层天域的叛逃灵体”。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.chaima.hunt.changing.edge",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛出发去结束阿贝卡西斯的痛苦……尽管她的最终目的依然不太明确，即便对她自己来说也是如此。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.chaima.stalk.edge",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛已前往布达佩斯跟踪美杜莎——她在噤声居屋学到的第一点就是，绝对不能靠得太近。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.fraser.hunt.changing.scale",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "弗雷泽·斯特拉思科因希望，但并不指望自己能从猎人们手下护住阿贝卡西斯。",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.rowena.numa.winter.a.winter",
+    "label" : "已阅读：罗威娜",
+    "desc" : "“当我还在这里的时候——当我第一次来到这里的时候，我相当生气。我打开道路后就被弃于一旁——这是最微不足道的。我打开了道路——这才是最糟糕的。尽管曾有一次，我觉得情况恰恰相反。”",
+    "imagePath" : "/assets/images/aspects/rowena.png"
+  }, {
+    "id" : "acted.coquille.box.knock",
+    "label" : "已阅读：科基尔",
+    "desc" : "贵胄科基尔相信，她已经在噤声居屋从研究中学到了该如何打开棺柩。",
+    "imagePath" : "/assets/images/aspects/coquille.png"
+  }, {
+    "id" : "acted.stanislav.rite.awakening.nectar",
+    "label" : "已阅读：斯坦尼斯拉夫神父",
+    "desc" : "沙勒神父声称他打算埋掉那座被称为“檀木圣徒”的雕像，希望它能生长……但只能慢慢生长，而且是在正确的时节。",
+    "imagePath" : "/assets/images/aspects/stanislav.png"
+  }, {
+    "id" : "acted.olympe.project.ingenious.forge",
+    "label" : "已阅读：奥兰普",
+    "desc" : "贝谢女士在噤声居屋了解到了足够多（她希望如此）的信息，以说服一位富有的女赞助人买下未完工的百灵鸟，使它免于被官方当做废品贱卖。",
+    "imagePath" : "/assets/images/aspects/olympe.png"
+  }, {
+    "id" : "acted.douglas.project.solar.lantern",
+    "label" : "已阅读：道格拉斯·摩尔",
+    "desc" : "启明警探摩尔专程调查了个别特立独行的圣职者们破坏“王室之举”的可能动机……离开时，他对“应该逮捕谁这件事心里有数多了”。",
+    "imagePath" : "/assets/images/aspects/douglas.png"
+  }, {
+    "id" : "acted.chaima.revolution.edge",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛，以她在噤声居屋学到的东西武装自己，前去与门关军团的敌人战斗。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.azita.observe.scaly.sky",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "刃之长生者阿齐塔开始相信，她的孪敌迈哈德是那些遗留有介壳种天性的人中的一员；她决定尾随他去西方。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.azita.opera.apollo.sky",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "阿齐塔想要确保歌剧的所有细节都毫无纰漏——以保证它能够成为吸引她“最亲爱的敌人”迈哈德前来的最佳诱饵。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.rowena.numa.grail.b.grail",
+    "label" : "已阅读：罗威娜",
+    "desc" : "“如果我在这里……恐怕应是孪生子带我到了这里。是孪生子将不应分离之物结合。因此我与我的沥血姐妹们共享她们的庇护。就如班克罗夫特曾说的那样，这世上还有更甚于爱情的欲望。”",
+    "imagePath" : "/assets/images/aspects/rowena.png"
+  }, {
+    "id" : "acted.agdistis.observe.scaly.sky",
+    "label" : "已阅读：阿格狄斯提斯",
+    "desc" : "阿格狄斯提斯先生已经决定无视来自西方的召唤，选择拒绝转变的可能，保持现在的模样。",
+    "imagePath" : "/assets/images/aspects/agdistis.png"
+  }, {
+    "id" : "acted.agdistis.opera.apollo.sky",
+    "label" : "已阅读：阿格狄斯提斯",
+    "desc" : "阿格狄斯提斯先生协助编排了《阿波罗与马西亚斯》的配乐。",
+    "imagePath" : "/assets/images/aspects/agdistis.png"
+  }, {
+    "id" : "acted.ehsan.project.ingenious.sky",
+    "label" : "已阅读：埃桑",
+    "desc" : "埃桑希望自己托人为齐达内所作的悼歌能用“未完工的百灵鸟”播放——但在噤声居屋研究了此事之后，他认为这可能太冒险了。",
+    "imagePath" : "/assets/images/aspects/ehsan.png"
+  }, {
+    "id" : "acted.douglas.pan.heart",
+    "label" : "已阅读：道格拉斯·摩尔",
+    "desc" : "启明警探摩尔认定莱特里昂没有什么值得防剿局调查的东西。",
+    "imagePath" : "/assets/images/aspects/douglas.png"
+  }, {
+    "id" : "acted.auntmopsy.numa.moon.b.moon",
+    "label" : "已阅读：M阿姨",
+    "desc" : "“没错，亲爱的。没有那些黑暗中的诸神，恐怕我们在永恒以外的地方都看不到太阳。祝你好梦。”",
+    "imagePath" : "/assets/images/aspects/auntmopsy.png"
+  }, {
+    "id" : "acted.aladim.observe.scaly.scale",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "阿勒颇人断定，在圣滕特雷托僧院上空云层出现的介壳种踪迹值得自己去关注。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.connie.opera.apollo.sky",
+    "label" : "已阅读：康妮",
+    "desc" : "副警监李认为歌剧带来的梦境危险没有她担心的那么严重，并为此舒了口气……但她还是决定和“巴黎相关机构的同僚”谈谈。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.morgen.revolution.grail",
+    "label" : "已阅读：摩根",
+    "desc" : "平旦女士确信她在边境的战争中能找到称心合意的大餐。",
+    "imagePath" : "/assets/images/aspects/morgen.png"
+  }, {
+    "id" : "acted.douglas.omen.dawn.lantern",
+    "label" : "已阅读：道格拉斯·摩尔",
+    "desc" : "启明警探摩尔对在墨萨拿发生的事情似乎仍不太确定。但他答应向防剿局提及我对他的帮助。",
+    "imagePath" : "/assets/images/aspects/douglas.png"
+  }, {
+    "id" : "acted.arun.opera.wings.moth",
+    "label" : "已阅读：褪皮",
+    "desc" : "褪皮博士希望能与“喜鹊”夫里泽里夫——飞蛾的具名者——“谈谈”，他认为正是后者制造了歌剧现场的灾难。",
+    "imagePath" : "/assets/images/aspects/arun.png"
+  }, {
+    "id" : "acted.fraser.mystical.lantern",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "弗雷泽·斯特拉思科因相信有某种东西促使忘却会——退居午港的长生者团体——重返了世间。",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.franklin.numa.grail.b.grail",
+    "label" : "已阅读：班克罗夫特",
+    "desc" : "“……一旦我们开始，就再无止尽。没有圣杯，就没有置闰；没有置闰，司辰们要如何阻止……”",
+    "imagePath" : "/assets/images/aspects/franklin.png"
+  }, {
+    "id" : "acted.auntmopsy.numa.moon.a.moon",
+    "label" : "已阅读：M阿姨",
+    "desc" : "“没错，亲爱的。咱今葬它不知所失，待它葬咱才知失孰。如果我是你，我会考虑我该埋葬什么。祝你好梦。”",
+    "imagePath" : "/assets/images/aspects/auntmopsy.png"
+  }, {
+    "id" : "acted.serena.mystical.lantern",
+    "label" : "已阅读：瑟雷娜",
+    "desc" : "布莱克伍德博士对那些教派嗤之以鼻，认为这只是动荡时代的一种普遍妄想。",
+    "imagePath" : "/assets/images/aspects/serena.png"
+  }, {
+    "id" : "acted.agdistis.pan.heart",
+    "label" : "已阅读：阿格狄斯提斯",
+    "desc" : "阿格狄斯提斯先生决定尝试蜂蜜。",
+    "imagePath" : "/assets/images/aspects/agdistis.png"
+  }, {
+    "id" : "acted.ehsan.wound.heart",
+    "label" : "已阅读：埃桑",
+    "desc" : "埃桑相信“开启牧师”已经引起了蚁母的注意——但也下定决心，不论如何也要治愈那个可怜的家伙。",
+    "imagePath" : "/assets/images/aspects/ehsan.png"
+  }, {
+    "id" : "acted.chaima.omen.horizon.rose",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛受防剿局委托，来追捕伊苏的使者——虽然她此行在布兰库格学到了点东西，但还是没指望自己能找到那使者。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.arthur.omen.dawn.lantern",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉开始相信墨萨拿出现的那些奇迹可能意味着第二拂晓将近。“当世界发生变革时，”他评论说，“将会翻天覆地。”",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.connie.mob.moon",
+    "label" : "已阅读：康妮",
+    "desc" : "副警监李十分担心可能有清算人已经找到了某种能欺骗昕旦的方法，匆忙赶往考纳斯。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.corso.omen.dawn.lantern",
+    "label" : "已阅读：科尔索",
+    "desc" : "科尔索认定，教会委托他鉴别的——那份详述无拘之眼预言的手稿——是件赝品。",
+    "imagePath" : "/assets/images/aspects/corso.png"
+  }, {
+    "id" : "acted.yvette.intrusion.winter",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士去往克拉科夫与霍布森面谈——但她先来到了噤声居屋，已确保自己了解可能承担的风险。",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.morgen.project.ingenious.sky",
+    "label" : "已阅读：摩根",
+    "desc" : "平旦女士希望完成齐达内的遗作；而在噤声居屋，她找到，或者认定自己找到了为此要准备的一切。",
+    "imagePath" : "/assets/images/aspects/morgen.png"
+  }, {
+    "id" : "acted.douglas.wound.heart",
+    "label" : "已阅读：道格拉斯·摩尔",
+    "desc" : "启明警探摩尔得出结论，“开启牧师”必须被永久关闭。",
+    "imagePath" : "/assets/images/aspects/douglas.png"
+  }, {
+    "id" : "acted.arun.lost.find.moth",
+    "label" : "已阅读：褪皮",
+    "desc" : "褪皮博士与往常一样在布兰库格找到了他想要的东西，从一个谜语中解脱，然后自顾自离开。他的目的依然不清楚。",
+    "imagePath" : "/assets/images/aspects/arun.png"
+  }, {
+    "id" : "acted.azita.mob.edge",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "阿齐塔去了考纳斯，她声称，要按着清算人的脑袋，让他们坐下来谈谈。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.rowena.numa.grail.a.grail",
+    "label" : "已阅读：罗威娜",
+    "desc" : "“如果我在这里，这会使我快慰；如果我在这里，我会给你比现在更高的酬劳。”",
+    "imagePath" : "/assets/images/aspects/rowena.png"
+  }, {
+    "id" : "acted.aladim.omen.horizon.rose",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "阿勒颇人怀疑亨德里克·德沃尔夫并不只是个寻常的佣兵队长……而布兰库格与伊苏之间的神秘联系意味着，他可能会从这座岛屿踏上前往伊苏的旅程。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.zachary.heist.knock",
+    "label" : "已阅读：扎迦利",
+    "desc" : "扎迦利·韦克菲尔德对他关于奥里弗拉姆事件真相的猜测守口如瓶，但他确实给了一个暗示：“一门闭，一扉启，另有一扉。”",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.connie.observe.scaly.sky",
+    "label" : "已阅读：康妮",
+    "desc" : "为来自西方的呼唤而挂虑，副警监李决定不亲自前往那里调查——而是决定防剿局应该尽其所能地保护沿海地区的安全。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.ehsan.curse.heart",
+    "label" : "已阅读：埃桑",
+    "desc" : "埃桑应防剿局之请，帮助他们解决格吕内瓦尔德相关事务，他来噤声居屋寻找在此过程中的自保之法。",
+    "imagePath" : "/assets/images/aspects/ehsan.png"
+  }, {
+    "id" : "acted.coquille.heist.knock",
+    "label" : "已阅读：科基尔",
+    "desc" : "贵胄科基尔在调查奥里弗拉姆失窃案的具体手法的过程中，碰巧发现了某种“更加轰动的东西”。",
+    "imagePath" : "/assets/images/aspects/coquille.png"
+  }, {
+    "id" : "acted.yvette.box.moon",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士，受到圣米哈尔之棺传闻的启发，前来研究圣哥伦巴石棺的传说，并且似乎找到了她想要的东西。“浪潮依旧”，她说到……",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.ehsan.opera.apollo.sky",
+    "label" : "已阅读：埃桑",
+    "desc" : "在噤声居屋学到的东西让埃桑相信，那件作品不会打扰到下层天域——尤其，也许，在他的调停之下。",
+    "imagePath" : "/assets/images/aspects/ehsan.png"
+  }, {
+    "id" : "acted.serena.heist.forge",
+    "label" : "已阅读：瑟雷娜",
+    "desc" : "布莱克伍德博士怀疑是奥里弗拉姆内部的某人编造了整个失窃案件。她想不出原因——但她在我这里了解的信息足以让她在那里的联络人认真对待此事。",
+    "imagePath" : "/assets/images/aspects/serena.png"
+  }, {
+    "id" : "acted.douglas.curse.heart",
+    "label" : "已阅读：道格拉斯·摩尔",
+    "desc" : "受他在噤声居屋学到东西的鼓舞，启明警探摩尔前去解决格吕内瓦尔德造成的麻烦。",
+    "imagePath" : "/assets/images/aspects/douglas.png"
+  }, {
+    "id" : "acted.dagmar.stalk.rose",
+    "label" : "已阅读：妲格玛",
+    "desc" : "“日魇”已经动身去布达佩斯调查与美杜莎有关的事。她坚称这么做不是为了帮助自己的朋友，尤其不是为了某个名字以K开头的。",
+    "imagePath" : "/assets/images/aspects/dagmar.png"
+  }, {
+    "id" : "acted.hokobald.opera.wings.grail",
+    "label" : "已阅读：霍科博尔德",
+    "desc" : "在拜访噤声居屋后，霍科博尔德大师认为自己已经准备好“充分利用”在歌剧上演时将出现的灾难。尽管他似乎并不特别感激。",
+    "imagePath" : "/assets/images/aspects/hokobald.png"
+  }, {
+    "id" : "acted.arthur.hunt.changing.edge",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉决定将阿贝卡西斯交由群狮迷宫看管。",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.douglas.mystical.lantern",
+    "label" : "已阅读：道格拉斯·摩尔",
+    "desc" : "启明警探摩尔最担心的是那些教派可能成为新长生者的摇篮——进而增加发生天孽的风险。",
+    "imagePath" : "/assets/images/aspects/douglas.png"
+  }, {
+    "id" : "acted.coquille.opera.wings.grail",
+    "label" : "已阅读：科基尔",
+    "desc" : "贵胄科基尔希望在歌剧的台下找到自己的家人——准确来说，是她“最新的”家人。",
+    "imagePath" : "/assets/images/aspects/coquille.png"
+  }, {
+    "id" : "acted.auntmopsy.numa.wood.nectar",
+    "label" : "已阅读：M阿姨",
+    "desc" : "“没错，亲爱的。没有树木就没有纸张；没有森林就没有斧头；没有记忆就没有忘却。祝你好梦。”",
+    "imagePath" : "/assets/images/aspects/auntmopsy.png"
+  }, {
+    "id" : "acted.agdistis.project.ingenious.sky",
+    "label" : "已阅读：阿格狄斯提斯",
+    "desc" : "阿格狄斯提斯先生写下了祖斯马林·齐达内的悼歌。",
+    "imagePath" : "/assets/images/aspects/agdistis.png"
+  }, {
+    "id" : "acted.connie.rising.moon",
+    "label" : "已阅读：康妮",
+    "desc" : "副警监李的上级要求她研究一则来自“冉升之时”的神谕，这最终让她充满疑虑——她担心“大赝身”在王国的内政中扮演了某种角色。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.yvette.rising.moon",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士，为梦境所扰，惧怕溺亡。",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.dagmar.intrusion.knock",
+    "label" : "已阅读：妲格玛",
+    "desc" : "“日魇”对防剿局自称的专业性不以为意。她动身前往克拉科夫，以确保拘束蠕虫的防护措施符合自己的标准。",
+    "imagePath" : "/assets/images/aspects/dagmar.png"
+  }, {
+    "id" : "acted.hokobald.project.solar.forge",
+    "label" : "已阅读：霍科博尔德",
+    "desc" : "霍科博尔德大师想要尽可能地了解“王室之举”的目的与性质。他似乎对那个项目十分满意；他似乎对噤声居屋也几乎满意。",
+    "imagePath" : "/assets/images/aspects/hokobald.png"
+  }, {
+    "id" : "acted.olympe.opera.wings.moth",
+    "label" : "已阅读：奥兰普",
+    "desc" : "贝谢女士希望她能帮助一位朋友完成歌剧表演……或者至少从中幸存下来。在噤声居屋，她发现了一些希望能有所帮助的东西。",
+    "imagePath" : "/assets/images/aspects/olympe.png"
+  }, {
+    "id" : "acted.julian.numa.moon.a.moon",
+    "label" : "已阅读：科赛利",
+    "desc" : "“……伊苏，例外之城。可在永恒面前，一切例外都只是过眼云烟。这才是重点！唯有当我接受……”",
+    "imagePath" : "/assets/images/aspects/julian.png"
+  }, {
+    "id" : "acted.aladim.rite.awakening.scale",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "阿勒颇人声称那座檀木雕像应该被扔进火里，因为他担心那将“开始嗡鸣作响”。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.zachary.mystical.winter",
+    "label" : "已阅读：扎迦利",
+    "desc" : "尚不清楚扎迦利·韦克菲尔德对那些新兴教派持何态度……但很明显，他并没有给出什么特别有建设性的见解。",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.ehsan.observe.scaly.sky",
+    "label" : "已阅读：埃桑",
+    "desc" : "埃桑开始帮助那些听到云层召唤的病人——抑制他们向西进发的狂热——尽管他尚有疑虑。",
+    "imagePath" : "/assets/images/aspects/ehsan.png"
+  }, {
+    "id" : "acted.chaima.stalk.rose",
+    "label" : "已阅读：柴玛",
+    "desc" : "拉拉·柴玛已经动身去了布达佩斯，以跟踪美杜莎——她在噤声居屋学到的第一点就是，一定要表现出足够的尊重。",
+    "imagePath" : "/assets/images/aspects/chaima.png"
+  }, {
+    "id" : "acted.coquille.revolution.grail",
+    "label" : "已阅读：科基尔",
+    "desc" : "贵胄科基尔为她在门关军团的一位十分特别的军官朋友找到了一份十分特别的礼物。",
+    "imagePath" : "/assets/images/aspects/coquille.png"
+  }, {
+    "id" : "acted.morgen.observe.scaly.sky",
+    "label" : "已阅读：摩根",
+    "desc" : "平旦女士，备好了知识，打算亲自动身去西方了解情况；并警告说，某种存在也可能会来到布兰库格上空的云层中。",
+    "imagePath" : "/assets/images/aspects/morgen.png"
+  }, {
+    "id" : "acted.julian.numa.moon.b.moon",
+    "label" : "已阅读：科赛利",
+    "desc" : "“……是我的傲慢。为了推翻必然而战。我不会说我的时间都是白费的——对暴政的打击没有白费。但唯当我看到……”",
+    "imagePath" : "/assets/images/aspects/julian.png"
+  }, {
+    "id" : "acted.aladim.hunt.changing.scale",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "阿勒颇人开始相信阿贝卡西斯已经接受了“为蛇哺乳之人”向他提供的食物。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.aladim.rising.scale",
+    "label" : "已阅读：阿迪姆",
+    "desc" : "阿勒颇人推测七蟠和太阳之间存在某种联系，却又担心自己在冉升之时的神谕者那里会得知令他害怕的真相……最终决定不前往那里。",
+    "imagePath" : "/assets/images/aspects/aladim.png"
+  }, {
+    "id" : "acted.stanislav.pan.heart",
+    "label" : "已阅读：斯坦尼斯拉夫神父",
+    "desc" : "沙勒神父决定和莱特里昂的几位赞助人谈谈，希望能对“世界脉搏的节奏”中的变化有所了解。",
+    "imagePath" : "/assets/images/aspects/stanislav.png"
+  }, {
+    "id" : "acted.ehsan.pan.heart",
+    "label" : "已阅读：埃桑",
+    "desc" : "埃桑注意到，在莱特里昂被创作出的作品，与居屋第七任图书管理员蒂尔扎·布雷克的作品有相似之处。",
+    "imagePath" : "/assets/images/aspects/ehsan.png"
+  }, {
+    "id" : "acted.zachary.intrusion.winter",
+    "label" : "已阅读：扎迦利",
+    "desc" : "扎迦利·韦克菲尔德认为，他的朋友霍布森，现在可能已经是他的朋友们了。在“向外”和“向下”的问题上，他选择了“向下”。",
+    "imagePath" : "/assets/images/aspects/zachary.png"
+  }, {
+    "id" : "acted.hokobald.opera.apollo.grail",
+    "label" : "已阅读：霍科博尔德",
+    "desc" : "在拜访噤声居屋后，霍科博尔德大师相信他已经找到了最适合赠送给表演者的礼物。他差点就为此感谢我了。",
+    "imagePath" : "/assets/images/aspects/hokobald.png"
+  }, {
+    "id" : "acted.corso.project.solar.lantern",
+    "label" : "已阅读：科尔索",
+    "desc" : "科尔索有些沮丧地回到他的“外国朋友”那里，警告他们对“王室之举”本质的担忧或许是合理的。",
+    "imagePath" : "/assets/images/aspects/corso.png"
+  }, {
+    "id" : "acted.stanislav.pan.nectar",
+    "label" : "已阅读：斯坦尼斯拉夫神父",
+    "desc" : "沙勒神父决心去黑森林看看，他感觉这是个让某些旧事物重生的机会——“以正确或错误的方式”。",
+    "imagePath" : "/assets/images/aspects/stanislav.png"
+  }, {
+    "id" : "acted.morgen.opera.apollo.grail",
+    "label" : "已阅读：摩根",
+    "desc" : "平旦女士确信自己将会是观众席上打扮得最漂亮的女人。",
+    "imagePath" : "/assets/images/aspects/morgen.png"
+  }, {
+    "id" : "acted.corso.mystical.lantern",
+    "label" : "已阅读：科尔索",
+    "desc" : "科尔索认为，最近兴起的教派向他暗示了某种联系——名为制烛人的神秘司辰，与守夜人的具名者日落西莉亚之间的联系。",
+    "imagePath" : "/assets/images/aspects/corso.png"
+  }, {
+    "id" : "acted.fraser.rite.awakening.scale",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "弗雷泽·斯特拉思科因声称他打算将斯特拉斯堡教堂的檀木雕像沉入水中，希望它会“继续成长”。",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.azita.hunt.changing.edge",
+    "label" : "已阅读：阿齐塔",
+    "desc" : "刃之长生者阿齐塔永恒的孪敌，迈哈德，计划让阿贝卡西斯光荣地死去。带着歉意，阿齐塔决定着手于阻止此事发生。",
+    "imagePath" : "/assets/images/aspects/azita.png"
+  }, {
+    "id" : "acted.serena.omen.dawn.lantern",
+    "label" : "已阅读：瑟雷娜",
+    "desc" : "拜访布兰库格后，布莱克伍德博士强烈怀疑墨萨拿异状的罪魁祸首根本不是守夜人的具名者……而是制烛人的具名者。",
+    "imagePath" : "/assets/images/aspects/serena.png"
+  }, {
+    "id" : "acted.connie.box.moon",
+    "label" : "已阅读：康妮",
+    "desc" : "副警监李怀疑圣米哈尔之棺内可能收容着一位制烛人的具名者……按照她的说法，这似乎是她今年第二次听说此类情况。她对此种可能性感到忧虑。",
+    "imagePath" : "/assets/images/aspects/connie.png"
+  }, {
+    "id" : "acted.arthur.mystical.lantern",
+    "label" : "已阅读：亚瑟·摩尔",
+    "desc" : "摩尔中尉希望他已经开始理解所谓“太阳的计划”。",
+    "imagePath" : "/assets/images/aspects/arthur.png"
+  }, {
+    "id" : "acted.fraser.project.solar.lantern",
+    "label" : "已阅读：斯特拉思科因",
+    "desc" : "王室之举的采购委员会似乎是弗雷泽·斯特拉思科因的众多客户之一。所以他来噤声居屋研究他们的订单中隐藏的秘密：“战舰；浮空器；火车头。这些东西的共同点是什么，图书管理员？告诉你吧：它们皆具其名。”",
+    "imagePath" : "/assets/images/aspects/fraser.png"
+  }, {
+    "id" : "acted.arun.rite.renewal.moon",
+    "label" : "已阅读：褪皮",
+    "desc" : "褪皮博士已动身去参观将在格拉德温湖进行的仪式，还提到了几个不详的名字：罗比戈，慷慨待主者；戴冠之孳；奥尔图基奥……",
+    "imagePath" : "/assets/images/aspects/arun.png"
+  }, {
+    "id" : "acted.yvette.wound.winter",
+    "label" : "已阅读：伊薇特",
+    "desc" : "骚赛博士不奢望能治愈“开启牧师”的肉体——但他曾是她的病人，而她认为他可能再次成为她的病人。",
+    "imagePath" : "/assets/images/aspects/yvette.png"
+  }, {
+    "id" : "acted.stanislav.wound.heart",
+    "label" : "已阅读：斯坦尼斯拉夫神父",
+    "desc" : "沙勒神父，那位“开启牧师”曾经的朋友，认为他在这里学到了足够的知识，可以给他提供“他可能想要的东西”。",
+    "imagePath" : "/assets/images/aspects/stanislav.png"
+  }, {
+    "id" : "v.project.ingenious",
+    "label" : "访客：未完工的百灵鸟事件",
+    "desc" : "因与未完工的百灵鸟有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.project.ingenious.png"
+  }, {
+    "id" : "interest.rose",
+    "label" : "对引的兴趣",
+    "desc" : "此人对视界感兴趣。[复杂，探索，希望。]",
+    "imagePath" : "/assets/images/aspects/rose.png"
+  }, {
+    "id" : "v.observe.scaly",
+    "label" : "访客：利爪云霄事件",
+    "desc" : "因与利爪云霄有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.observe.scaly.png"
+  }, {
+    "id" : "v.stalk",
+    "label" : "访客：缺席友人事件",
+    "desc" : "因与缺席友人有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.stalk.png"
+  }, {
+    "id" : "relevance.rose",
+    "label" : "相关：引",
+    "desc" : "与对视界感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/rose.png"
+  }, {
+    "id" : "v.rising",
+    "label" : "访客：冉升之时事件",
+    "desc" : "因与冉升之时有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.rising.png"
+  }, {
+    "id" : "interest.heart",
+    "label" : "对心的兴趣",
+    "desc" : "此人对治愈和保护感兴趣。[<b>心</b>是长存与延续的准则。]",
+    "imagePath" : "/assets/images/aspects/heart.png"
+  }, {
+    "id" : "interest.edge",
+    "label" : "对刃的兴趣",
+    "desc" : "此人对暴力感兴趣。[<b>刃</b>是战斗与抗争的准则。]",
+    "imagePath" : "/assets/images/aspects/edge.png"
+  }, {
+    "id" : "v.numa.wood",
+    "label" : "访客：关于绳结与缠线",
+    "desc" : "在绳结与缠线的问题最为重要的时节访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.numa.wood.png"
+  }, {
+    "id" : "v.mob",
+    "label" : "访客：可恕之债事件",
+    "desc" : "因与可恕之债有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.mob.png"
+  }, {
+    "id" : "v.opera.apollo",
+    "label" : "访客：《阿波罗与马西亚斯》事件",
+    "desc" : "因与《阿波罗与马西亚斯》有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.opera.apollo.png"
+  }, {
+    "id" : "v.numa.moon.a",
+    "label" : "访客：关于虚假记忆",
+    "desc" : "在虚假记忆的问题最为重要的时节访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.numa.moon.a.png"
+  }, {
+    "id" : "relevance.grail",
+    "label" : "相关：杯",
+    "desc" : "与对食欲感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/grail.png"
+  }, {
+    "id" : "v.numa.winter.a",
+    "label" : "访客：关于更柔之霜",
+    "desc" : "在更柔之霜的问题最为重要的时节访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.numa.winter.a.png"
+  }, {
+    "id" : "interest.scale",
+    "label" : "对鳞的兴趣",
+    "desc" : "此人对远古的深奥知识感兴趣。[此为大地深处原始力量的残余。]",
+    "imagePath" : "/assets/images/aspects/scale.png"
+  }, {
+    "id" : "v.numa.grail.a",
+    "label" : "访客：庇护饮剂的时节",
+    "desc" : "在庇护饮剂的问题最为重要的时节访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.numa.grail.a.png"
+  }, {
+    "id" : "v.numa.grail.b",
+    "label" : "访客：关于寥寥宴客",
+    "desc" : "在寥寥宴客的问题最为重要的时节访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.numa.grail.b.png"
+  }, {
+    "id" : "v.opera.wings",
+    "label" : "访客：无形歌剧事件",
+    "desc" : "因与无形歌剧有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.opera.wings.png"
+  }, {
+    "id" : "v.pan",
+    "label" : "访客：林地之神事件",
+    "desc" : "因与林地之神有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.pan.png"
+  }, {
+    "id" : "v.numa.moon.b",
+    "label" : "访客：关于午夜孪生子",
+    "desc" : "在午夜孪生子的问题最为重要的时节访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.numa.moon.b.png"
+  }, {
+    "id" : "relevance.moon",
+    "label" : "相关：月",
+    "desc" : "与对隐藏之物感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/moon.png"
+  }, {
+    "id" : "interest.grail",
+    "label" : "对杯的兴趣",
+    "desc" : "此人对食欲感兴趣。[<b>杯</b>是生育与飨宴的准则。]",
+    "imagePath" : "/assets/images/aspects/grail.png"
+  }, {
+    "id" : "v.omen.horizon",
+    "label" : "访客：别样地平线事件",
+    "desc" : "因与别样地平线有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.omen.horizon.png"
+  }, {
+    "id" : "relevance.moth",
+    "label" : "相关：蛾",
+    "desc" : "与对意外感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/moth.png"
+  }, {
+    "id" : "v.wound",
+    "label" : "访客：开启牧师事件",
+    "desc" : "因与开启牧师有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.wound.png"
+  }, {
+    "id" : "v.box",
+    "label" : "访客：信使灵柩事件",
+    "desc" : "因与信使灵柩有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.box.png"
+  }, {
+    "id" : "interest.lantern",
+    "label" : "对灯的兴趣",
+    "desc" : "此人对启示感兴趣。[<b>灯</b>是有“太阳之居屋”之称的隐秘场所与其上光芒的准则。]",
+    "imagePath" : "/assets/images/aspects/lantern.png"
+  }, {
+    "id" : "relevance.knock",
+    "label" : "相关：启",
+    "desc" : "与对开启感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/knock.png"
+  }, {
+    "id" : "relevance.sky",
+    "label" : "相关：穹",
+    "desc" : "与对大地与天界之歌感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/sky.png"
+  }, {
+    "id" : "v.omen.dawn",
+    "label" : "访客：无拘之眼事件",
+    "desc" : "因与无拘之眼有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.omen.dawn.png"
+  }, {
+    "id" : "interest.winter",
+    "label" : "对冬的兴趣",
+    "desc" : "……？[<b>冬</b>是静默、终结和不尽然逝去之物的准则。]",
+    "imagePath" : "/assets/images/aspects/winter.png"
+  }, {
+    "id" : "interest.moth",
+    "label" : "对蛾的兴趣",
+    "desc" : "此人对意外之事感兴趣。[<b>蛾</b>，狂野又凶险，是混沌与渴慕的准则。]",
+    "imagePath" : "/assets/images/aspects/moth.png"
+  }, {
+    "id" : "relevance.nectar",
+    "label" : "相关：蜜",
+    "desc" : "与对事物的根源感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/nectar.png"
+  }, {
+    "id" : "relevance.scale",
+    "label" : "相关：鳞",
+    "desc" : "与对远古的深奥知识感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/scale.png"
+  }, {
+    "id" : "v.hunt.changing",
+    "label" : "访客：第二覆皮事件",
+    "desc" : "因与第二覆皮有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.hunt.changing.png"
+  }, {
+    "id" : "v.curse",
+    "label" : "访客：格吕内瓦尔德条款事件",
+    "desc" : "因与格吕内瓦尔德条款有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.curse.png"
+  }, {
+    "id" : "interest.moon",
+    "label" : "对月的兴趣",
+    "desc" : "此人对隐藏的事物感兴趣。[夜行之物，遗忘之物。]",
+    "imagePath" : "/assets/images/aspects/moon.png"
+  }, {
+    "id" : "interest.knock",
+    "label" : "对启的兴趣",
+    "desc" : "此人对拆解感兴趣。[<b>启</b>是开启与拆解的准则。]",
+    "imagePath" : "/assets/images/aspects/knock.png"
+  }, {
+    "id" : "v.project.solar",
+    "label" : "访客：王室之举事件",
+    "desc" : "因与王室之举有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.project.solar.png"
+  }, {
+    "id" : "v.intrusion",
+    "label" : "访客：无穷来客事件",
+    "desc" : "因与无穷来客有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.intrusion.png"
+  }, {
+    "id" : "interest.forge",
+    "label" : "对铸的兴趣",
+    "desc" : "此人对塑形的技艺感兴趣。[<b>铸</b>是变换与毁灭的准则。]",
+    "imagePath" : "/assets/images/aspects/forge.png"
+  }, {
+    "id" : "relevance.forge",
+    "label" : "相关：铸",
+    "desc" : "与对塑形的技法感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/forge.png"
+  }, {
+    "id" : "relevance.winter",
+    "label" : "相关：冬",
+    "desc" : "与更缄默的访客相关。",
+    "imagePath" : "/assets/images/aspects/winter.png"
+  }, {
+    "id" : "v.rite.renewal",
+    "label" : "访客：修士织幔事件",
+    "desc" : "因与修士织幔有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.rite.renewal.png"
+  }, {
+    "id" : "v.mystical",
+    "label" : "访客：离奇秘氛事件",
+    "desc" : "因与离奇秘氛有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.mystical.png"
+  }, {
+    "id" : "interest.sky",
+    "label" : "对穹的兴趣",
+    "desc" : "此人对大地与天界之歌感兴趣。[易被急躁之人忽视的古老苍穹之力量。]",
+    "imagePath" : "/assets/images/aspects/sky.png"
+  }, {
+    "id" : "v.rite.awakening",
+    "label" : "访客：檀木圣徒事件",
+    "desc" : "因与檀木圣徒有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.rite.awakening.png"
+  }, {
+    "id" : "v.heist",
+    "label" : "访客：奥里弗拉姆失窃事件",
+    "desc" : "因与奥里弗拉姆失窃有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.heist.png"
+  }, {
+    "id" : "interest.nectar",
+    "label" : "对蜜的兴趣",
+    "desc" : "此人对事物的根源感兴趣。[很久以前，一些人把该准则称作“血”。]",
+    "imagePath" : "/assets/images/aspects/nectar.png"
+  }, {
+    "id" : "relevance.lantern",
+    "label" : "相关：灯",
+    "desc" : "与对启示感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/lantern.png"
+  }, {
+    "id" : "relevance.edge",
+    "label" : "相关：刃",
+    "desc" : "与对暴力感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/edge.png"
+  }, {
+    "id" : "relevance.heart",
+    "label" : "相关：心",
+    "desc" : "与对治疗与存续感兴趣的访客相关。",
+    "imagePath" : "/assets/images/aspects/heart.png"
+  }, {
+    "id" : "v.revolution",
+    "label" : "访客：门关革命事件",
+    "desc" : "因与门关革命有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.revolution.png"
+  }, {
+    "id" : "v.lost.find",
+    "label" : "访客：斑驳玫瑰事件",
+    "desc" : "因与斑驳玫瑰有关的事务访问噤声居屋。",
+    "imagePath" : "/assets/images/aspects/v.lost.find.png"
+  }, {
+    "id" : "tx.ehsan",
+    "label" : "已借阅",
+    "desc" : "埃桑·费克里曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.ehsan.png"
+  }, {
+    "id" : "tx.auntmopsy",
+    "label" : "已借阅",
+    "desc" : "莫普西阿姨曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.auntmopsy.png"
+  }, {
+    "id" : "tx.zachary",
+    "label" : "已借阅",
+    "desc" : "韦克菲尔德曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.zachary.png"
+  }, {
+    "id" : "tx.coquille",
+    "label" : "已借阅",
+    "desc" : "贵胄科基尔·阿米雷吉比曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.coquille.png"
+  }, {
+    "id" : "tx.rowena",
+    "label" : "已借阅",
+    "desc" : "罗威娜曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.rowena.png"
+  }, {
+    "id" : "tx.corso",
+    "label" : "已借阅",
+    "desc" : "科尔索·雷维特曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.corso.png"
+  }, {
+    "id" : "tx.hokobald",
+    "label" : "已借阅",
+    "desc" : "霍科博尔德大师曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.hokobald.png"
+  }, {
+    "id" : "tx.stanislav",
+    "label" : "已借阅",
+    "desc" : "沙勒神父曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.stanislav.png"
+  }, {
+    "id" : "tx.fraser",
+    "label" : "已借阅",
+    "desc" : "弗雷泽·斯特拉思科因曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.fraser.png"
+  }, {
+    "id" : "tx.dagmar",
+    "label" : "已借阅",
+    "desc" : "“日魇”曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.dagmar.png"
+  }, {
+    "id" : "tx.julian",
+    "label" : "已借阅",
+    "desc" : "朱利安·科赛利曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.julian.png"
+  }, {
+    "id" : "tx.serena",
+    "label" : "已借阅",
+    "desc" : "瑟雷娜·布莱克伍德博士曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.serena.png"
+  }, {
+    "id" : "tx.chaima",
+    "label" : "已借阅",
+    "desc" : "拉拉·柴玛曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.chaima.png"
+  }, {
+    "id" : "tx.aladim",
+    "label" : "已借阅",
+    "desc" : "伊本·阿迪姆博士曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.aladim.png"
+  }, {
+    "id" : "tx.agdistis",
+    "label" : "已借阅",
+    "desc" : "彼得·阿格狄斯提斯先生曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.agdistis.png"
+  }, {
+    "id" : "tx.yvette",
+    "label" : "已借阅",
+    "desc" : "骚赛博士曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.yvette.png"
+  }, {
+    "id" : "tx.azita",
+    "label" : "已借阅",
+    "desc" : "阿齐塔·布哈拉曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.azita.png"
+  }, {
+    "id" : "tx.olympe",
+    "label" : "已借阅",
+    "desc" : "奥兰普·贝谢曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.olympe.png"
+  }, {
+    "id" : "tx.morgen",
+    "label" : "已借阅",
+    "desc" : "平旦女士曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.morgen.png"
+  }, {
+    "id" : "tx.franklin",
+    "label" : "已借阅",
+    "desc" : "班克罗夫特勋爵曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.franklin.png"
+  }, {
+    "id" : "tx.arun",
+    "label" : "已借阅",
+    "desc" : "阿伦·褪皮博士曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.arun.png"
+  }, {
+    "id" : "tx.douglas",
+    "label" : "已借阅",
+    "desc" : "启明警探道格拉斯·摩尔曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.douglas.png"
+  }, {
+    "id" : "tx.arthur",
+    "label" : "已借阅",
+    "desc" : "亚瑟·托马斯·摩尔中尉曾来到居屋寻求我的帮助；所以我让他参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.arthur.png"
+  }, {
+    "id" : "tx.connie",
+    "label" : "已借阅",
+    "desc" : "副警监康斯坦丝·李曾来到居屋寻求我的帮助；所以我让她参考了这个。",
+    "imagePath" : "/assets/images/aspects/tx.connie.png"
+  } ]
+}

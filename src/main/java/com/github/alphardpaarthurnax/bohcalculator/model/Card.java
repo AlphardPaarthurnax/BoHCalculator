@@ -6,20 +6,26 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javafx.scene.image.Image;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Aspect {
+public class Card {
     private String id;
     private String label;
     private String desc;
 
-    @JsonIgnore
-    private Image image;
-
-    @JsonIgnore
-    private String sourceFile;
-
     @JsonProperty("imagePath")
     private String imagePath;
+
+    @JsonProperty("sourceFile")
+    private String sourceFile;
+
+    @JsonProperty("aspects")
+    private Map<String, Integer> aspects = new LinkedHashMap<>();
+
+    @JsonIgnore
+    private Image image;
 
     @JsonProperty("id")
     public String getId() {
@@ -52,6 +58,30 @@ public class Aspect {
         this.desc = desc;
     }
 
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    public String getSourceFile() {
+        return sourceFile;
+    }
+
+    public void setSourceFile(String sourceFile) {
+        this.sourceFile = sourceFile;
+    }
+
+    public Map<String, Integer> getAspects() {
+        return aspects;
+    }
+
+    public void setAspects(Map<String, Integer> aspects) {
+        this.aspects = aspects;
+    }
+
     @JsonIgnore
     public Image getImage() {
         return image;
@@ -60,26 +90,6 @@ public class Aspect {
     @JsonIgnore
     public void setImage(Image image) {
         this.image = image;
-    }
-
-    @JsonIgnore
-    public String getSourceFile() {
-        return sourceFile;
-    }
-
-    @JsonIgnore
-    public void setSourceFile(String sourceFile) {
-        this.sourceFile = sourceFile;
-    }
-
-    @JsonProperty("imagePath")
-    public String getImagePath() {
-        return imagePath;
-    }
-
-    @JsonProperty("imagePath")
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
     }
 
     @JsonIgnore

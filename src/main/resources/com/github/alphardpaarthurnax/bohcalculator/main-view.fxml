@@ -9,4 +9,10 @@
     <Tab text="性相">
         <fx:include source="aspect-browser.fxml"/>
     </Tab>
+    <Tab text="卡牌">
+        <fx:include source="card-browser.fxml"/>
+    </Tab>
+    <Tab text="生成器">
+        <fx:include source="data-generator.fxml"/>
+    </Tab>
 </TabPane>

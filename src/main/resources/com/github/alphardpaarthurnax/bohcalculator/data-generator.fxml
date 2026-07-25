@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.DataGeneratorController"
+      spacing="12">
+    <padding>
+        <Insets top="12" left="12" right="12" bottom="12"/>
+    </padding>
+
+    <Label text="数据生成器" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="12" alignment="CENTER_LEFT">
+        <Button fx:id="generateAspectsBtn" text="生成 Aspects JSON" onAction="#onGenerateAspects"/>
+        <Label fx:id="aspectsStatus" style="-fx-font-size: 13px; -fx-text-fill: gray;"/>
+    </HBox>
+
+    <HBox spacing="8" alignment="CENTER_LEFT">
+        <Label text="线程数:" style="-fx-font-size: 13px;"/>
+        <TextField fx:id="threadCountField" prefWidth="60" style="-fx-font-size: 13px;"/>
+        <Button fx:id="generateCardsBtn" text="生成 Cards JSON" onAction="#onGenerateCards"/>
+        <Label fx:id="cardsStatus" style="-fx-font-size: 13px; -fx-text-fill: gray;"/>
+    </HBox>
+
+    <ProgressBar fx:id="cardsProgress" prefWidth="600" progress="0"/>
+
+    <ScrollPane fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+        <TextFlow fx:id="logFlow" lineSpacing="1"/>
+    </ScrollPane>
+</VBox>

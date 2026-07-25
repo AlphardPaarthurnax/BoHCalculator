@@ -54,9 +54,6 @@ public class AspectBrowserController {
 
     @FXML
     public void initialize() {
-        AspectDataService dataService = new AspectDataService();
-        var allElements = dataService.loadAllElements();
-
         Collator collator = Collator.getInstance(Locale.CHINA);
         Comparator<Aspect> elementComparator = (a, b) -> {
             boolean aHasLabel = a.getLabel() != null && !a.getLabel().isEmpty();
@@ -67,7 +64,7 @@ public class AspectBrowserController {
             return collator.compare(a.getDisplayName(), b.getDisplayName());
         };
 
-        filteredElements = new FilteredList<>(FXCollections.observableArrayList(allElements));
+        filteredElements = new FilteredList<>(AspectDataService.getInstance().getAspects());
         SortedList<Aspect> sortedList = new SortedList<>(filteredElements, elementComparator);
         sortedList.comparatorProperty().set(elementComparator);
 

@@ -13,6 +13,7 @@ module com.github.alphardpaarthurnax.bohcalculator {
 
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.core;
+    requires org.jsoup;
 
     opens com.github.alphardpaarthurnax.bohcalculator to javafx.fxml;
     opens com.github.alphardpaarthurnax.bohcalculator.controller to javafx.fxml;
