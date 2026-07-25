@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         tabClosingPolicy="UNAVAILABLE">
+    <Tab text="性相">
+        <fx:include source="aspect-browser.fxml"/>
+    </Tab>
+</TabPane>

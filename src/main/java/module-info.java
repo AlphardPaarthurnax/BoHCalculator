@@ -11,6 +11,12 @@ module com.github.alphardpaarthurnax.bohcalculator {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
+    requires com.fasterxml.jackson.databind;
+    requires com.fasterxml.jackson.core;
+
     opens com.github.alphardpaarthurnax.bohcalculator to javafx.fxml;
+    opens com.github.alphardpaarthurnax.bohcalculator.controller to javafx.fxml;
+    opens com.github.alphardpaarthurnax.bohcalculator.model to com.fasterxml.jackson.databind;
     exports com.github.alphardpaarthurnax.bohcalculator;
+    exports com.github.alphardpaarthurnax.bohcalculator.model;
 }
