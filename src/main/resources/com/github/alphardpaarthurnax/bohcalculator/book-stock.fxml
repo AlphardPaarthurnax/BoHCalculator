@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="10"
+      fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.BookStockController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <Label text="Book 解锁状态" style="-fx-font-size: 17px; -fx-font-weight: bold;"/>
+    <TextField fx:id="searchField" promptText="搜索名称、ID或说明…"/>
+    <HBox spacing="12" VBox.vgrow="ALWAYS"><VBox spacing="6" HBox.hgrow="ALWAYS"><Label text="未解锁（初始状态）" style="-fx-font-weight: bold;"/><ListView fx:id="lockedList" VBox.vgrow="ALWAYS"/></VBox>
+        <VBox alignment="CENTER" spacing="10"><Button fx:id="unlockButton" text="解锁 →" onAction="#unlockSelected"/><Button fx:id="lockButton" text="← 设为未解锁" onAction="#lockSelected"/></VBox>
+        <VBox spacing="6" HBox.hgrow="ALWAYS"><Label text="已解锁" style="-fx-font-weight: bold;"/><ListView fx:id="unlockedList" VBox.vgrow="ALWAYS"/></VBox></HBox>
+    <Label fx:id="saveStatus" wrapText="true" style="-fx-text-fill: #38761d;"/>
+</VBox>

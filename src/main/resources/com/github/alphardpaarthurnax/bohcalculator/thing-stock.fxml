@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.ThingStockController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <top><VBox spacing="8"><Label text="Things 库存（只显示数量大于 0 的物品）" style="-fx-font-size: 17px; -fx-font-weight: bold;"/><HBox spacing="8"><TextField fx:id="searchField" promptText="搜索当前库存…" HBox.hgrow="ALWAYS"/><Button text="添加物品…" onAction="#chooseNewItem"/></HBox></VBox></top>
+    <center><SplitPane dividerPositions="0.42"><ListView fx:id="itemList"/><VBox alignment="TOP_CENTER" spacing="12">
+        <padding><Insets top="24" right="20" bottom="20" left="20"/></padding>
+        <ImageView fx:id="itemImage" fitWidth="80" fitHeight="80" preserveRatio="true"/>
+        <Label fx:id="itemName" wrapText="true" style="-fx-font-size: 19px; -fx-font-weight: bold;"/>
+        <Label fx:id="itemId" wrapText="true" style="-fx-text-fill: gray;"/>
+        <Label text="库存数量" style="-fx-font-weight: bold;"/>
+        <HBox alignment="CENTER" spacing="8"><Button text="−" onAction="#decrementQuantity"/><Spinner fx:id="quantitySpinner" prefWidth="130"/><Button text="+" onAction="#incrementQuantity"/></HBox>
+        <Label fx:id="saveStatus" wrapText="true" style="-fx-text-fill: #38761d;"/>
+    </VBox></SplitPane></center>
+</BorderPane>

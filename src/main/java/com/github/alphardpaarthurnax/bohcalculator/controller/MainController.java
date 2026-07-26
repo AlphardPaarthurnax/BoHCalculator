@@ -15,6 +15,7 @@ public class MainController {
     @FXML private TabPane mainTabs;
     @FXML private TabPane dataSourceTabs;
     @FXML private TabPane itemTabs;
+    @FXML private TabPane stockTabs;
     @FXML private Tab dataSourceTab;
     @FXML private Tab elementTab;
     @FXML private Tab recipeTab;
@@ -26,6 +27,13 @@ public class MainController {
     @FXML private Tab comfortTab;
     @FXML private Tab thingTab;
     @FXML private Tab bookTab;
+    @FXML private Tab stockTab;
+    @FXML private Tab stockCardTab;
+    @FXML private Tab stockWallartTab;
+    @FXML private Tab stockComfortTab;
+    @FXML private Tab stockThingTab;
+    @FXML private Tab stockBookTab;
+    @FXML private Tab stockWorkstationTab;
     @FXML private Tab craftTab;
     @FXML private Tab workstationTab;
     @FXML private Tab otherRecipeTab;
@@ -45,6 +53,12 @@ public class MainController {
         resources.put(comfortTab, "comfort-browser.fxml");
         resources.put(thingTab, "thing-browser.fxml");
         resources.put(bookTab, "book-browser.fxml");
+        resources.put(stockCardTab, "card-stock.fxml");
+        resources.put(stockWallartTab, "wallart-stock.fxml");
+        resources.put(stockComfortTab, "comfort-stock.fxml");
+        resources.put(stockThingTab, "thing-stock.fxml");
+        resources.put(stockBookTab, "book-stock.fxml");
+        resources.put(stockWorkstationTab, "workstation-stock.fxml");
         resources.put(craftTab, "craft-browser.fxml");
         resources.put(workstationTab, "workstation-browser.fxml");
         resources.put(otherRecipeTab, "other-recipe-browser.fxml");
@@ -57,6 +71,8 @@ public class MainController {
                         loadIfNeeded(dataSourceTabs.getSelectionModel().getSelectedItem());
                     } else if (newTab == itemTab) {
                         loadIfNeeded(itemTabs.getSelectionModel().getSelectedItem());
+                    } else if (newTab == stockTab) {
+                        loadIfNeeded(stockTabs.getSelectionModel().getSelectedItem());
                     } else {
                         loadIfNeeded(newTab);
                     }
@@ -64,6 +80,8 @@ public class MainController {
         dataSourceTabs.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldTab, newTab) -> loadIfNeeded(newTab));
         itemTabs.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldTab, newTab) -> loadIfNeeded(newTab));
+        stockTabs.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldTab, newTab) -> loadIfNeeded(newTab));
         loadIfNeeded(dataSourceTabs.getSelectionModel().getSelectedItem());
     }

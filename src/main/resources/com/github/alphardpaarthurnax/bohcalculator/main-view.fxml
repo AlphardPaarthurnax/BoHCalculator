@@ -26,6 +26,16 @@
             <Tab fx:id="bookTab" text="Books"/>
         </TabPane>
     </Tab>
+    <Tab fx:id="stockTab" text="库存" closable="false">
+        <TabPane fx:id="stockTabs" tabClosingPolicy="UNAVAILABLE">
+            <Tab fx:id="stockCardTab" text="Cards"/>
+            <Tab fx:id="stockWallartTab" text="Wallart"/>
+            <Tab fx:id="stockComfortTab" text="Comforts"/>
+            <Tab fx:id="stockThingTab" text="Things"/>
+            <Tab fx:id="stockBookTab" text="Book"/>
+            <Tab fx:id="stockWorkstationTab" text="Workstations"/>
+        </TabPane>
+    </Tab>
     <Tab fx:id="craftTab" text="Crafts"/>
     <Tab fx:id="workstationTab" text="Workstations"/>
 </TabPane>
