@@ -2,7 +2,9 @@ package com.github.alphardpaarthurnax.bohcalculator.controller;
 
 import com.github.alphardpaarthurnax.bohcalculator.model.Aspect;
 import com.github.alphardpaarthurnax.bohcalculator.service.AspectDataService;
-import com.github.alphardpaarthurnax.bohcalculator.service.CatalogImageService;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogImageService;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogListCell;
+import com.github.alphardpaarthurnax.bohcalculator.utils.RichDescriptionRenderer;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;

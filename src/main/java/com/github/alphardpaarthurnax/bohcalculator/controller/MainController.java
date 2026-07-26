@@ -14,12 +14,18 @@ import java.util.Map;
 public class MainController {
     @FXML private TabPane mainTabs;
     @FXML private TabPane dataSourceTabs;
+    @FXML private TabPane itemTabs;
     @FXML private Tab dataSourceTab;
     @FXML private Tab elementTab;
     @FXML private Tab recipeTab;
     @FXML private Tab verbTab;
     @FXML private Tab aspectTab;
     @FXML private Tab cardTab;
+    @FXML private Tab itemTab;
+    @FXML private Tab wallartTab;
+    @FXML private Tab comfortTab;
+    @FXML private Tab thingTab;
+    @FXML private Tab bookTab;
     @FXML private Tab craftTab;
     @FXML private Tab workstationTab;
     @FXML private Tab otherRecipeTab;
@@ -35,6 +41,10 @@ public class MainController {
         resources.put(verbTab, "verb-browser.fxml");
         resources.put(aspectTab, "aspect-browser.fxml");
         resources.put(cardTab, "card-browser.fxml");
+        resources.put(wallartTab, "wallart-browser.fxml");
+        resources.put(comfortTab, "comfort-browser.fxml");
+        resources.put(thingTab, "thing-browser.fxml");
+        resources.put(bookTab, "book-browser.fxml");
         resources.put(craftTab, "craft-browser.fxml");
         resources.put(workstationTab, "workstation-browser.fxml");
         resources.put(otherRecipeTab, "other-recipe-browser.fxml");
@@ -45,11 +55,15 @@ public class MainController {
                 (observable, oldTab, newTab) -> {
                     if (newTab == dataSourceTab) {
                         loadIfNeeded(dataSourceTabs.getSelectionModel().getSelectedItem());
+                    } else if (newTab == itemTab) {
+                        loadIfNeeded(itemTabs.getSelectionModel().getSelectedItem());
                     } else {
                         loadIfNeeded(newTab);
                     }
                 });
         dataSourceTabs.getSelectionModel().selectedItemProperty().addListener(
+                (observable, oldTab, newTab) -> loadIfNeeded(newTab));
+        itemTabs.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldTab, newTab) -> loadIfNeeded(newTab));
         loadIfNeeded(dataSourceTabs.getSelectionModel().getSelectedItem());
     }
@@ -69,4 +83,5 @@ public class MainController {
             tab.setContent(new Label("页面加载失败：" + exception.getMessage()));
         }
     }
+
 }

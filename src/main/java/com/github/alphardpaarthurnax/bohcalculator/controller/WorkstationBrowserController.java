@@ -2,8 +2,10 @@ package com.github.alphardpaarthurnax.bohcalculator.controller;
 
 import com.github.alphardpaarthurnax.bohcalculator.model.VerbSlot;
 import com.github.alphardpaarthurnax.bohcalculator.model.Workstation;
-import com.github.alphardpaarthurnax.bohcalculator.service.CatalogReferenceIndex;
 import com.github.alphardpaarthurnax.bohcalculator.service.WorkstationDataService;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogBrowserSupport;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogReferenceIndex;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogReferenceViews;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
@@ -14,7 +16,7 @@ import javafx.scene.layout.VBox;
 
 import java.util.List;
 
-public class WorkstationBrowserController extends CatalogBrowserController<Workstation> {
+public final class WorkstationBrowserController extends CatalogBrowserSupport<Workstation> {
     @FXML private VBox slotContainer;
 
     private final CatalogReferenceIndex references = CatalogReferenceIndex.getInstance();

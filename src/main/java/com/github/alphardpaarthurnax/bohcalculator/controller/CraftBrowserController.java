@@ -1,8 +1,10 @@
 package com.github.alphardpaarthurnax.bohcalculator.controller;
 
 import com.github.alphardpaarthurnax.bohcalculator.model.Recipe;
-import com.github.alphardpaarthurnax.bohcalculator.service.CatalogReferenceIndex;
 import com.github.alphardpaarthurnax.bohcalculator.service.CraftDataService;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogReferenceIndex;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogReferenceViews;
+import com.github.alphardpaarthurnax.bohcalculator.utils.RecipeBrowserSupport;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
@@ -10,7 +12,7 @@ import javafx.scene.control.TableView;
 import java.util.List;
 import java.util.Map;
 
-public class CraftBrowserController extends RecipeBrowserController {
+public final class CraftBrowserController extends RecipeBrowserSupport {
     @FXML private TableView<CatalogReferenceViews.Entry> requirementsTable;
     @FXML private TableView<CatalogReferenceViews.Entry> specialRequirementsTable;
     @FXML private TableView<CatalogReferenceViews.Entry> effectsTable;
@@ -42,7 +44,7 @@ public class CraftBrowserController extends RecipeBrowserController {
         Map<String, Integer> requirements = item != null ? item.getRequirements() : Map.of();
         Map<String, Integer> effects = item != null ? item.getEffects() : Map.of();
         CatalogReferenceViews.setMap(requirementsTable, requirements, references.aspects());
-        CatalogReferenceViews.setMap(specialRequirementsTable, requirements, references.cards());
+        CatalogReferenceViews.setMap(specialRequirementsTable, requirements, references.cardsAndItems());
         CatalogReferenceViews.setMap(effectsTable, effects, references.all());
     }
 

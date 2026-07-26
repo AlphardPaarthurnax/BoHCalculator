@@ -2,11 +2,12 @@ package com.github.alphardpaarthurnax.bohcalculator.controller;
 
 import com.github.alphardpaarthurnax.bohcalculator.model.Element;
 import com.github.alphardpaarthurnax.bohcalculator.service.ElementDataService;
+import com.github.alphardpaarthurnax.bohcalculator.utils.CatalogBrowserSupport;
 import javafx.collections.ObservableList;
 
 import java.util.List;
 
-public class ElementBrowserController extends CatalogBrowserController<Element> {
+public final class ElementBrowserController extends CatalogBrowserSupport<Element> {
     @Override protected String title() { return "Elements：Rowenarium 抓取的全部 Element（不索引图片）"; }
 
     @Override protected boolean displayImages() { return false; }

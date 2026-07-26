@@ -17,8 +17,9 @@ module com.github.alphardpaarthurnax.bohcalculator {
 
     opens com.github.alphardpaarthurnax.bohcalculator to javafx.fxml;
     opens com.github.alphardpaarthurnax.bohcalculator.controller to javafx.fxml;
+    opens com.github.alphardpaarthurnax.bohcalculator.utils to javafx.fxml;
     opens com.github.alphardpaarthurnax.bohcalculator.model to com.fasterxml.jackson.databind;
     exports com.github.alphardpaarthurnax.bohcalculator;
-    exports com.github.alphardpaarthurnax.bohcalculator.domain;
+    exports com.github.alphardpaarthurnax.bohcalculator.craft;
     exports com.github.alphardpaarthurnax.bohcalculator.model;
 }

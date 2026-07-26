@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.ThingBrowserController">
+    <padding><Insets top="8" left="8" right="8" bottom="8"/></padding>
+    <top><TextField fx:id="searchField" promptText="搜索..." style="-fx-font-size: 14px;"><BorderPane.margin><Insets bottom="8"/></BorderPane.margin></TextField></top>
+    <left><ListView fx:id="cardList" prefWidth="220" style="-fx-font-size: 13px;"><BorderPane.margin><Insets right="8"/></BorderPane.margin></ListView></left>
+    <center><ScrollPane fitToWidth="true" hbarPolicy="NEVER"><VBox alignment="TOP_CENTER" spacing="10">
+        <padding><Insets top="16" left="16" right="16" bottom="16"/></padding>
+        <ImageView fx:id="cardImage" fitWidth="64" fitHeight="64" preserveRatio="true"/>
+        <Label fx:id="cardName" style="-fx-font-size: 20px; -fx-font-weight: bold;" wrapText="true"/>
+        <Label fx:id="cardId" style="-fx-font-size: 12px; -fx-text-fill: gray;" wrapText="true"/>
+        <Label fx:id="cardSource" style="-fx-font-size: 12px; -fx-text-fill: gray;" wrapText="true"/>
+        <TextFlow fx:id="cardDescription" lineSpacing="4" style="-fx-font-size: 14px;"/>
+        <Label text="性相:" style="-fx-font-weight: bold; -fx-font-size: 14px;"><VBox.margin><Insets top="8"/></VBox.margin></Label>
+        <TableView fx:id="aspectTable" prefHeight="200"><columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy></TableView>
+    </VBox></ScrollPane></center>
+</BorderPane>

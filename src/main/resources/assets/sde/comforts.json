@@ -1,0 +1,2458 @@
+{
+  "comforts" : [ {
+    "imagePath" : "/assets/images/cards/cockatoo.green.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/cockatoo.green.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Description" : "这种不可思议的鸟儿在很多地区都难觅踪迹。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "2grail2boost.grail2heart2boost.heart2sky2boost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "cockatoo.green.hungry",
+    "label" : null,
+    "desc" : "这种不可思议的鸟儿在很多地区都难觅踪迹。",
+    "aspects" : {
+      "grail" : 2,
+      "boost.grail" : 2,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/statue.debraose.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/statue.debraose.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《德·布劳斯夫人》",
+      "Description" : "有时被亲切地称为“第一位伊娃”。德·布劳斯夫人从未造访过这座小岛，但正是她的慷慨捐赠使修道院在13世纪得以繁荣发展。",
+      "Inherits" : "_comfort",
+      "Aspects" : "heartboost.heartcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "statue.debraose",
+    "label" : "《德·布劳斯夫人》",
+    "desc" : "有时被亲切地称为“第一位伊娃”。德·布劳斯夫人从未造访过这座小岛，但正是她的慷慨捐赠使修道院在13世纪得以繁荣发展。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/statue.crozier.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/statue.crozier.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《权威》",
+      "Description" : "这根牧羊人曲柄杖曾代表着教会的权威。防剿局把它留在这儿或许是因为他们一向喜欢权威的概念。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "statue.crozier",
+    "label" : "《权威》",
+    "desc" : "这根牧羊人曲柄杖曾代表着教会的权威。防剿局把它留在这儿或许是因为他们一向喜欢权威的概念。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/statue.rowena.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/statue.rowena.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《罗威娜女士》",
+      "Description" : "自噤声居屋存在以来，关于它神秘女守护者的故事就一直时有流传。",
+      "Inherits" : "_comfort",
+      "Aspects" : "winterboost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "statue.rowena",
+    "label" : "《罗威娜女士》",
+    "desc" : "自噤声居屋存在以来，关于它神秘女守护者的故事就一直时有流传。",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/bucket.seawater.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/bucket.seawater.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "一桶海水",
+      "Description" : "细碎的浮沫在水面飘荡。",
+      "Inherits" : "_comfort",
+      "Aspects" : "liquidmoonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "bucket.seawater",
+    "label" : "一桶海水",
+    "desc" : "细碎的浮沫在水面飘荡。",
+    "aspects" : {
+      "liquid" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/bucket.ashes.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/bucket.ashes.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "一桶灰烬",
+      "Description" : "冷却已久，但它们仍旧隐约记得那火。",
+      "Inherits" : "_comfort",
+      "Aspects" : "materialforgeboost.forgecomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "bucket.ashes",
+    "label" : "一桶灰烬",
+    "desc" : "冷却已久，但它们仍旧隐约记得那火。",
+    "aspects" : {
+      "material" : 1,
+      "forge" : 1,
+      "boost.forge" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.church.knock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.church.knock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "不适座椅",
+      "Description" : "为保证信徒能保持集中的注意力而打造。",
+      "Inherits" : "_comfort",
+      "Aspects" : "knockboost.knockcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.church.knock",
+    "label" : "不适座椅",
+    "desc" : "为保证信徒能保持集中的注意力而打造。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/lamp.artdeco.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/lamp.artdeco.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "优雅旭日灯",
+      "Description" : "一株明亮的黄铜树。",
+      "Inherits" : "_comfort",
+      "Aspects" : "light3lantern3boost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "lamp.artdeco",
+    "label" : "优雅旭日灯",
+    "desc" : "一株明亮的黄铜树。",
+    "aspects" : {
+      "light" : 1,
+      "lantern" : 3,
+      "boost.lantern" : 3,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.knock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.knock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "兰紫坐凳",
+      "Description" : "黑紫坐垫，冬青木镶花。",
+      "Inherits" : "_comfort",
+      "Aspects" : "knockboost.knockcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.knock",
+    "label" : "兰紫坐凳",
+    "desc" : "黑紫坐垫，冬青木镶花。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.church.lantern.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.church.lantern.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "冥想座椅",
+      "Description" : "暂歇于此，冥思拂晓之秘。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.church.lantern",
+    "label" : "冥想座椅",
+    "desc" : "暂歇于此，冥思拂晓之秘。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.sky.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.sky.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "凯蒂的扶手椅",
+      "Description" : "它<i>看着</i>很像是在艾尔·布莱顿那张著名的合影里，第二任图书管理员凯蒂·马扎林坐的那把扶手椅。",
+      "Inherits" : "_comfort",
+      "Aspects" : "skyboost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.sky",
+    "label" : "凯蒂的扶手椅",
+    "desc" : "它<i>看着</i>很像是在艾尔·布莱顿那张著名的合影里，第二任图书管理员凯蒂·马扎林坐的那把扶手椅。",
+    "aspects" : {
+      "sky" : 1,
+      "boost.sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/imago.perilous.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/imago.perilous.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "凶匿成虫",
+      "Description" : "它已经远达至此。放生它，它就能飞得更远。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "cooperative2knock2boost.knock2moon2boost.moon6moth6boost.moth2scale2boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "imago.perilous",
+    "label" : "凶匿成虫",
+    "desc" : "它已经远达至此。放生它，它就能飞得更远。",
+    "aspects" : {
+      "cooperative" : 1,
+      "knock" : 2,
+      "boost.knock" : 2,
+      "moon" : 2,
+      "boost.moon" : 2,
+      "moth" : 6,
+      "boost.moth" : 6,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/cockatoo.green.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/cockatoo.green.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "华丽的绿羽鸡头鹦鹉",
+      "Description" : "这种不可思议的鸟儿在很多地区都难觅踪迹。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "cooperative2grail2boost.grail2heart2boost.heart2sky2boost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "cockatoo.green",
+    "label" : "华丽的绿羽鸡头鹦鹉",
+    "desc" : "这种不可思议的鸟儿在很多地区都难觅踪迹。",
+    "aspects" : {
+      "cooperative" : 1,
+      "grail" : 2,
+      "boost.grail" : 2,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.moon.a.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.moon.a.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "华丽阅读椅",
+      "Description" : "华丽地安置于此。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.moon.a",
+    "label" : "华丽阅读椅",
+    "desc" : "华丽地安置于此。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/lamp.revelation.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/lamp.revelation.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "台灯",
+      "Description" : "即便在最为黑暗的情况下也能保证清晰的视野。偶尔会闪烁。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lightlanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "lamp.revelation",
+    "label" : "台灯",
+    "desc" : "即便在最为黑暗的情况下也能保证清晰的视野。偶尔会闪烁。",
+    "aspects" : {
+      "light" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.librarian.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.librarian.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "图书管理员之凳",
+      "Description" : "一把色如海洋，星形花纹的凳子。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.librarian",
+    "label" : "图书管理员之凳",
+    "desc" : "一把色如海洋，星形花纹的凳子。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.librarian.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.librarian.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "图书管理员扶手椅",
+      "Description" : "一把色如海洋，星形花纹的扶手椅。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.librarian",
+    "label" : "图书管理员扶手椅",
+    "desc" : "一把色如海洋，星形花纹的扶手椅。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/footstool.librarian.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/footstool.librarian.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "图书管理员脚凳",
+      "Description" : "一把色如海洋，星形花纹的脚凳。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "footstool.librarian",
+    "label" : "图书管理员脚凳",
+    "desc" : "一把色如海洋，星形花纹的脚凳。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chicken.tuppence.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chicken.tuppence.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "土便士，另一只鸡",
+      "Description" : "所有见到她的人都会同意，土便士最显著的特征，便是她并非特伦士。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "cooperative2scale2boost.scaleskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chicken.tuppence",
+    "label" : "土便士，另一只鸡",
+    "desc" : "所有见到她的人都会同意，土便士最显著的特征，便是她并非特伦士。",
+    "aspects" : {
+      "cooperative" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.moon.a.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.moon.a.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "夜空座椅",
+      "Description" : "丝绒滑如午夜。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.moon.a",
+    "label" : "夜空座椅",
+    "desc" : "丝绒滑如午夜。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.moon.c.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.moon.c.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "夜色座椅",
+      "Description" : "坚固、舒适、有种奇怪的不起眼。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.moon.c",
+    "label" : "夜色座椅",
+    "desc" : "坚固、舒适、有种奇怪的不起眼。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/pot.bigken.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/pot.bigken.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "天堂棕榈",
+      "Description" : "一股难以抑制的活力。",
+      "Inherits" : "_comfort",
+      "Aspects" : "2nectar2boost.nectarcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "pot.bigken",
+    "label" : "天堂棕榈",
+    "desc" : "一股难以抑制的活力。",
+    "aspects" : {
+      "nectar" : 2,
+      "boost.nectar" : 2,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/boots.morgue.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/boots.morgue.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "太平间靴子",
+      "Description" : "可靠的橡胶。",
+      "Inherits" : "_comfort",
+      "Aspects" : "winterboost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "boots.morgue",
+    "label" : "太平间靴子",
+    "desc" : "可靠的橡胶。",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/bag.tricks.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/bag.tricks.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "妙计锦囊",
+      "Description" : "“有用”：一个极其主观的词。里边有什么有用的东西吗？",
+      "Inherits" : "_comfort",
+      "Aspects" : "cachemothboost.mothcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "bag.tricks",
+    "label" : "妙计锦囊",
+    "desc" : "“有用”：一个极其主观的词。里边有什么有用的东西吗？",
+    "aspects" : {
+      "cache" : 1,
+      "moth" : 1,
+      "boost.moth" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/gull.wild.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/gull.wild.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "孤雏",
+      "Description" : "一只唧唧叫的小家伙，它的妈妈不是死了就是飞走了。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "moonboost.moon2sky2boost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No",
+      "In Decks" : "2nests.springnests.summer"
+    },
+    "id" : "gull.wild",
+    "label" : "孤雏",
+    "desc" : "一只唧唧叫的小家伙，它的妈妈不是死了就是飞走了。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.garden2.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.garden2.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "安宁花园椅",
+      "Description" : "坐在这里聆听树木生长。亦或树叶凋落。人各有所好。",
+      "Inherits" : "_comfort",
+      "Aspects" : "nectarboost.nectarcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.garden2",
+    "label" : "安宁花园椅",
+    "desc" : "坐在这里聆听树木生长。亦或树叶凋落。人各有所好。",
+    "aspects" : {
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.grail.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.grail.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "安布罗斯的爱椅",
+      "Description" : "被雪茄烫出了些孔洞。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.grail",
+    "label" : "安布罗斯的爱椅",
+    "desc" : "被雪茄烫出了些孔洞。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.knock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.knock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "定论躺椅",
+      "Description" : "图书管理员范·劳伦曾躺在上面，思索自己从哈里斯那儿继承来的悖论。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailknockboost.knockcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.knock",
+    "label" : "定论躺椅",
+    "desc" : "图书管理员范·劳伦曾躺在上面，思索自己从哈里斯那儿继承来的悖论。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "knock" : 1,
+      "boost.knock" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/gull.tame.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/gull.tame.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "宠物海鸥",
+      "Description" : "和它还是雏鸟时一样吵闹且挑剔。但体型要大得多。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "cooperativemoonboost.moon2sky2boost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "gull.tame",
+    "label" : "宠物海鸥",
+    "desc" : "和它还是雏鸟时一样吵闹且挑剔。但体型要大得多。",
+    "aspects" : {
+      "cooperative" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/cat.tame.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/cat.tame.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "宠物猫",
+      "Description" : "哦？你想在那张桌子上<i>工作</i>吗？",
+      "Inherits" : "_beast.carnivore.plusmilk",
+      "Aspects" : "cooperative2grail2boost.grail2heart2boost.heart2moth2boost.mothbeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "cat.tame",
+    "label" : "宠物猫",
+    "desc" : "哦？你想在那张桌子上<i>工作</i>吗？",
+    "aspects" : {
+      "cooperative" : 1,
+      "grail" : 2,
+      "boost.grail" : 2,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "moth" : 2,
+      "boost.moth" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.grail.c.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.grail.c.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "宽大座椅",
+      "Description" : "用一种异常丰满的丝绒装饰，让人忍不住想用手触摸。坐一会儿吧，你应得的。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailmoonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.grail.c",
+    "label" : "宽大座椅",
+    "desc" : "用一种异常丰满的丝绒装饰，让人忍不住想用手触摸。坐一会儿吧，你应得的。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/dog.tame.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/dog.tame.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "忠诚的狗",
+      "Description" : "散步对换取他那不渝的忠贞而言无疑只是小小的代价。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "cooperative2edge2boost.edge2heart2boost.heart2scale2boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "dog.tame",
+    "label" : "忠诚的狗",
+    "desc" : "散步对换取他那不渝的忠贞而言无疑只是小小的代价。",
+    "aspects" : {
+      "cooperative" : 1,
+      "edge" : 2,
+      "boost.edge" : 2,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.grail.b.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.grail.b.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "怡人安歇处",
+      "Description" : "由岛屿决议会安置，以便能在升登前或下行后休息。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.grail.b",
+    "label" : "怡人安歇处",
+    "desc" : "由岛屿决议会安置，以便能在升登前或下行后休息。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.grail.b.x.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.grail.b.x.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "怡人安歇处",
+      "Description" : "由岛屿决议会安置，以便能在升登前或下行后休息。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.grail.b.x",
+    "label" : "怡人安歇处",
+    "desc" : "由岛屿决议会安置，以便能在升登前或下行后休息。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chicken.tuppence.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chicken.tuppence.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "恳求的土便士",
+      "Description" : "咯咯……咯咯？",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "2scale2boost.scaleskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chicken.tuppence.hungry",
+    "label" : "恳求的土便士",
+    "desc" : "咯咯……咯咯？",
+    "aspects" : {
+      "scale" : 2,
+      "boost.scale" : 2,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.sky.x.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.sky.x.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "悦耳凹凸椅",
+      "Description" : "似乎有人为它的吱呀声调了音。",
+      "Inherits" : "_comfort",
+      "Aspects" : "skyboost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.sky.x",
+    "label" : "悦耳凹凸椅",
+    "desc" : "似乎有人为它的吱呀声调了音。",
+    "aspects" : {
+      "sky" : 1,
+      "boost.sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.sky.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.sky.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "悦耳座椅",
+      "Description" : "似乎有人为它的吱呀声调了音。",
+      "Inherits" : "_comfort",
+      "Aspects" : "skyboost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.sky",
+    "label" : "悦耳座椅",
+    "desc" : "似乎有人为它的吱呀声调了音。",
+    "aspects" : {
+      "sky" : 1,
+      "boost.sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chicken.terrence.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chicken.terrence.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "愤懑的特伦士",
+      "Description" : "咯咯，<b>咯咯</b>。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "3scale3boost.scaleskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chicken.terrence.hungry",
+    "label" : "愤懑的特伦士",
+    "desc" : "咯咯，<b>咯咯</b>。",
+    "aspects" : {
+      "scale" : 3,
+      "boost.scale" : 3,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/bucket.mop.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/bucket.mop.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "拖把与水桶",
+      "Description" : "镀锌钢制，上边满是多年来有条不紊的拖地工作留下的污渍。",
+      "Inherits" : "_comfort",
+      "Aspects" : "toolheartboost.heartcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "bucket.mop",
+    "label" : "拖把与水桶",
+    "desc" : "镀锌钢制，上边满是多年来有条不紊的拖地工作留下的污渍。",
+    "aspects" : {
+      "tool" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.knock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.knock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "挑战座椅",
+      "Description" : "图书管理员哈里斯曾坐在这里，构思他将要留给范·劳伦的悖论。",
+      "Inherits" : "_comfort",
+      "Aspects" : "knockboost.knockcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.knock",
+    "label" : "挑战座椅",
+    "desc" : "图书管理员哈里斯曾坐在这里，构思他将要留给范·劳伦的悖论。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.church.atrium.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.church.atrium.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "教堂前庭座椅",
+      "Description" : "留给迟到者、不信者与忧思者。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.church.atrium",
+    "label" : "教堂前庭座椅",
+    "desc" : "留给迟到者、不信者与忧思者。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.severe2.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.severe2.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "斯巴达式座椅",
+      "Description" : "坐垫被拿走了，也许这是个小气的报复。",
+      "Inherits" : "_comfort",
+      "Aspects" : "edgeboost.edgecomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.severe2",
+    "label" : "斯巴达式座椅",
+    "desc" : "坐垫被拿走了，也许这是个小气的报复。",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stymphling.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stymphling.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "斯廷法利斯湖兽",
+      "Description" : "伊娃·德沃尔夫教会了她的父亲瓦伦丁如何孵化这些银色的小坏蛋，但他从没学会喜欢上它们。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "cooperative3moon3boost.moon3scale3boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stymphling",
+    "label" : "斯廷法利斯湖兽",
+    "desc" : "伊娃·德沃尔夫教会了她的父亲瓦伦丁如何孵化这些银色的小坏蛋，但他从没学会喜欢上它们。",
+    "aspects" : {
+      "cooperative" : 1,
+      "moon" : 3,
+      "boost.moon" : 3,
+      "scale" : 3,
+      "boost.scale" : 3,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.grail.b.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.grail.b.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "暗酒红椅",
+      "Description" : "一件法国进口的十八世纪优雅之作。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.grail.b",
+    "label" : "暗酒红椅",
+    "desc" : "一件法国进口的十八世纪优雅之作。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.moon.c.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.moon.c.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "暮光座椅",
+      "Description" : "丝绒暗如蓝暮。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.moon.c",
+    "label" : "暮光座椅",
+    "desc" : "丝绒暗如蓝暮。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.moon.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.moon.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "月亮座凳",
+      "Description" : "被往届图书管理员的屁股擦得煞白。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.moon",
+    "label" : "月亮座凳",
+    "desc" : "被往届图书管理员的屁股擦得煞白。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/footstool.moon.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/footstool.moon.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "月亮脚凳",
+      "Description" : "柔和的金色朦胧地闪烁着。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "footstool.moon",
+    "label" : "月亮脚凳",
+    "desc" : "柔和的金色朦胧地闪烁着。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/brazier.moon.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/brazier.moon.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "月神火盆",
+      "Description" : "甚至早在罗马人到来之前，它就已经在经受火焰的炙烤。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "brazier.moon",
+    "label" : "月神火盆",
+    "desc" : "甚至早在罗马人到来之前，它就已经在经受火焰的炙烤。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.iron.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.iron.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "木工凳",
+      "Description" : "晃得厉害。说不定有什么在作祟。",
+      "Inherits" : "_comfort",
+      "Aspects" : "edgeboost.edge2moth2boost.mothcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.iron",
+    "label" : "木工凳",
+    "desc" : "晃得厉害。说不定有什么在作祟。",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "moth" : 2,
+      "boost.moth" : 2,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.plain.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.plain.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "朴素坐凳",
+      "Description" : "人能想象出的最可靠之物。它<i>究竟</i>有多老了？",
+      "Inherits" : "_comfort",
+      "Aspects" : "winterboost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.plain",
+    "label" : "朴素坐凳",
+    "desc" : "人能想象出的最可靠之物。它<i>究竟</i>有多老了？",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.wicker.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.wicker.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "柳条座椅",
+      "Description" : "老旧，但结实。",
+      "Inherits" : "_comfort",
+      "Aspects" : "heartboost.heartcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.wicker",
+    "label" : "柳条座椅",
+    "desc" : "老旧，但结实。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.grail.a.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.grail.a.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "格林的红椅",
+      "Description" : "有点晃，格林坐在它上面的时候常前倾身子。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.grail.a",
+    "label" : "格林的红椅",
+    "desc" : "有点晃，格林坐在它上面的时候常前倾身子。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.scale.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.scale.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "沉湎沙发",
+      "Description" : "在此沉沦于晦暗之思。",
+      "Inherits" : "_comfort",
+      "Aspects" : "scaleboost.scalecomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.scale",
+    "label" : "沉湎沙发",
+    "desc" : "在此沉沦于晦暗之思。",
+    "aspects" : {
+      "scale" : 1,
+      "boost.scale" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/astrolabe.sky.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/astrolabe.sky.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "沉默男爵的星盘",
+      "Description" : "托马斯·德沃尔夫将这架浑天仪——一种球形星盘——用在了自己的计算中，但它可比他古老得多。",
+      "Inherits" : "_comfort",
+      "Aspects" : "toolskyboost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "astrolabe.sky",
+    "label" : "沉默男爵的星盘",
+    "desc" : "托马斯·德沃尔夫将这架浑天仪——一种球形星盘——用在了自己的计算中，但它可比他古老得多。",
+    "aspects" : {
+      "tool" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/relic.living.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/relic.living.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "活化石",
+      "Description" : "在<i>这个</i>太阳照耀的世界里鲜能见到这种存在。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "cooperativeheartboost.heart4scale4boost.scale2sky2boost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "relic.living",
+    "label" : "活化石",
+    "desc" : "在<i>这个</i>太阳照耀的世界里鲜能见到这种存在。",
+    "aspects" : {
+      "cooperative" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 4,
+      "boost.scale" : 4,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/dog.wild.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/dog.wild.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "流浪狗",
+      "Description" : "茫然，恐惧，饥肠辘辘。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "2edge2boost.edge2heart2boost.heart2scale2boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No",
+      "In Decks" : "moor.springmoor.summermoor.autumnmoor.wintermoor.numa"
+    },
+    "id" : "dog.wild",
+    "label" : "流浪狗",
+    "desc" : "茫然，恐惧，饥肠辘辘。",
+    "aspects" : {
+      "edge" : 2,
+      "boost.edge" : 2,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/cat.wild.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/cat.wild.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "流浪猫",
+      "Description" : "喂养其他动物能获得它们的忠诚。但喂养这只，获得的是它的耐心。",
+      "Inherits" : "_beast.carnivore.plusmilk",
+      "Aspects" : "2grail2boost.grail2heart2boost.heart2moth2boost.mothbeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No",
+      "In Decks" : "beach.springbeach.summerbeach.autumnbeach.winterbeach.numa"
+    },
+    "id" : "cat.wild",
+    "label" : "流浪猫",
+    "desc" : "喂养其他动物能获得它们的忠诚。但喂养这只，获得的是它的耐心。",
+    "aspects" : {
+      "grail" : 2,
+      "boost.grail" : 2,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "moth" : 2,
+      "boost.moth" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.winter.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.winter.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "海绿沙发",
+      "Description" : "在这儿，伊娃·德沃尔夫女士会编织她的阴谋，以及满足自己对伤感小说的私密渴望。",
+      "Inherits" : "_comfort",
+      "Aspects" : "winterboost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.winter",
+    "label" : "海绿沙发",
+    "desc" : "在这儿，伊娃·德沃尔夫女士会编织她的阴谋，以及满足自己对伤感小说的私密渴望。",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.moon.b.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.moon.b.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "涣星座椅",
+      "Description" : "丝绒柔如星光。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.moon.b",
+    "label" : "涣星座椅",
+    "desc" : "丝绒柔如星光。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/cat.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/cat.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "淡漠的猫",
+      "Description" : "<b>近日食物短缺。你会明白形势有多严峻。毫无疑问，你也急于改正。</b>",
+      "Inherits" : "_beast.carnivore.plusmilk",
+      "Aspects" : "grailboost.grailmothboost.mothbeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "cat.hungry",
+    "label" : "淡漠的猫",
+    "desc" : "<b>近日食物短缺。你会明白形势有多严峻。毫无疑问，你也急于改正。</b>",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "moth" : 1,
+      "boost.moth" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/larva.chimeric.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/larva.chimeric.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "混种幼虫",
+      "Description" : "接近化蛹的十字路口。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "cooperative2knock2boost.knock2moon2boost.moon4moth4boost.mothbeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "larva.chimeric",
+    "label" : "混种幼虫",
+    "desc" : "接近化蛹的十字路口。",
+    "aspects" : {
+      "cooperative" : 1,
+      "knock" : 2,
+      "boost.knock" : 2,
+      "moon" : 2,
+      "boost.moon" : 2,
+      "moth" : 4,
+      "boost.moth" : 4,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.gullscry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.gullscry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "温存座椅",
+      "Description" : "一张铺着柔软白色膝毯的柳条座椅，为寒冷的夜晚而生。",
+      "Inherits" : "_comfort",
+      "Aspects" : "2heart2boost.heart2scale2boost.scalecomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.gullscry",
+    "label" : "温存座椅",
+    "desc" : "一张铺着柔软白色膝毯的柳条座椅，为寒冷的夜晚而生。",
+    "aspects" : {
+      "heart" : 2,
+      "boost.heart" : 2,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/viper.tame.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/viper.tame.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "温顺蝰蛇",
+      "Description" : "一位对暖壁炉，温老鼠与热牛奶如饥似渴的研究者。",
+      "Inherits" : "_beast.carnivore.plusmilk",
+      "Aspects" : "cooperative2knock2boost.knock2scale2boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "viper.tame",
+    "label" : "温顺蝰蛇",
+    "desc" : "一位对暖壁炉，温老鼠与热牛奶如饥似渴的研究者。",
+    "aspects" : {
+      "cooperative" : 1,
+      "knock" : 2,
+      "boost.knock" : 2,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.lavender.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.lavender.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "牢房坐凳",
+      "Description" : "明快的薰衣紫，或许是为了激励起改过自新的热情。",
+      "Inherits" : "_comfort",
+      "Aspects" : "2heart2boost.heartknockboost.knockcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.lavender",
+    "label" : "牢房坐凳",
+    "desc" : "明快的薰衣紫，或许是为了激励起改过自新的热情。",
+    "aspects" : {
+      "heart" : 2,
+      "boost.heart" : 2,
+      "knock" : 1,
+      "boost.knock" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chicken.terrence.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chicken.terrence.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "特伦士，一只鸡",
+      "Description" : "这只高贵且倔犟的鸟禽是得名自教区牧师家那位倔犟且高贵的女管家吗？还是别打听太多为妙。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "cooperative3scale3boost.scaleskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chicken.terrence",
+    "label" : "特伦士，一只鸡",
+    "desc" : "这只高贵且倔犟的鸟禽是得名自教区牧师家那位倔犟且高贵的女管家吗？还是别打听太多为妙。",
+    "aspects" : {
+      "cooperative" : 1,
+      "scale" : 3,
+      "boost.scale" : 3,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/gullscry.memorial.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/gullscry.memorial.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "瓦伦丁纪念碑",
+      "Description" : "瓦伦丁两个世纪前就去世了，这块石头要比那新得多——大约只有二十年的样子。",
+      "Inherits" : "_comfort",
+      "Aspects" : "3winter3boost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "gullscry.memorial",
+    "label" : "瓦伦丁纪念碑",
+    "desc" : "瓦伦丁两个世纪前就去世了，这块石头要比那新得多——大约只有二十年的样子。",
+    "aspects" : {
+      "winter" : 3,
+      "boost.winter" : 3,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.gullscry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.gullscry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "画家小凳",
+      "Description" : "一处足够舒适的栖枝。",
+      "Inherits" : "_comfort",
+      "Aspects" : "skyboost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.gullscry",
+    "label" : "画家小凳",
+    "desc" : "一处足够舒适的栖枝。",
+    "aspects" : {
+      "sky" : 1,
+      "boost.sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/lamp.moth.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/lamp.moth.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "瞩目之灯",
+      "Description" : "飞蛾如五月柱舞者般绕其盘旋。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lightwinterboost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "lamp.moth",
+    "label" : "瞩目之灯",
+    "desc" : "飞蛾如五月柱舞者般绕其盘旋。",
+    "aspects" : {
+      "light" : 1,
+      "winter" : 1,
+      "boost.winter" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.lantern.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.lantern.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "稻草垫座椅",
+      "Description" : "软垫装得毫无技术含量。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.lantern",
+    "label" : "稻草垫座椅",
+    "desc" : "软垫装得毫无技术含量。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.moon.b.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.moon.b.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "端庄阅读椅",
+      "Description" : "端庄地安置于此。",
+      "Inherits" : "_comfort",
+      "Aspects" : "moonboost.mooncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.moon.b",
+    "label" : "端庄阅读椅",
+    "desc" : "端庄地安置于此。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.grail.a.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.grail.a.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "缠绵安歇处",
+      "Description" : "用一种异常丰满的丝绒装饰，让人忍不住想用手触摸。",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.graillanternboost.lanterncomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.grail.a",
+    "label" : "缠绵安歇处",
+    "desc" : "用一种异常丰满的丝绒装饰，让人忍不住想用手触摸。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/armchair.knock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.knock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "职工扶手椅",
+      "Description" : "被几十名无所事事的狱警的屁股擦得锃光瓦亮。",
+      "Inherits" : "_comfort",
+      "Aspects" : "2knock2boost.knockcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.knock",
+    "label" : "职工扶手椅",
+    "desc" : "被几十名无所事事的狱警的屁股擦得锃光瓦亮。",
+    "aspects" : {
+      "knock" : 2,
+      "boost.knock" : 2,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.church.heart.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.church.heart.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "舒适椅子",
+      "Description" : "用于太阳崇拜集会的拂晓色椅子。",
+      "Inherits" : "_comfort",
+      "Aspects" : "heartboost.heartcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.church.heart",
+    "label" : "舒适椅子",
+    "desc" : "用于太阳崇拜集会的拂晓色椅子。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.garden1.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.garden1.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "舒适花园椅",
+      "Description" : "清漆上得外行，色染得倒有个性。",
+      "Inherits" : "_comfort",
+      "Aspects" : "nectarboost.nectarcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.garden1",
+    "label" : "舒适花园椅",
+    "desc" : "清漆上得外行，色染得倒有个性。",
+    "aspects" : {
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stool.pale.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stool.pale.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "苍白之凳",
+      "Description" : "漂白的山毛榉木。",
+      "Inherits" : "_comfort",
+      "Aspects" : "winterboost.wintercomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stool.pale",
+    "label" : "苍白之凳",
+    "desc" : "漂白的山毛榉木。",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/elements/armchair.blue.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/armchair.blue.png",
+    "sourceFile" : "comforts.json",
+    "fields" : {
+      "Label" : "蓝扶手椅（内部文本？）",
+      "Description" : "在放荡的阿瑞梭莎，她蔚蓝的臂弯里……（内部文本？）",
+      "Inherits" : "_comfort",
+      "Aspects" : "skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "armchair.blue",
+    "label" : "蓝扶手椅（内部文本？）",
+    "desc" : "在放荡的阿瑞梭莎，她蔚蓝的臂弯里……（内部文本？）",
+    "aspects" : {
+      "sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.gullscry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.gullscry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "蓝色软沙发",
+      "Description" : "温柔地填补了布兰库格周围的大海与天空。",
+      "Inherits" : "_comfort",
+      "Aspects" : "2moon2boost.moon2sky2boost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.gullscry",
+    "label" : "蓝色软沙发",
+    "desc" : "温柔地填补了布兰库格周围的大海与天空。",
+    "aspects" : {
+      "moon" : 2,
+      "boost.moon" : 2,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/pot.watchful.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/pot.watchful.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "警觉盆栽",
+      "Description" : "并非所有存在都需要眼睛。",
+      "Inherits" : "_comfort",
+      "Aspects" : "lanternboost.lanternnectarboost.nectarcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "pot.watchful",
+    "label" : "警觉盆栽",
+    "desc" : "并非所有存在都需要眼睛。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/footstool.grail.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/footstool.grail.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "诱人脚凳",
+      "Description" : "有多少自暴风雨中归家的人儿将双脚搁在它上面，凝望着炉火？",
+      "Inherits" : "_comfort",
+      "Aspects" : "grailboost.grailcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "footstool.grail",
+    "label" : "诱人脚凳",
+    "desc" : "有多少自暴风雨中归家的人儿将双脚搁在它上面，凝望着炉火？",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.severe1.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.severe1.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "质朴座椅",
+      "Description" : "朴素的沼绿色衬垫。",
+      "Inherits" : "_comfort",
+      "Aspects" : "edgeboost.edgecomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.severe1",
+    "label" : "质朴座椅",
+    "desc" : "朴素的沼绿色衬垫。",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/viper.wild.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/viper.wild.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "野生蝰蛇",
+      "Description" : "不要做任何突然的举动。",
+      "Inherits" : "_beast.carnivore.plusmilk",
+      "Aspects" : "2knock2boost.knock2scale2boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No",
+      "In Decks" : "2moor.summer"
+    },
+    "id" : "viper.wild",
+    "label" : "野生蝰蛇",
+    "desc" : "不要做任何突然的举动。",
+    "aspects" : {
+      "knock" : 2,
+      "boost.knock" : 2,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/savage.relic.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/savage.relic.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "野蛮的活化石",
+      "Description" : "一小团尖叫着的、自远古而来的暴脾气。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "heartboost.heart4scale4boost.scaleskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No",
+      "In Decks" : "beach.numa"
+    },
+    "id" : "savage.relic",
+    "label" : "野蛮的活化石",
+    "desc" : "一小团尖叫着的、自远古而来的暴脾气。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 4,
+      "boost.scale" : 4,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/chair.bells.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/chair.bells.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "钟楼椅",
+      "Description" : "结实、平凡，而且，正如居屋里的众多物件一样，是仅存的孤品。",
+      "Inherits" : "_comfort",
+      "Aspects" : "forgeboost.forge2sky2boost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "chair.bells",
+    "label" : "钟楼椅",
+    "desc" : "结实、平凡，而且，正如居屋里的众多物件一样，是仅存的孤品。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stand.umbrella.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stand.umbrella.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "顶帷秘库",
+      "Description" : "就像是一处抵御肺炎的军械库。",
+      "Inherits" : "_comfort",
+      "Aspects" : "heartboost.heartskyboost.skycomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stand.umbrella",
+    "label" : "顶帷秘库",
+    "desc" : "就像是一处抵御肺炎的军械库。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/larva.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/larva.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿幼虫",
+      "Description" : "贪婪地颤搐着。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "2knock2boost.knock2moon2boost.moon4moth4boost.mothbeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "larva.hungry",
+    "label" : "饥饿幼虫",
+    "desc" : "贪婪地颤搐着。",
+    "aspects" : {
+      "knock" : 2,
+      "boost.knock" : 2,
+      "moon" : 2,
+      "boost.moon" : 2,
+      "moth" : 4,
+      "boost.moth" : 4,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/imago.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/imago.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿成虫",
+      "Description" : "因饥饿而蛰伏。",
+      "Inherits" : "_beast.herbivore",
+      "Aspects" : "2knock2boost.knock2moon2boost.moon6moth6boost.moth2scale2boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "imago.hungry",
+    "label" : "饥饿成虫",
+    "desc" : "因饥饿而蛰伏。",
+    "aspects" : {
+      "knock" : 2,
+      "boost.knock" : 2,
+      "moon" : 2,
+      "boost.moon" : 2,
+      "moth" : 6,
+      "boost.moth" : 6,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/stymphling.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/stymphling.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿的斯廷法利斯湖兽",
+      "Description" : "急切的嘶嘶声。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "3moon3boost.moon3scale3boost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "stymphling.hungry",
+    "label" : "饥饿的斯廷法利斯湖兽",
+    "desc" : "急切的嘶嘶声。",
+    "aspects" : {
+      "moon" : 3,
+      "boost.moon" : 3,
+      "scale" : 3,
+      "boost.scale" : 3,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/relic.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/relic.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿的活化石",
+      "Description" : "直到再次被喂食前，它都在吵闹。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "heartboost.heart4scale4boost.scaleskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "relic.hungry",
+    "label" : "饥饿的活化石",
+    "desc" : "直到再次被喂食前，它都在吵闹。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 4,
+      "boost.scale" : 4,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/gull.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/gull.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿的海鸥",
+      "Description" : "急切地鸣叫。",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "moonboost.moonskyboost.skybeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "gull.hungry",
+    "label" : "饥饿的海鸥",
+    "desc" : "急切地鸣叫。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/dog.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/dog.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿的狗",
+      "Description" : "无底而可耻的胃口！可又是<i>如此好</i>的胃口！",
+      "Inherits" : "_beast.carnivore",
+      "Aspects" : "edgeboost.edgeheartboost.heartscaleboost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "dog.hungry",
+    "label" : "饥饿的狗",
+    "desc" : "无底而可耻的胃口！可又是<i>如此好</i>的胃口！",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/viper.hungry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/viper.hungry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "饥饿蝰蛇",
+      "Description" : "相当慵懒，可仍有攻击倾向——直到被喂饱。",
+      "Inherits" : "_beast.carnivore.plusmilk",
+      "Aspects" : "knockboost.knockscaleboost.scalebeastconsiderablecomfort",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "viper.hungry",
+    "label" : "饥饿蝰蛇",
+    "desc" : "相当慵懒，可仍有攻击倾向——直到被喂饱。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "beast" : 1,
+      "considerable" : 1,
+      "comfort" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/cards/sofa.russet.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/comforts/sofa.russet.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "黄褐长沙发",
+      "Description" : "一样实用的物件，扶手上涂着清漆，衬垫因频繁使用而光滑发亮。",
+      "Inherits" : "_comfort",
+      "Aspects" : "mothboost.mothcomfortconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "Comfort",
+      "Resaturate?" : "No"
+    },
+    "id" : "sofa.russet",
+    "label" : "黄褐长沙发",
+    "desc" : "一样实用的物件，扶手上涂着清漆，衬垫因频繁使用而光滑发亮。",
+    "aspects" : {
+      "moth" : 1,
+      "boost.moth" : 1,
+      "comfort" : 1,
+      "considerable" : 1
+    }
+  } ]
+}

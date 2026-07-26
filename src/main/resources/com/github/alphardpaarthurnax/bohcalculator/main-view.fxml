@@ -18,6 +18,14 @@
     </Tab>
     <Tab fx:id="aspectTab" text="Aspects"/>
     <Tab fx:id="cardTab" text="Cards"/>
+    <Tab fx:id="itemTab" text="Items" closable="false">
+        <TabPane fx:id="itemTabs" tabClosingPolicy="UNAVAILABLE">
+            <Tab fx:id="wallartTab" text="Wallarts"/>
+            <Tab fx:id="comfortTab" text="Comforts"/>
+            <Tab fx:id="thingTab" text="Things"/>
+            <Tab fx:id="bookTab" text="Books"/>
+        </TabPane>
+    </Tab>
     <Tab fx:id="craftTab" text="Crafts"/>
     <Tab fx:id="workstationTab" text="Workstations"/>
 </TabPane>

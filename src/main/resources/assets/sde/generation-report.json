@@ -1,11 +1,16 @@
 {
-  "generatedAt" : "2026-07-26T03:23:46.241702100Z",
+  "generatedAt" : "2026-07-26T09:42:44.406967200Z",
   "counts" : {
     "elements" : 3621,
     "recipes" : 4078,
     "verbs" : 278,
     "aspects" : 1028,
-    "cards" : 1734,
+    "cards" : 694,
+    "items" : 1040,
+    "books" : 385,
+    "wallarts" : 92,
+    "comforts" : 92,
+    "things" : 471,
     "crafts" : 556,
     "workstations" : 110,
     "otherRecipes" : 3522,

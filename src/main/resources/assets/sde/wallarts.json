@@ -1,0 +1,2452 @@
+{
+  "wallarts" : [ {
+    "imagePath" : "/assets/images/wallarts/motto.bureau.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/motto.bureau.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "<b>ALIIS LICET TIBI NON LICET</b>",
+      "Description" : "“于我则许，于尔则拒。”防剿局的座右铭。",
+      "Inherits" : "_wallart",
+      "Aspects" : "knockboost.knocklanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "motto.bureau",
+    "label" : "<b>ALIIS LICET TIBI NON LICET</b>",
+    "desc" : "“于我则许，于尔则拒。”防剿局的座右铭。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/stag.tavish.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/stag.tavish.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“塔维什”",
+      "Description" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手命名自己的猎获。",
+      "Inherits" : "_wallart",
+      "Aspects" : "carcass2scale2boost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "stag.tavish",
+    "label" : "“塔维什”",
+    "desc" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手命名自己的猎获。",
+    "aspects" : {
+      "carcass" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.scale.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.scale.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“孵化”",
+      "Description" : "一个人形从蛤壳中缓缓爬出。",
+      "Inherits" : "_wallart",
+      "Aspects" : "scaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.scale",
+    "label" : "“孵化”",
+    "desc" : "一个人形从蛤壳中缓缓爬出。",
+    "aspects" : {
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/motley1.portrait2.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/motley1.portrait2.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“我们的女赞助人”",
+      "Description" : "显然是曾经赞助过决议会的某人……但她更愿意保持匿名。",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgeheartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "motley1.portrait2",
+    "label" : "“我们的女赞助人”",
+    "desc" : "显然是曾经赞助过决议会的某人……但她更愿意保持匿名。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/motley1.portrait1.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/motley1.portrait1.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“我们的赞助人”",
+      "Description" : "显然是曾经赞助过决议会的某人……但他更愿意保持匿名。",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgeheartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "motley1.portrait1",
+    "label" : "“我们的赞助人”",
+    "desc" : "显然是曾经赞助过决议会的某人……但他更愿意保持匿名。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/tapestry.thefoundationofthesun.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/tapestry.thefoundationofthesun.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“皓日之基”",
+      "Description" : "“很久以前，在这个国度，一个人若不先向残阳献祭一头白色公牛，便不可建立教堂……”所罗门·赫舍从他来的地方带来了这张织幔——好吧，不管所罗门是从哪来的。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woven2winter2boost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "tapestry.thefoundationofthesun",
+    "label" : "“皓日之基”",
+    "desc" : "“很久以前，在这个国度，一个人若不先向残阳献祭一头白色公牛，便不可建立教堂……”所罗门·赫舍从他来的地方带来了这张织幔——好吧，不管所罗门是从哪来的。",
+    "aspects" : {
+      "woven" : 1,
+      "winter" : 2,
+      "boost.winter" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/stag.philemon.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/stag.philemon.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“腓利蒙”",
+      "Description" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手命名自己的猎获。",
+      "Inherits" : "_wallart",
+      "Aspects" : "carcass2scale2boost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "stag.philemon",
+    "label" : "“腓利蒙”",
+    "desc" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手命名自己的猎获。",
+    "aspects" : {
+      "carcass" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/stag.finnian.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/stag.finnian.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“菲尼安”",
+      "Description" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手或仇敌命名自己的猎获。",
+      "Inherits" : "_wallart",
+      "Aspects" : "carcass2scale2boost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "stag.finnian",
+    "label" : "“菲尼安”",
+    "desc" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手或仇敌命名自己的猎获。",
+    "aspects" : {
+      "carcass" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/stag.hokobald.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/stag.hokobald.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "“霍科博尔德”",
+      "Description" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手命名自己的猎获。",
+      "Inherits" : "_wallart",
+      "Aspects" : "carcass2scale2boost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "stag.hokobald",
+    "label" : "“霍科博尔德”",
+    "desc" : "安布罗斯·威斯考特喜欢以（据他说）与其猎获相像的老对手命名自己的猎获。",
+    "aspects" : {
+      "carcass" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.knock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.knock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《一场交易》",
+      "Description" : "毒蛇舔舐着从一张被缝合的嘴中滴落的鲜血。",
+      "Inherits" : "_wallart",
+      "Aspects" : "knockboost.knockwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.knock",
+    "label" : "《一场交易》",
+    "desc" : "毒蛇舔舐着从一张被缝合的嘴中滴落的鲜血。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.sacrifice.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.sacrifice.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《一场献祭》",
+      "Description" : "人群沉默地注视着长袍牧师将挣扎的牺牲者溺死于一盆缤纷斑斓的油脂中。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.sacrifice",
+    "label" : "《一场献祭》",
+    "desc" : "人群沉默地注视着长袍牧师将挣扎的牺牲者溺死于一盆缤纷斑斓的油脂中。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.annointing.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.annointing.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《一次受膏》",
+      "Description" : "人群沉默地注视着长袍牧师用圣油为受祝者祝福。",
+      "Inherits" : "_wallart",
+      "Aspects" : "mothboost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.annointing",
+    "label" : "《一次受膏》",
+    "desc" : "人群沉默地注视着长袍牧师用圣油为受祝者祝福。",
+    "aspects" : {
+      "moth" : 1,
+      "boost.moth" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.sky.b.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.sky.b.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《上如其下，下如其上》",
+      "Description" : "一页被装裱起来的牛皮纸插画。靠近观看，这些色彩炫目且眩目。",
+      "Inherits" : "_wallart",
+      "Aspects" : "skyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.sky.b",
+    "label" : "《上如其下，下如其上》",
+    "desc" : "一页被装裱起来的牛皮纸插画。靠近观看，这些色彩炫目且眩目。",
+    "aspects" : {
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/hours.velvet.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/hours.velvet.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《丝毧》",
+      "Description" : "“辉光是一个疑问，飞蛾总以肯定作答。丝毧以否定作答，从来如此。”",
+      "Inherits" : "_wallart",
+      "Aspects" : "2moon2boost.moonwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "hours.velvet",
+    "label" : "《丝毧》",
+    "desc" : "“辉光是一个疑问，飞蛾总以肯定作答。丝毧以否定作答，从来如此。”",
+    "aspects" : {
+      "moon" : 2,
+      "boost.moon" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.mountainlake.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.mountainlake.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《为倾听那些声音》",
+      "Description" : "莱文森的“预见”之一，是一幅复制的画作，其在二十年后才会被<i>真正的</i>作者呈现在画布上。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2moon2boost.moonnectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.mountainlake",
+    "label" : "《为倾听那些声音》",
+    "desc" : "莱文森的“预见”之一，是一幅复制的画作，其在二十年后才会被<i>真正的</i>作者呈现在画布上。",
+    "aspects" : {
+      "moon" : 2,
+      "boost.moon" : 2,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.dontmesswithladyeva.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.dontmesswithladyeva.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《伊娃与亚伯拉罕，1724》",
+      "Description" : "一幅华丽的油画，描绘着一对衣着高雅的十八世纪伴侣。然而，男方的面庞很久以前便被某种漆黑的腐蚀性物质抹去了。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.dontmesswithladyeva",
+    "label" : "《伊娃与亚伯拉罕，1724》",
+    "desc" : "一幅华丽的油画，描绘着一对衣着高雅的十八世纪伴侣。然而，男方的面庞很久以前便被某种漆黑的腐蚀性物质抹去了。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.thekiss.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.thekiss.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《再次，于夜间》",
+      "Description" : "莱文森博士的“预见”之一，一幅与二十年后的画作非常相似（且本不可能存在）的复制品，原画出自凯尔希纳之手，莱文森经常在他的镜像梦境中提前预见到那些作品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.graillanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.thekiss",
+    "label" : "《再次，于夜间》",
+    "desc" : "莱文森博士的“预见”之一，一幅与二十年后的画作非常相似（且本不可能存在）的复制品，原画出自凯尔希纳之手，莱文森经常在他的镜像梦境中提前预见到那些作品。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.rose.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.rose.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《凯尔·伊苏》",
+      "Description" : "一座于涛涛巨浪间朦胧可见的尖塔之城。",
+      "Inherits" : "_wallart",
+      "Aspects" : "roseboost.rosewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.rose",
+    "label" : "《凯尔·伊苏》",
+    "desc" : "一座于涛涛巨浪间朦胧可见的尖塔之城。",
+    "aspects" : {
+      "rose" : 1,
+      "boost.rose" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.chiliarch.victory.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.chiliarch.victory.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《千夫长的胜利》",
+      "Description" : "一幅模糊且令人生畏的画作，刻画了一具色如不洁硫磺，肥大且松弛的尸体，其间点缀着几块相对鲜艳的黄斑。署名“布鲁洛夫，1861”。",
+      "Inherits" : "_wallart",
+      "Aspects" : "edgeboost.edgescaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.chiliarch.victory",
+    "label" : "《千夫长的胜利》",
+    "desc" : "一幅模糊且令人生畏的画作，刻画了一具色如不洁硫磺，肥大且松弛的尸体，其间点缀着几块相对鲜艳的黄斑。署名“布鲁洛夫，1861”。",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/hours.witch.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/hours.witch.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《双生女巫》",
+      "Description" : "“双生女巫令静止之物结合。她位于水之缘，月之底。她不可分离，她不可触碰；她是珊瑚，是琥珀，是珍珠。”",
+      "Inherits" : "_wallart",
+      "Aspects" : "2grail2boost.grailheartboost.heart2moth2boost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "hours.witch",
+    "label" : "《双生女巫》",
+    "desc" : "“双生女巫令静止之物结合。她位于水之缘，月之底。她不可分离，她不可触碰；她是珊瑚，是琥珀，是珍珠。”",
+    "aspects" : {
+      "grail" : 2,
+      "boost.grail" : 2,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "moth" : 2,
+      "boost.moth" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/hours.sister.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/hours.sister.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《双生巫女》",
+      "Description" : "“双生巫女将不可分离之物结合。她位于月之底，水之缘。她是珍珠、是琥珀、是珊瑚；她不可触碰；她不可分离。”",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grail2heart2boost.heart2moth2boost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "hours.sister",
+    "label" : "《双生巫女》",
+    "desc" : "“双生巫女将不可分离之物结合。她位于月之底，水之缘。她是珍珠、是琥珀、是珊瑚；她不可触碰；她不可分离。”",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "heart" : 2,
+      "boost.heart" : 2,
+      "moth" : 2,
+      "boost.moth" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.birds.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.birds.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《启航》",
+      "Description" : "瓦伦丁在这幅画中描绘了飞越昏黑汪洋的迁徙鸥群。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2moth2boost.moth2winter2boost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.birds",
+    "label" : "《启航》",
+    "desc" : "瓦伦丁在这幅画中描绘了飞越昏黑汪洋的迁徙鸥群。",
+    "aspects" : {
+      "moth" : 2,
+      "boost.moth" : 2,
+      "winter" : 2,
+      "boost.winter" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.bridge.ortucchio.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.bridge.ortucchio.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《奥尔图基奥之桥》",
+      "Description" : "一抹模糊的身影正等待着收取通行费。",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.bridge.ortucchio",
+    "label" : "《奥尔图基奥之桥》",
+    "desc" : "一抹模糊的身影正等待着收取通行费。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.owl.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.owl.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《守望者》",
+      "Description" : "瓦伦丁的又一幅画作；一只在他的护理下康复的仓鸮。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2knock2boost.knock2lantern2boost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.owl",
+    "label" : "《守望者》",
+    "desc" : "瓦伦丁的又一幅画作；一只在他的护理下康复的仓鸮。",
+    "aspects" : {
+      "knock" : 2,
+      "boost.knock" : 2,
+      "lantern" : 2,
+      "boost.lantern" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.morgen.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.morgen.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《平旦女士》",
+      "Description" : "一位诱人的年轻女子，深蓝色的眼睛犹如坚硬深邃的蓝宝石。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailmoonboost.moonwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.morgen",
+    "label" : "《平旦女士》",
+    "desc" : "一位诱人的年轻女子，深蓝色的眼睛犹如坚硬深邃的蓝宝石。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.heart.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.heart.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《弃婴》",
+      "Description" : "一双人类的眼睛在缠结根系间的黑暗中向外窥视。",
+      "Inherits" : "_wallart",
+      "Aspects" : "heartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.heart",
+    "label" : "《弃婴》",
+    "desc" : "一双人类的眼睛在缠结根系间的黑暗中向外窥视。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.cockatoo.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.cockatoo.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《恰克》",
+      "Description" : "瓦伦丁·德沃尔夫豢养的那只华丽绿羽鸡头鹦鹉，署名者是瓦伦丁本人。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2nectar2boost.nectar2sky2boost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.cockatoo",
+    "label" : "《恰克》",
+    "desc" : "瓦伦丁·德沃尔夫豢养的那只华丽绿羽鸡头鹦鹉，署名者是瓦伦丁本人。",
+    "aspects" : {
+      "nectar" : 2,
+      "boost.nectar" : 2,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.behatted.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.behatted.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《戴帽女士的肖像》",
+      "Description" : "“帽子越高耸，离光辉越近。”",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.behatted",
+    "label" : "《戴帽女士的肖像》",
+    "desc" : "“帽子越高耸，离光辉越近。”",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.poplars.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.poplars.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《拉维林之夏》",
+      "Description" : "某个宁静之地的旱季。",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgenectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.poplars",
+    "label" : "《拉维林之夏》",
+    "desc" : "某个宁静之地的旱季。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.munday.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.munday.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《曼迪勋爵》",
+      "Description" : "一位衣着考究的中年绅士，发际线后退，面带显而易见的惊喜之情。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.munday",
+    "label" : "《曼迪勋爵》",
+    "desc" : "一位衣着考究的中年绅士，发际线后退，面带显而易见的惊喜之情。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.julian.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.julian.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《朱利安·科赛利》",
+      "Description" : "众所周知，朱利安是一位冬之长生者：在大限到来之日，庇护他的司辰将确保他有一个凄美的结尾。但在此之前，他比大多数长生者更难被彻底杀死。尽管如此，我们还是知道，他在1920年代被一位新晋长生者击败了。而他如今的真实状况——一位衰弱的幸存者？一段坚定的回忆？或是别的什么？——是个深奥的辩论主题。",
+      "Inherits" : "_wallart",
+      "Aspects" : "moonboost.moonwinterboost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.julian",
+    "label" : "《朱利安·科赛利》",
+    "desc" : "众所周知，朱利安是一位冬之长生者：在大限到来之日，庇护他的司辰将确保他有一个凄美的结尾。但在此之前，他比大多数长生者更难被彻底杀死。尽管如此，我们还是知道，他在1920年代被一位新晋长生者击败了。而他如今的真实状况——一位衰弱的幸存者？一段坚定的回忆？或是别的什么？——是个深奥的辩论主题。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "winter" : 1,
+      "boost.winter" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.teeny2.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.teeny2.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《涨潮时分的鸦过滩》",
+      "Description" : "对阴沉天气中大海的阴沉描绘。",
+      "Inherits" : "_wallart",
+      "Aspects" : "moonboost.moonwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.teeny2",
+    "label" : "《涨潮时分的鸦过滩》",
+    "desc" : "对阴沉天气中大海的阴沉描绘。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.mansus.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.mansus.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《漫宿》",
+      "Description" : "曾有许多描画太阳居屋的尝试。而最有名的这张出自一位富有创见的画家，我们只知其自称马扎尔人。其上写有署名与日期——如果这真是原作，它肯定能列入居屋最珍贵的宝物之一。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2knock2boost.knock2lantern2boost.lantern2moth2boost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.mansus",
+    "label" : "《漫宿》",
+    "desc" : "曾有许多描画太阳居屋的尝试。而最有名的这张出自一位富有创见的画家，我们只知其自称马扎尔人。其上写有署名与日期——如果这真是原作，它肯定能列入居屋最珍贵的宝物之一。",
+    "aspects" : {
+      "knock" : 2,
+      "boost.knock" : 2,
+      "lantern" : 2,
+      "boost.lantern" : 2,
+      "moth" : 2,
+      "boost.moth" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.tryphon.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.tryphon.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《特里丰女士》",
+      "Description" : "一幅非常古老的拜占庭风格半身像。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2grail2boost.grailmothboost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.tryphon",
+    "label" : "《特里丰女士》",
+    "desc" : "一幅非常古老的拜占庭风格半身像。",
+    "aspects" : {
+      "grail" : 2,
+      "boost.grail" : 2,
+      "moth" : 1,
+      "boost.moth" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.serena.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.serena.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《瑟雷娜·布莱克伍德博士》",
+      "Description" : "画中无人——仅有一座空空荡荡的花园。",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgeroseboost.rosewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.serena",
+    "label" : "《瑟雷娜·布莱克伍德博士》",
+    "desc" : "画中无人——仅有一座空空荡荡的花园。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "rose" : 1,
+      "boost.rose" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.donkey.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.donkey.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《破落谪民》",
+      "Description" : "蒂尔扎·布雷克，噤声居屋的第七任图书管理员，喜欢画驴子。没人喜欢她的驴子画，但蒂尔扎从不太在意别人喜欢什么。",
+      "Inherits" : "_wallart",
+      "Aspects" : "heartboost.heartscaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.donkey",
+    "label" : "《破落谪民》",
+    "desc" : "蒂尔扎·布雷克，噤声居屋的第七任图书管理员，喜欢画驴子。没人喜欢她的驴子画，但蒂尔扎从不太在意别人喜欢什么。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.winter.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.winter.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《祈求》",
+      "Description" : "残阳，但是颠倒着的，也就是说，是鲜血滴入太阳并被吸收。",
+      "Inherits" : "_wallart",
+      "Aspects" : "winterboost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.winter",
+    "label" : "《祈求》",
+    "desc" : "残阳，但是颠倒着的，也就是说，是鲜血滴入太阳并被吸收。",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.teeny3.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.teeny3.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《祈祷的男孩》",
+      "Description" : "在这扭曲且险恶的画面中既没有男孩，也没人像是在祈祷。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailmoonboost.moonscaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.teeny3",
+    "label" : "《祈祷的男孩》",
+    "desc" : "在这扭曲且险恶的画面中既没有男孩，也没人像是在祈祷。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.forge.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.forge.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《第一场终结》",
+      "Description" : "一支孤零的蜡烛在黑暗中燃烧，烛焰形如弯月。",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.forge",
+    "label" : "《第一场终结》",
+    "desc" : "一支孤零的蜡烛在黑暗中燃烧，烛焰形如弯月。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.moth.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.moth.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《第一声作答》",
+      "Description" : "一只巨大的飞蛾独处于繁星如斑的虚空中，盘旋着飞向熊熊燃烧的太阳。",
+      "Inherits" : "_wallart",
+      "Aspects" : "mothboost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.moth",
+    "label" : "《第一声作答》",
+    "desc" : "一只巨大的飞蛾独处于繁星如斑的虚空中，盘旋着飞向熊熊燃烧的太阳。",
+    "aspects" : {
+      "moth" : 1,
+      "boost.moth" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.grail.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.grail.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《第一次生诞》",
+      "Description" : "一圈孤零的涟漪搅动了鲜血之井平静的表面。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.grail",
+    "label" : "《第一次生诞》",
+    "desc" : "一圈孤零的涟漪搅动了鲜血之井平静的表面。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.edge.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.edge.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《第一道门关》",
+      "Description" : "一柄双角利斧独自伫立于大漠中。",
+      "Inherits" : "_wallart",
+      "Aspects" : "heartboost.heartscaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.edge",
+    "label" : "《第一道门关》",
+    "desc" : "一柄双角利斧独自伫立于大漠中。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.picasso2.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.picasso2.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《累累硕果》",
+      "Description" : "一副像模像样的毕加索复制品……在毕加索画出原作的二十年前画下。布莱恩·莱文森又一次耍了他的小花招。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grail2nectar2boost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.picasso2",
+    "label" : "《累累硕果》",
+    "desc" : "一副像模像样的毕加索复制品……在毕加索画出原作的二十年前画下。布莱恩·莱文森又一次耍了他的小花招。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "nectar" : 2,
+      "boost.nectar" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.picasso1.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.picasso1.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《红，蓝》",
+      "Description" : "一副像模像样的毕加索复制品……在毕加索画出原作的二十年前画下。布莱恩·莱文森又一次耍了他的小花招。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.picasso1",
+    "label" : "《红，蓝》",
+    "desc" : "一副像模像样的毕加索复制品……在毕加索画出原作的二十年前画下。布莱恩·莱文森又一次耍了他的小花招。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.sky.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.sky.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《自我生诞》",
+      "Description" : "一只毛茸茸，看着像偶蹄目的蹄子伸向一面镜子：它的映像是一只鸟爪。",
+      "Inherits" : "_wallart",
+      "Aspects" : "skyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.sky",
+    "label" : "《自我生诞》",
+    "desc" : "一只毛茸茸，看着像偶蹄目的蹄子伸向一面镜子：它的映像是一只鸟爪。",
+    "aspects" : {
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.nectar.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.nectar.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《诸神的回归》",
+      "Description" : "一杆绿芽破石而出。",
+      "Inherits" : "_wallart",
+      "Aspects" : "nectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.nectar",
+    "label" : "《诸神的回归》",
+    "desc" : "一杆绿芽破石而出。",
+    "aspects" : {
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.thecalm.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.thecalm.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《赛多纳未至》",
+      "Description" : "莱文森博士的“预见”之一，一幅画家本人尚未完成的画作的本不可能存在的复制品，他在其上标记了照明术的记号，并注明年份“1958”。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2moth2boost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.thecalm",
+    "label" : "《赛多纳未至》",
+    "desc" : "莱文森博士的“预见”之一，一幅画家本人尚未完成的画作的本不可能存在的复制品，他在其上标记了照明术的记号，并注明年份“1958”。",
+    "aspects" : {
+      "moth" : 2,
+      "boost.moth" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.moon.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.moon.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《转轮依旧》",
+      "Description" : "一个闪闪发亮、隐约有着血肉外观的辐条轮在一轮满月下旋转——那月亮正将手指抵在自己的双唇上。",
+      "Inherits" : "_wallart",
+      "Aspects" : "moonboost.moonwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.moon",
+    "label" : "《转轮依旧》",
+    "desc" : "一个闪闪发亮、隐约有着血肉外观的辐条轮在一轮满月下旋转——那月亮正将手指抵在自己的双唇上。",
+    "aspects" : {
+      "moon" : 1,
+      "boost.moon" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/hours.thunderskin.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/hours.thunderskin.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《轰雷之皮》",
+      "Description" : "“他不可止息；他渴求舞蹈；他受击如鼓。在世界之下的林地能听到他的声音。”",
+      "Inherits" : "_wallart",
+      "Aspects" : "2heart2boost.heart2sky2boost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "hours.thunderskin",
+    "label" : "《轰雷之皮》",
+    "desc" : "“他不可止息；他渴求舞蹈；他受击如鼓。在世界之下的林地能听到他的声音。”",
+    "aspects" : {
+      "heart" : 2,
+      "boost.heart" : 2,
+      "sky" : 2,
+      "boost.sky" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.lantern.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.lantern.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《辉光的赠礼》",
+      "Description" : "一道人影在耀眼烈日的映衬下清晰可见。",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.lantern",
+    "label" : "《辉光的赠礼》",
+    "desc" : "一道人影在耀眼烈日的映衬下清晰可见。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.coupleinthelibrary.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.coupleinthelibrary.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《静谧之地的爱》",
+      "Description" : "莱文森博士的“预见”之一，一幅与二十年后的画作非常相似（且本不可能存在）的复制品，原画出自凯尔希纳之手，莱文森经常在他的镜像梦境中提前预见到那些作品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.graillanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.coupleinthelibrary",
+    "label" : "《静谧之地的爱》",
+    "desc" : "莱文森博士的“预见”之一，一幅与二十年后的画作非常相似（且本不可能存在）的复制品，原画出自凯尔希纳之手，莱文森经常在他的镜像梦境中提前预见到那些作品。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.tree.teeny.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.tree.teeny.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "《风中树叶》",
+      "Description" : "一幅舒缓却乏味的油画。某人显然很善于画树木，并且想要让观者知道。",
+      "Inherits" : "_wallart",
+      "Aspects" : "nectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.tree.teeny",
+    "label" : "《风中树叶》",
+    "desc" : "一幅舒缓却乏味的油画。某人显然很善于画树木，并且想要让观者知道。",
+    "aspects" : {
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.pistols.flintlock.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.pistols.flintlock.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "一对燧发枪",
+      "Description" : "一对手枪——其款式与制作者标记暗示它来自十七世纪晚期。姓名首字母“MD”在布兰库格男爵的端坐之狼徽记上方用白银标出。",
+      "Inherits" : "_wallart",
+      "Aspects" : "edgeboost.edgeheartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.pistols.flintlock",
+    "label" : "一对燧发枪",
+    "desc" : "一对手枪——其款式与制作者标记暗示它来自十七世纪晚期。姓名首字母“MD”在布兰库格男爵的端坐之狼徽记上方用白银标出。",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/symbol.solinvictis.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/symbol.solinvictis.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "不败太阳神徽记",
+      "Description" : "无敌太阳永恒的徽记，可以追溯至无影帝国时期，即便历经置闰的黑暗岁月仍得以传承。",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "symbol.solinvictis",
+    "label" : "不败太阳神徽记",
+    "desc" : "无敌太阳永恒的徽记，可以追溯至无影帝国时期，即便历经置闰的黑暗岁月仍得以传承。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/mirror.frost.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/mirror.frost.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "似霜之镜",
+      "Description" : "一面色泽如月的椭圆金属。它形状如同镜子，却无任何可见的映像。",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternwinterboost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "mirror.frost",
+    "label" : "似霜之镜",
+    "desc" : "一面色泽如月的椭圆金属。它形状如同镜子，却无任何可见的映像。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "winter" : 1,
+      "boost.winter" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.bow.poacher.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.bow.poacher.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "偷猎者之弓",
+      "Description" : "一件相当实用的武器。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenroseboost.roseskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.bow.poacher",
+    "label" : "偷猎者之弓",
+    "desc" : "一件相当实用的武器。",
+    "aspects" : {
+      "wooden" : 1,
+      "rose" : 1,
+      "boost.rose" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/mirror.shaving.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/mirror.shaving.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "剃须镜",
+      "Description" : "<i>咔嚓，咔嚓！</i>",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternmothboost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "mirror.shaving",
+    "label" : "剃须镜",
+    "desc" : "<i>咔嚓，咔嚓！</i>",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "moth" : 1,
+      "boost.moth" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.crossbow.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.crossbow.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "十字弩",
+      "Description" : "一把来自噤声居屋男爵时期早期的古董十字弩。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenforgeboost.forgeskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.crossbow",
+    "label" : "十字弩",
+    "desc" : "一把来自噤声居屋男爵时期早期的古董十字弩。",
+    "aspects" : {
+      "wooden" : 1,
+      "forge" : 1,
+      "boost.forge" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.bow.sentry.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.bow.sentry.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "哨兵之弓",
+      "Description" : "一件令人生畏的武器。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenlanternboost.lanternskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.bow.sentry",
+    "label" : "哨兵之弓",
+    "desc" : "一件令人生畏的武器。",
+    "aspects" : {
+      "wooden" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.foil.torgue.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.foil.torgue.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "图格的花剑",
+      "Description" : "一段锐利的韧钢，剑身上刻着<b>图格</b>。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2edge2boost.edgenectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.foil.torgue",
+    "label" : "图格的花剑",
+    "desc" : "一段锐利的韧钢，剑身上刻着<b>图格</b>。",
+    "aspects" : {
+      "edge" : 2,
+      "boost.edge" : 2,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.swords.sebastian.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.swords.sebastian.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "塞巴斯蒂安的刀",
+      "Description" : "一对十八世纪弯刀。刀刃靠近刀柄处刻着姓名首字母“SD”。",
+      "Inherits" : "_wallart",
+      "Aspects" : "knifeedgeboost.edgemoonboost.moonskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.swords.sebastian",
+    "label" : "塞巴斯蒂安的刀",
+    "desc" : "一对十八世纪弯刀。刀刃靠近刀柄处刻着姓名首字母“SD”。",
+    "aspects" : {
+      "knife" : 1,
+      "edge" : 1,
+      "boost.edge" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/trophy.yeth.hound.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/trophy.yeth.hound.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "夜嘶猎犬之角",
+      "Description" : "在过去，夜嘶会在这片国家的荒野上追猎不虔者与不洁者。亨德里克·德沃尔夫从来不喜欢它们。",
+      "Inherits" : "_wallart",
+      "Aspects" : "carcassgrailboost.grail2scale2boost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "trophy.yeth.hound",
+    "label" : "夜嘶猎犬之角",
+    "desc" : "在过去，夜嘶会在这片国家的荒野上追猎不虔者与不洁者。亨德里克·德沃尔夫从来不喜欢它们。",
+    "aspects" : {
+      "carcass" : 1,
+      "grail" : 1,
+      "boost.grail" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.fraser.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.fraser.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "弗雷泽的练习用剑",
+      "Description" : "一段上过清漆的木头。剑身刻有<b>弗雷泽</b>之名。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenedgeboost.edgescaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.fraser",
+    "label" : "弗雷泽的练习用剑",
+    "desc" : "一段上过清漆的木头。剑身刻有<b>弗雷泽</b>之名。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 1,
+      "boost.edge" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.moth.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.moth.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "斑纹六尺棍",
+      "Description" : "一根有饰有黑白条纹的长棍。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenmothboost.mothnectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.moth",
+    "label" : "斑纹六尺棍",
+    "desc" : "一根有饰有黑白条纹的长棍。",
+    "aspects" : {
+      "wooden" : 1,
+      "moth" : 1,
+      "boost.moth" : 1,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.leaf.moth.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.leaf.moth.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "斑纹训练用剑",
+      "Description" : "一柄相当古老的叶形木剑。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenedgeboost.edgemothboost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.leaf.moth",
+    "label" : "斑纹训练用剑",
+    "desc" : "一柄相当古老的叶形木剑。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 1,
+      "boost.edge" : 1,
+      "moth" : 1,
+      "boost.moth" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/mirror.storm.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/mirror.storm.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "暴雨飘摇之镜",
+      "Description" : "坚固的工艺品，但并不十分引人注目。",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "mirror.storm",
+    "label" : "暴雨飘摇之镜",
+    "desc" : "坚固的工艺品，但并不十分引人注目。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapons.td.bokken.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapons.td.bokken.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "木刀：图格上尉与蒂尔黛夫人",
+      "Description" : "来自东方的纪念品，装填着厚重的垫料。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2edge2boost.edgeskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapons.td.bokken",
+    "label" : "木刀：图格上尉与蒂尔黛夫人",
+    "desc" : "来自东方的纪念品，装填着厚重的垫料。",
+    "aspects" : {
+      "edge" : 2,
+      "boost.edge" : 2,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.greene.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.greene.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "格林的练习用剑",
+      "Description" : "一段上过清漆的木头。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenedgeboost.edgeheartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.greene",
+    "label" : "格林的练习用剑",
+    "desc" : "一段上过清漆的木头。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 1,
+      "boost.edge" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapons.td.cudgels.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapons.td.cudgels.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "棍棒：蒂迪佳与圣图瓦格",
+      "Description" : "非常古老的铁棍，不久前填入了厚重的垫料。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2edge2boost.edge2forge2boost.forgeskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapons.td.cudgels",
+    "label" : "棍棒：蒂迪佳与圣图瓦格",
+    "desc" : "非常古老的铁棍，不久前填入了厚重的垫料。",
+    "aspects" : {
+      "edge" : 2,
+      "boost.edge" : 2,
+      "forge" : 2,
+      "boost.forge" : 2,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.bow.hunter.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.bow.hunter.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "猎手之弓",
+      "Description" : "一件相当实用的武器。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenskyboost.skywinterboost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.bow.hunter",
+    "label" : "猎手之弓",
+    "desc" : "一件相当实用的武器。",
+    "aspects" : {
+      "wooden" : 1,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "winter" : 1,
+      "boost.winter" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/mirror.fractured.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/mirror.fractured.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "碎裂之镜",
+      "Description" : "满是裂纹与苍蝇屎。",
+      "Inherits" : "_wallart",
+      "Aspects" : "knockboost.knocklanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "mirror.fractured",
+    "label" : "碎裂之镜",
+    "desc" : "满是裂纹与苍蝇屎。",
+    "aspects" : {
+      "knock" : 1,
+      "boost.knock" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/trophy.deer.red.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/trophy.deer.red.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "红鹿角",
+      "Description" : "不完全算毛发，不完全算牙齿，但无疑是某人杀死某物的凭证。",
+      "Inherits" : "_wallart",
+      "Aspects" : "carcass2scale2boost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "trophy.deer.red",
+    "label" : "红鹿角",
+    "desc" : "不完全算毛发，不完全算牙齿，但无疑是某人杀死某物的凭证。",
+    "aspects" : {
+      "carcass" : 1,
+      "scale" : 2,
+      "boost.scale" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/shield.drake.red.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/shield.drake.red.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "红龙盾徽",
+      "Description" : "彩绘皮革，铆接在重型铁器上。",
+      "Inherits" : "_wallart",
+      "Aspects" : "heartboost.heartscaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "shield.drake.red",
+    "label" : "红龙盾徽",
+    "desc" : "彩绘皮革，铆接在重型铁器上。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.natalia.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.natalia.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "纳塔莉娅的练习用剑",
+      "Description" : "一段上过清漆的木头。剑身刻有<b>纳塔莉娅</b>之名。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenedgeboost.edgelanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.natalia",
+    "label" : "纳塔莉娅的练习用剑",
+    "desc" : "一段上过清漆的木头。剑身刻有<b>纳塔莉娅</b>之名。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 1,
+      "boost.edge" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/shield.stag.green.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/shield.stag.green.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "翠鹿盾徽",
+      "Description" : "彩绘皮革，铆接在重型铁器上。",
+      "Inherits" : "_wallart",
+      "Aspects" : "heartboost.heartnectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "shield.stag.green",
+    "label" : "翠鹿盾徽",
+    "desc" : "彩绘皮革，铆接在重型铁器上。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.foil.dearday.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.foil.dearday.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "蒂尔黛的花剑",
+      "Description" : "一段锐利的韧钢，剑身上刻着<b>蒂尔黛</b>。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2edge2boost.edgeskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.foil.dearday",
+    "label" : "蒂尔黛的花剑",
+    "desc" : "一段锐利的韧钢，剑身上刻着<b>蒂尔黛</b>。",
+    "aspects" : {
+      "edge" : 2,
+      "boost.edge" : 2,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapons.td.wasters.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapons.td.wasters.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "训练用剑：蒂儿宝贝与图克神父",
+      "Description" : "近期制造的木剑，从未用过。",
+      "Inherits" : "_wallart",
+      "Aspects" : "2edge2boost.edgeskyboost.skywallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapons.td.wasters",
+    "label" : "训练用剑：蒂儿宝贝与图克神父",
+    "desc" : "近期制造的木剑，从未用过。",
+    "aspects" : {
+      "edge" : 2,
+      "boost.edge" : 2,
+      "sky" : 1,
+      "boost.sky" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/chart.genealogical.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/chart.genealogical.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "谱系图",
+      "Description" : "六年前，乔治国王在一场因其继承人爱德华的风流行径而起的争执中被爱德华本人杀死。于宪法崩溃之危机中拯救王国的是亨利·赫德尔斯顿·阿布尼-黑斯廷斯，第十三任劳登伯爵——宣称血统承自金雀花王室之人。天佑新王！",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgelanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "chart.genealogical",
+    "label" : "谱系图",
+    "desc" : "六年前，乔治国王在一场因其继承人爱德华的风流行径而起的争执中被爱德华本人杀死。于宪法崩溃之危机中拯救王国的是亨利·赫德尔斯顿·阿布尼-黑斯廷斯，第十三任劳登伯爵——宣称血统承自金雀花王室之人。天佑新王！",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.grail.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.grail.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "赤色六尺棍",
+      "Description" : "一根有赤色条纹的长棍。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodengrailboost.grailnectarboost.nectarwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.grail",
+    "label" : "赤色六尺棍",
+    "desc" : "一根有赤色条纹的长棍。",
+    "aspects" : {
+      "wooden" : 1,
+      "grail" : 1,
+      "boost.grail" : 1,
+      "nectar" : 1,
+      "boost.nectar" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.leaf.grail.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.leaf.grail.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "赤色练习用剑",
+      "Description" : "一柄相当古老的叶形木剑。",
+      "Inherits" : "_wallart",
+      "Aspects" : "woodenedgeboost.edgegrailboost.grailwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.leaf.grail",
+    "label" : "赤色练习用剑",
+    "desc" : "一柄相当古老的叶形木剑。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 1,
+      "boost.edge" : 1,
+      "grail" : 1,
+      "boost.grail" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.mihail.altar.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.mihail.altar.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "辉光中的米哈尔",
+      "Description" : "“黑暗信使”米哈尔，绘于他的全盛时期。",
+      "Inherits" : "_wallart",
+      "Aspects" : "hidden.mihail.altar2forge2boost.forge2lantern2boost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.mihail.altar",
+    "label" : "辉光中的米哈尔",
+    "desc" : "“黑暗信使”米哈尔，绘于他的全盛时期。",
+    "aspects" : {
+      "hidden.mihail.altar" : 1,
+      "forge" : 2,
+      "boost.forge" : 2,
+      "lantern" : 2,
+      "boost.lantern" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.mehrdad.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.mehrdad.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "迈哈德的练习用剑",
+      "Description" : "一段上过清漆的木头。其上以黄金镶出<b>迈哈德</b>之名。",
+      "Inherits" : "_wallart",
+      "Aspects" : "wooden2edge2boost.edgelanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.mehrdad",
+    "label" : "迈哈德的练习用剑",
+    "desc" : "一段上过清漆的木头。其上以黄金镶出<b>迈哈德</b>之名。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 2,
+      "boost.edge" : 2,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/shield.lion.golden.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/shield.lion.golden.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "金狮盾徽",
+      "Description" : "彩绘皮革，铆接在重型铁器上。",
+      "Inherits" : "_wallart",
+      "Aspects" : "edgeboost.edgeheartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "shield.lion.golden",
+    "label" : "金狮盾徽",
+    "desc" : "彩绘皮革，铆接在重型铁器上。",
+    "aspects" : {
+      "edge" : 1,
+      "boost.edge" : 1,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/painting.mihail.sarcophagus.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/painting.mihail.sarcophagus.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "镣铐下的米哈尔",
+      "Description" : "“黑暗信使”米哈尔，绘于他战败之后。",
+      "Inherits" : "_wallart",
+      "Aspects" : "hidden.mihail.sarcophagus2lantern2boost.lantern2winter2boost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "painting.mihail.sarcophagus",
+    "label" : "镣铐下的米哈尔",
+    "desc" : "“黑暗信使”米哈尔，绘于他战败之后。",
+    "aspects" : {
+      "hidden.mihail.sarcophagus" : 1,
+      "lantern" : 2,
+      "boost.lantern" : 2,
+      "winter" : 2,
+      "boost.winter" : 2,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/weapon.practice.azita.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/weapon.practice.azita.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "阿齐塔的练习用剑",
+      "Description" : "一段上过清漆的木头。其上以白银镶出<b>阿齐塔</b>之名。",
+      "Inherits" : "_wallart",
+      "Aspects" : "wooden2edge2boost.edgeheartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "weapon.practice.azita",
+    "label" : "阿齐塔的练习用剑",
+    "desc" : "一段上过清漆的木头。其上以白银镶出<b>阿齐塔</b>之名。",
+    "aspects" : {
+      "wooden" : 1,
+      "edge" : 2,
+      "boost.edge" : 2,
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/wings.winter.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/wings.winter.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "鳞翅目展品（冬主题）",
+      "Description" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "winterboost.winterwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "wings.winter",
+    "label" : "鳞翅目展品（冬主题）",
+    "desc" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+    "aspects" : {
+      "winter" : 1,
+      "boost.winter" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/wings.heart.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/wings.heart.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "鳞翅目展品（心主题）",
+      "Description" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "heartboost.heartwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "wings.heart",
+    "label" : "鳞翅目展品（心主题）",
+    "desc" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+    "aspects" : {
+      "heart" : 1,
+      "boost.heart" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/wings.grail.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/wings.grail.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "鳞翅目展品（杯主题）",
+      "Description" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "grailboost.grailwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "wings.grail",
+    "label" : "鳞翅目展品（杯主题）",
+    "desc" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+    "aspects" : {
+      "grail" : 1,
+      "boost.grail" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/wings.moth.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/wings.moth.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "鳞翅目展品（蛾主题）",
+      "Description" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "mothboost.mothwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "wings.moth",
+    "label" : "鳞翅目展品（蛾主题）",
+    "desc" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+    "aspects" : {
+      "moth" : 1,
+      "boost.moth" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/wings.scale.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/wings.scale.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "鳞翅目展品（鳞主题）",
+      "Description" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+      "Inherits" : "_wallart",
+      "Aspects" : "scaleboost.scalewallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "wings.scale",
+    "label" : "鳞翅目展品（鳞主题）",
+    "desc" : "一套拥有罕见特征的鳞翅目昆虫收藏品。",
+    "aspects" : {
+      "scale" : 1,
+      "boost.scale" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/clock.artdeco.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/clock.artdeco.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "黄铜表",
+      "Description" : "不太明显的是，这块钟缺少指针；尽管如此，上发条后它依旧会尽职地嗒嗒响。",
+      "Inherits" : "_wallart",
+      "Aspects" : "forgeboost.forgelanternboost.lanternwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "clock.artdeco",
+    "label" : "黄铜表",
+    "desc" : "不太明显的是，这块钟缺少指针；尽管如此，上发条后它依旧会尽职地嗒嗒响。",
+    "aspects" : {
+      "forge" : 1,
+      "boost.forge" : 1,
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  }, {
+    "imagePath" : "/assets/images/wallarts/mirror.night.png",
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/wallarts/mirror.night.png",
+    "sourceFile" : "aspecteditems.json",
+    "fields" : {
+      "Label" : "黑夜之镜",
+      "Description" : "一面黯淡得古怪的镜子。",
+      "Inherits" : "_wallart",
+      "Aspects" : "lanternboost.lanternmoonboost.moonwallartconsiderable",
+      "Aspect?" : "No",
+      "Unique?" : "No",
+      "Hidden?" : "No",
+      "No Art Needed?" : "No",
+      "Manifestation type" : "WallArt",
+      "Resaturate?" : "No"
+    },
+    "id" : "mirror.night",
+    "label" : "黑夜之镜",
+    "desc" : "一面黯淡得古怪的镜子。",
+    "aspects" : {
+      "lantern" : 1,
+      "boost.lantern" : 1,
+      "moon" : 1,
+      "boost.moon" : 1,
+      "wallart" : 1,
+      "considerable" : 1
+    }
+  } ]
+}

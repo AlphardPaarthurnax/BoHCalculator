@@ -19,7 +19,7 @@
 
     <Label text="完整 SDE 数据生成器" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
     <Label wrapText="true"
-           text="从 Rowenarium 抓取全部 Elements、Recipes、Verbs，再派生 Aspects、Cards、Crafts、Workstations、OtherRecipes、OtherVerbs。仅 Aspects、Cards、Workstations 检查和下载正常图片；过程、失败页面和缺图均显示在下方。"/>
+           text="从 Rowenarium 抓取全部 Elements、Recipes、Verbs，再派生 Aspects、Cards、Items（Books、Wallarts、Comforts、Things）、Crafts、Workstations、OtherRecipes、OtherVerbs。Aspects、Cards、Items 各分类和 Workstations 会检查并下载正常图片；过程、失败页面和缺图均显示在下方。"/>
 
     <HBox spacing="8" alignment="CENTER_LEFT">
         <Label text="并发线程："/>
