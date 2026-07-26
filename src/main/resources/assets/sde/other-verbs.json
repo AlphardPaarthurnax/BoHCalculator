@@ -1,0 +1,3131 @@
+{
+  "otherVerbs" : [ {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/block.numa.initial.png",
+    "sourceFile" : "celestial_recipes_time.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "block.numa.initial",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/ch.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "ch",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/ch.setup.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "ch.setup",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/collection.busts.png",
+    "sourceFile" : "_collections.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "collection.busts",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/collection.test.png",
+    "sourceFile" : "_collections.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "collection.test",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/consider.png",
+    "sourceFile" : "librarian.json",
+    "fields" : {
+      "Label" : "研究",
+      "Description" : "检查；欣赏；编目。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "研究",
+      "description" : "总有更多的东西可以了解。",
+      "essential" : [ ],
+      "required" : [ "readable", "considerable", "skill", "lesson", "cache" ],
+      "forbidden" : [ "record.phonograph", "film", "fixed" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "consider",
+    "label" : "研究",
+    "desc" : "检查；欣赏；编目。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/consider.setup.png",
+    "sourceFile" : "librarian.json",
+    "fields" : {
+      "Label" : "忆起",
+      "Description" : "我还剩了什么要去做？"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "打捞",
+      "description" : "[任何符合性相的东西都可以放入这个槽位。]",
+      "essential" : [ ],
+      "required" : [ "soaked", "memory", "ability" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "consider.setup",
+    "label" : "忆起",
+    "desc" : "我还剩了什么要去做？"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/desk.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "desk",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/draw.numa.png",
+    "sourceFile" : "celestial_recipes_time.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "draw.numa",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.beehive.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "蜂巢",
+      "Description" : "对待蜜蜂，应如对待图书管理员，不可儿戏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "nectar", "scale" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar", "scale", "lyterion" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.beehive",
+    "label" : "蜂巢",
+    "desc" : "对待蜜蜂，应如对待图书管理员，不可儿戏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.beehive.liselotte.png",
+    "sourceFile" : "workstations_upgraded.json",
+    "fields" : {
+      "Label" : "蜂巢",
+      "Description" : "对待蜜蜂，应如对待图书管理员般不可儿戏。对这些蜜蜂尤其如此。于它们嗡嗡喧闹声的掩护下，或将成为绽莓族新始祖的贵种幼虫优雅地蜷缩着。绽莓族的遗民会前来致敬。[即使闰时未至，有时也能在这个蜂巢里找到杜鹃蜜。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "nectar", "scale" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar", "scale" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.beehive.liselotte",
+    "label" : "蜂巢",
+    "desc" : "对待蜜蜂，应如对待图书管理员般不可儿戏。对这些蜜蜂尤其如此。于它们嗡嗡喧闹声的掩护下，或将成为绽莓族新始祖的贵种幼虫优雅地蜷缩着。绽莓族的遗民会前来致敬。[即使闰时未至，有时也能在这个蜂巢里找到杜鹃蜜。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.a.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "香盏花绽在夏秋，四旬斋玫瑰盛于冬。在闰时可能会有更稀有的植物荣茂生长。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.a.1",
+    "label" : "花园",
+    "desc" : "香盏花绽在夏秋，四旬斋玫瑰盛于冬。在闰时可能会有更稀有的植物荣茂生长。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.a.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "香盏花绽在夏秋，四旬斋玫瑰盛于冬。在闰时可能会有更稀有的植物荣茂生长。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.a.2",
+    "label" : "花园",
+    "desc" : "香盏花绽在夏秋，四旬斋玫瑰盛于冬。在闰时可能会有更稀有的植物荣茂生长。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.a.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "香盏花绽在夏秋，四旬斋玫瑰盛于冬。在闰时可能会有更稀有的植物荣茂生长。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.a.3",
+    "label" : "花园",
+    "desc" : "香盏花绽在夏秋，四旬斋玫瑰盛于冬。在闰时可能会有更稀有的植物荣茂生长。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.b.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "海冬青绽开在夏，蓝冠花盛放于冬。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.b.1",
+    "label" : "花园",
+    "desc" : "海冬青绽开在夏，蓝冠花盛放于冬。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.b.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "海冬青绽开在夏，蓝冠花盛放于冬。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.b.2",
+    "label" : "花园",
+    "desc" : "海冬青绽开在夏，蓝冠花盛放于冬。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.b.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "海冬青绽开在夏，蓝冠花盛放于冬。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.b.3",
+    "label" : "花园",
+    "desc" : "海冬青绽开在夏，蓝冠花盛放于冬。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.c.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "猫爪草开在春，喇叭百合盛于夏。在闰时可能会有更稀有的植物荣茂生长。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.c.1",
+    "label" : "花园",
+    "desc" : "猫爪草开在春，喇叭百合盛于夏。在闰时可能会有更稀有的植物荣茂生长。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.c.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "猫爪草开在春，喇叭百合盛于夏。在闰时可能会有更稀有的植物荣茂生长。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.c.2",
+    "label" : "花园",
+    "desc" : "猫爪草开在春，喇叭百合盛于夏。在闰时可能会有更稀有的植物荣茂生长。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.c.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "猫爪草开在春，喇叭百合盛于夏。在闰时可能会有更稀有的植物荣茂生长。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.c.3",
+    "label" : "花园",
+    "desc" : "猫爪草开在春，喇叭百合盛于夏。在闰时可能会有更稀有的植物荣茂生长。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.d.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "蛾兰繁在春夏，蜜痂茉莉盈于秋。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.d.1",
+    "label" : "花园",
+    "desc" : "蛾兰繁在春夏，蜜痂茉莉盈于秋。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.d.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "蛾兰繁在春夏，蜜痂茉莉盈于秋。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.d.2",
+    "label" : "花园",
+    "desc" : "蛾兰繁在春夏，蜜痂茉莉盈于秋。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.d.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "蛾兰繁在春夏，蜜痂茉莉盈于秋。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.d.3",
+    "label" : "花园",
+    "desc" : "蛾兰繁在春夏，蜜痂茉莉盈于秋。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.g.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "康沃尔温和的气候适合葡萄藤生长。春夏两季均能收获。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.g.1",
+    "label" : "花园",
+    "desc" : "康沃尔温和的气候适合葡萄藤生长。春夏两季均能收获。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.g.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "康沃尔温和的气候适合葡萄藤生长。春夏两季均能收获。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.g.2",
+    "label" : "花园",
+    "desc" : "康沃尔温和的气候适合葡萄藤生长。春夏两季均能收获。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.g.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "康沃尔温和的气候适合葡萄藤生长。春夏两季均能收获。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.g.3",
+    "label" : "花园",
+    "desc" : "康沃尔温和的气候适合葡萄藤生长。春夏两季均能收获。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.h.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "治愈草药勃于春夏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.h.1",
+    "label" : "花园",
+    "desc" : "治愈草药勃于春夏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.h.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "治愈草药勃于春夏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.h.2",
+    "label" : "花园",
+    "desc" : "治愈草药勃于春夏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.h.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "治愈草药勃于春夏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.h.3",
+    "label" : "花园",
+    "desc" : "治愈草药勃于春夏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.p.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "海佑梨在夏秋成熟；“闪耀之梨”——<i>铜梨</i>则在闰时挂果。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.p.1",
+    "label" : "花园",
+    "desc" : "海佑梨在夏秋成熟；“闪耀之梨”——<i>铜梨</i>则在闰时挂果。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.p.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "海佑梨在夏秋成熟；“闪耀之梨”——<i>铜梨</i>则在闰时挂果。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.p.2",
+    "label" : "花园",
+    "desc" : "海佑梨在夏秋成熟；“闪耀之梨”——<i>铜梨</i>则在闰时挂果。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.p.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "海佑梨在夏秋成熟；“闪耀之梨”——<i>铜梨</i>则在闰时挂果。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.p.3",
+    "label" : "花园",
+    "desc" : "海佑梨在夏秋成熟；“闪耀之梨”——<i>铜梨</i>则在闰时挂果。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.v.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "滋补蔬菜勃发于夏秋。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.v.1",
+    "label" : "花园",
+    "desc" : "滋补蔬菜勃发于夏秋。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.v.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "滋补蔬菜勃发于夏秋。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.v.2",
+    "label" : "花园",
+    "desc" : "滋补蔬菜勃发于夏秋。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.v.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "滋补蔬菜勃发于夏秋。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.v.3",
+    "label" : "花园",
+    "desc" : "滋补蔬菜勃发于夏秋。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.x.1.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "“历史之植”，即<i>永恒龙舌兰</i>，满开于夏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.x.1",
+    "label" : "花园",
+    "desc" : "“历史之植”，即<i>永恒龙舌兰</i>，满开于夏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.x.2.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "“历史之植”，即<i>永恒龙舌兰</i>，满开于夏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.x.2",
+    "label" : "花园",
+    "desc" : "“历史之植”，即<i>永恒龙舌兰</i>，满开于夏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/garden.plot.x.3.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "花园",
+      "Description" : "“历史之植”，即<i>永恒龙舌兰</i>，满开于夏。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "garden.plot.x.3",
+    "label" : "花园",
+    "desc" : "“历史之植”，即<i>永恒龙舌兰</i>，满开于夏。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/incident.advance.png",
+    "sourceFile" : "celestial.json",
+    "fields" : {
+      "Label" : "内部文本？",
+      "Description" : "内部文本？"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "incident.advance",
+    "label" : "内部文本？",
+    "desc" : "内部文本？"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/incident.base.png",
+    "sourceFile" : "celestial.json",
+    "fields" : {
+      "Label" : "事件（内部文本？）",
+      "Description" : "事件放逐基准谓词（内部文本？）"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "incident.base",
+    "label" : "事件（内部文本？）",
+    "desc" : "事件放逐基准谓词（内部文本？）"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/incident.expulsion.finisher.png",
+    "sourceFile" : "celestial.json",
+    "fields" : {
+      "Label" : "事件放逐结束器（内部文本？）",
+      "Description" : "标记事件完成的孤立谓词。（内部文本？）"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "incident.expulsion.finisher",
+    "label" : "事件放逐结束器（内部文本？）",
+    "desc" : "标记事件完成的孤立谓词。（内部文本？）"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/leiter.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "leiter",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/lighthouse.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "隐于幕后",
+      "Description" : "岛屿决议会早已不复存在。曾经，它帮助布兰库格保存少许知识，维持一份安稳，且设立起图书管理员一职。罗威娜是决议会的存续理事，这个复杂的存在一直保护着噤声居屋，而现在，她精疲力尽又处境艰难……因此，是时候轮到图书管理员作出回报，为决议会设立后继组织了。[帮助访客实现目标并推进计划。在找到六位受到计划启发的适格候选人后，你可以发起倡议，与他们共同建立一个名副其实的后继组织，延续岛屿决议会的遗志。若你无法找到合适的存续理事，罗威娜将继续担任这一职务，尽管她正日渐衰弱。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "司库",
+      "description" : "司库将负责学会的财政事务。这是个征集初始资金的极好机会——所以此人必须非常富有。",
+      "essential" : [ "inspired" ],
+      "required" : [ "fraser", "coquille", "dagmar", "hokobald" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "护理理事",
+      "description" : "护理理事将主管学会的治愈与修复工作。",
+      "essential" : [ "inspired" ],
+      "required" : [ "agdistis", "ehsan", "stanislav", "suitable.secretary.salvant.surprise" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "警戒理事",
+      "description" : "警戒理事将保证学会的安全。",
+      "essential" : [ "inspired" ],
+      "required" : [ "chaima", "arthur", "azita", "douglas" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "隐秘理事",
+      "description" : "隐秘理事将主管隐藏或揭示学会的秘密。",
+      "essential" : [ "inspired" ],
+      "required" : [ "yvette", "corso", "zachary", "arun" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "通讯理事",
+      "description" : "通讯理事将负责与其他组织沟通及洽谈。",
+      "essential" : [ "inspired" ],
+      "required" : [ "aladim", "olympe", "serena", "connie", "suitable.secretary.nunciant.surprise" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "存续理事",
+      "description" : "存续理事不仅必须为不朽者，还须有一只脚踏在司辰的律法之外……因此她必须是一位丽姬亚。",
+      "essential" : [ "inspired" ],
+      "required" : [ "suitable.secretary.persistent.surprise", "morgen" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "记录",
+      "description" : "图书管理员将记录到场的人物和所在地点。",
+      "essential" : [ ],
+      "required" : [ "journal" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "lighthouse",
+    "label" : "隐于幕后",
+    "desc" : "岛屿决议会早已不复存在。曾经，它帮助布兰库格保存少许知识，维持一份安稳，且设立起图书管理员一职。罗威娜是决议会的存续理事，这个复杂的存在一直保护着噤声居屋，而现在，她精疲力尽又处境艰难……因此，是时候轮到图书管理员作出回报，为决议会设立后继组织了。[帮助访客实现目标并推进计划。在找到六位受到计划启发的适格候选人后，你可以发起倡议，与他们共同建立一个名副其实的后继组织，延续岛屿决议会的遗志。若你无法找到合适的存续理事，罗威娜将继续担任这一职务，尽管她正日渐衰弱。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/lighthouse.convene.png",
+    "sourceFile" : "DLC_HOL_1_lighthouse.json",
+    "fields" : {
+      "Label" : "约定的信号",
+      "Description" : "创始人们一致同意，当时机成熟时，他们将重返噤声居屋。也许现在是时候了。[将你的日记置于此处，邀请灯塔学会的创始人们回到居屋。当所有创始人抵达后，把他们带到你选择的沙龙房间会面，并准备些简单的茶点。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "记录",
+      "description" : "图书管理员知晓到场的人物和所在地点。",
+      "essential" : [ ],
+      "required" : [ "journal" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "lighthouse.convene",
+    "label" : "约定的信号",
+    "desc" : "创始人们一致同意，当时机成熟时，他们将重返噤声居屋。也许现在是时候了。[将你的日记置于此处，邀请灯塔学会的创始人们回到居屋。当所有创始人抵达后，把他们带到你选择的沙龙房间会面，并准备些简单的茶点。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/neiter.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "neiter",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/numa.incident.base.png",
+    "sourceFile" : "celestial.json",
+    "fields" : {
+      "Label" : "事件（内部文本？）",
+      "Description" : "闰时事件放逐基准谓词（内部文本？）"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "numa.incident.base",
+    "label" : "事件（内部文本？）",
+    "desc" : "闰时事件放逐基准谓词（内部文本？）"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/nx.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "无需翻译"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "nx",
+    "label" : "无需翻译",
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/nx.resurrect.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "nx.resurrect",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/oriflammes.draw.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "oriflammes.draw",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/oriflammes.offer.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "oriflammes.offer",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/oriflammes.pass.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "oriflammes.pass",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/oriflammes.setup.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "oriflammes.setup",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/postoffice.delivery.png",
+    "sourceFile" : "village_interactions.json",
+    "fields" : {
+      "Label" : "邮件从邮局寄出"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "postoffice.delivery",
+    "label" : "邮件从邮局寄出",
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/postoffice.invitation.png",
+    "sourceFile" : "incidents.json",
+    "fields" : {
+      "Label" : "访客将在从邮局发送邀请后到达。我们现在为每位访客使用特定的技艺邀请，所以这个没有使用，但我们保留它，因为如果需要再次使用通用邀请的话这重要。"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "postoffice.invitation",
+    "label" : "访客将在从邮局发送邀请后到达。我们现在为每位访客使用特定的技艺邀请，所以这个没有使用，但我们保留它，因为如果需要再次使用通用邀请的话这重要。",
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/pumps.lower.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "水泵：下层",
+      "Description" : "这些机器的制造工艺与上面那些不同，而且更加先进；它们还包含了类似于电动机的结构。然而，它们的状况甚至更糟，我需要提供合适的材料与燃料，并用学者级的<b>铸</b>将其应急组装一番。",
+      "Aspects" : "10difficulty.scholar"
+    },
+    "aspects" : {
+      "difficulty.scholar" : 10
+    },
+    "slots" : [ {
+      "label" : "技艺",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "forge", "knock" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "魂质",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ ],
+      "forbidden" : [ "fatigued" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "燃料",
+      "description" : null,
+      "essential" : [ "liquid", "fuel" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "金属",
+      "description" : null,
+      "essential" : [ "metal" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "金属",
+      "description" : null,
+      "essential" : [ "metal" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "pumps.lower",
+    "label" : "水泵：下层",
+    "desc" : "这些机器的制造工艺与上面那些不同，而且更加先进；它们还包含了类似于电动机的结构。然而，它们的状况甚至更糟，我需要提供合适的材料与燃料，并用学者级的<b>铸</b>将其应急组装一番。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/pumps.upper.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "水泵：上层",
+      "Description" : "决议会为排干下层积水安装了这些水泵，然而这已经是十九世纪下半叶的事了。我需要为其提供合适的材料与燃料，并用入门级的<b>铸</b>将其应急组装一番。",
+      "Aspects" : "5difficulty.prentice"
+    },
+    "aspects" : {
+      "difficulty.prentice" : 5
+    },
+    "slots" : [ {
+      "label" : "技艺",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "forge", "knock" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "魂质",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ ],
+      "forbidden" : [ "fatigued" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "燃料",
+      "description" : null,
+      "essential" : [ "liquid", "fuel" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "金属",
+      "description" : null,
+      "essential" : [ "metal" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "金属",
+      "description" : null,
+      "essential" : [ "metal" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "pumps.upper",
+    "label" : "水泵：上层",
+    "desc" : "决议会为排干下层积水安装了这些水泵，然而这已经是十九世纪下半叶的事了。我需要为其提供合适的材料与燃料，并用入门级的<b>铸</b>将其应急组装一番。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/rhonwen.correspondence.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "rhonwen.correspondence",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/rhonwen.reminder.trysend.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "rhonwen.reminder.trysend",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/rhonwen.setup.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "rhonwen.setup",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/salon.chapter.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "会礼堂的沙龙",
+      "Description" : "宁静，且音效极佳，就是有点透风。[可以在上午供应午前茶，或下午供应下午茶。而两者都不应包含任何酒精饮料。]",
+      "Aspects" : "venue.informal"
+    },
+    "aspects" : {
+      "venue.informal" : 1
+    },
+    "slots" : [ {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor", "visitor.villager" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "存续理事",
+      "description" : "噤声居屋的餐桌通常会为罗威娜留一个空位。她是噤声居屋的女守护者，也曾是决议会的存续理事。[若有一天，你为罗威娜引荐了一位后继者……她也可以落座于此。]",
+      "essential" : [ ],
+      "required" : [ "appointment.persistent" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "salon.chapter",
+    "label" : "会礼堂的沙龙",
+    "desc" : "宁静，且音效极佳，就是有点透风。[可以在上午供应午前茶，或下午供应下午茶。而两者都不应包含任何酒精饮料。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/salon.division.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "分界大厅的沙龙",
+      "Description" : "将光芒带回伊娃女士曾主持集会的镜前。[可以在下午举行午宴，或在夜里筹办晚会。一个好主人至少会准备一道前菜、一道主菜、一道配菜和一道甜点。]",
+      "Aspects" : "venue.formal"
+    },
+    "aspects" : {
+      "venue.formal" : 1
+    },
+    "slots" : [ {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor", "visitor.villager" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "存续理事",
+      "description" : "噤声居屋的餐桌通常会为罗威娜留一个空位。她是噤声居屋的女守护者，也曾是决议会的存续理事。[若有一天，你为罗威娜引荐了一位后继者……她也可以落座于此。]",
+      "essential" : [ ],
+      "required" : [ "appointment.persistent" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "salon.division",
+    "label" : "分界大厅的沙龙",
+    "desc" : "将光芒带回伊娃女士曾主持集会的镜前。[可以在下午举行午宴，或在夜里筹办晚会。一个好主人至少会准备一道前菜、一道主菜、一道配菜和一道甜点。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/salon.gullscry.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "鸥鸣凉廊的野餐",
+      "Description" : "可怜的瓦伦汀曾独自坐此冥思，现在，你可以于故地进行沉重的对谈。[可以野餐，但仅限春夏。]",
+      "Aspects" : "venue.picnicking"
+    },
+    "aspects" : {
+      "venue.picnicking" : 1
+    },
+    "slots" : [ {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor", "visitor.villager" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "salon.gullscry",
+    "label" : "鸥鸣凉廊的野餐",
+    "desc" : "可怜的瓦伦汀曾独自坐此冥思，现在，你可以于故地进行沉重的对谈。[可以野餐，但仅限春夏。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/salon.physic.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "草药园的野餐",
+      "Description" : "鲜花无言，树叶絮语。[可以野餐，但仅限春夏。]",
+      "Aspects" : "venue.picnicking"
+    },
+    "aspects" : {
+      "venue.picnicking" : 1
+    },
+    "slots" : [ {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor", "visitor.villager" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "存续理事",
+      "description" : "噤声居屋的餐桌通常会为罗威娜留一个空位。她是噤声居屋的女守护者，也曾是决议会的存续理事。[若有一天，你为罗威娜引荐了一位后继者……她也可以落座于此。]",
+      "essential" : [ ],
+      "required" : [ "appointment.persistent" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "salon.physic",
+    "label" : "草药园的野餐",
+    "desc" : "鲜花无言，树叶絮语。[可以野餐，但仅限春夏。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/salon.refectory.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "餐厅的沙龙",
+      "Description" : "这曾是决议会成员会面的房间，如今则是一个举办沙龙的合适场所。[可以在下午举行午宴，或在夜里筹办晚宴。一个好的东道主至少会准备一道前菜、一道主菜、一道配菜和一道甜点。]",
+      "Aspects" : "venue.formal"
+    },
+    "aspects" : {
+      "venue.formal" : 1
+    },
+    "slots" : [ {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor", "visitor.villager" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "存续理事",
+      "description" : "噤声居屋的餐桌通常会为罗威娜留一个空位。她是噤声居屋的女守护者，也曾是决议会的存续理事。[若有一天，你为罗威娜引荐了一位后继者……她也可以落座于此。]",
+      "essential" : [ ],
+      "required" : [ "appointment.persistent" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "salon.refectory",
+    "label" : "餐厅的沙龙",
+    "desc" : "这曾是决议会成员会面的房间，如今则是一个举办沙龙的合适场所。[可以在下午举行午宴，或在夜里筹办晚宴。一个好的东道主至少会准备一道前菜、一道主菜、一道配菜和一道甜点。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/salon.voices.png",
+    "sourceFile" : "DLC_HOL_verbs.json",
+    "fields" : {
+      "Label" : "声韵大厅的沙龙",
+      "Description" : "一个古怪，但也可以说富有氛围感的沙龙选址。[可以在上午供应午前茶，或下午供应下午茶。而两者都不应包含任何酒精饮料。]",
+      "Aspects" : "venue.informal"
+    },
+    "aspects" : {
+      "venue.informal" : 1
+    },
+    "slots" : [ {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor", "visitor.villager" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "访客",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "visitor" ],
+      "forbidden" : [ "visitor.villager" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "存续理事",
+      "description" : "噤声居屋的餐桌通常会为罗威娜留一个空位。她是噤声居屋的女守护者，也曾是决议会的存续理事。[若有一天，你为罗威娜引荐了一位后继者……她也可以落座于此。]",
+      "essential" : [ ],
+      "required" : [ "appointment.persistent" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "salon.voices",
+    "label" : "声韵大厅的沙龙",
+    "desc" : "一个古怪，但也可以说富有氛围感的沙龙选址。[可以在上午供应午前茶，或下午供应下午茶。而两者都不应包含任何酒精饮料。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/season.png",
+    "sourceFile" : "_aspects.json",
+    "fields" : {
+      "Label" : "时节",
+      "Description" : "[时节]"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "season",
+    "label" : "时节",
+    "desc" : "[时节]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/station.serving.gaol.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "在此分装",
+      "Description" : "盘子、茶杯与酒杯，这样一来，如果我想请人喝酒，就不必把一整瓶都给他们了。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "分装",
+      "description" : null,
+      "essential" : [ "distributable" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "station.serving.gaol",
+    "label" : "在此分装",
+    "desc" : "盘子、茶杯与酒杯，这样一来，如果我想请人喝酒，就不必把一整瓶都给他们了。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/station.serving.kitchen.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "在此分装",
+      "Description" : "盘子、茶杯与酒杯，这样一来，如果我想请人喝酒，就不必把一整瓶都给他们了。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "分装",
+      "description" : null,
+      "essential" : [ "distributable" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "station.serving.kitchen",
+    "label" : "在此分装",
+    "desc" : "盘子、茶杯与酒杯，这样一来，如果我想请人喝酒，就不必把一整瓶都给他们了。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/station.serving.lodge.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "在此分装",
+      "Description" : "盘子、茶杯与酒杯，这样一来，如果我想请人喝酒，就不必把一整瓶都给他们了。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "分装",
+      "description" : null,
+      "essential" : [ "distributable" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "station.serving.lodge",
+    "label" : "在此分装",
+    "desc" : "盘子、茶杯与酒杯，这样一来，如果我想请人喝酒，就不必把一整瓶都给他们了。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/talk.png",
+    "sourceFile" : "librarian.json",
+    "fields" : {
+      "Label" : "交谈",
+      "Description" : "访客、帮手、陌客、友人……与各色人等谈话。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "交谈",
+      "description" : "和别人，通常如此。",
+      "essential" : [ ],
+      "required" : [ "visitor", "assistance", "employable", "beast" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "talk",
+    "label" : "交谈",
+    "desc" : "访客、帮手、陌客、友人……与各色人等谈话。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/talk.setup.png",
+    "sourceFile" : "librarian.json",
+    "fields" : {
+      "Label" : "求助？",
+      "Description" : "在我头顶，悬崖之上，坐落着布兰库格村。我不可能顶着风暴抵达那儿，但只要能鼓起最后的力量去求助……[点击卡槽能高亮显示可放入其中的卡牌与物件。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : null,
+      "description" : "我能做什么？",
+      "essential" : [ "ability" ],
+      "required" : [ "knock", "heart", "rose" ],
+      "forbidden" : [ "winter" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "talk.setup",
+    "label" : "求助？",
+    "desc" : "在我头顶，悬崖之上，坐落着布兰库格村。我不可能顶着风暴抵达那儿，但只要能鼓起最后的力量去求助……[点击卡槽能高亮显示可放入其中的卡牌与物件。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/terrain.unlock.png",
+    "sourceFile" : "librarian.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "terrain.unlock",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/time.night.png",
+    "sourceFile" : "celestial.json",
+    "fields" : {
+      "Label" : "拂晓",
+      "Description" : "[日出]"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "time",
+    "label" : "拂晓",
+    "desc" : "[日出]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/trn.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "trn",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/trn.setup.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "trn.setup",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/unknown.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "unknown",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.killes.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "village.killes",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.killes.closed.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "基尔太太和基尔先生[锁定]",
+      "Description" : "助产士基尔太太身材高大，神情阴郁。殡葬师基尔先生身材瘦小，言辞戏谑。在这个动荡的时代，两人都对陌生人保持警惕。[你需要一次适当的引荐；查看槽位。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "前厅",
+      "description" : "我需要一位熟人来介绍我认识基尔一家——某个有名望的人，或者某个和他们有共同兴趣的人。",
+      "essential" : [ "introduction" ],
+      "required" : [ "winter", "grail", "heart", "sky", "lantern", "moon" ],
+      "forbidden" : [ "introduction.rector.start", "introduction.blacksmith.start", "reluctant" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.killes.closed",
+    "label" : "基尔太太和基尔先生[锁定]",
+    "desc" : "助产士基尔太太身材高大，神情阴郁。殡葬师基尔先生身材瘦小，言辞戏谑。在这个动荡的时代，两人都对陌生人保持警惕。[你需要一次适当的引荐；查看槽位。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.killes.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "基尔太太和基尔先生",
+      "Description" : "助产士基尔太太身材高大，神情阴郁。殡葬师基尔先生身材瘦小，言辞戏谑。十年来，她一直把村民们接引到这个世界上，而他也为他们的离去塑造摇篮。但她会切削，而他也会画画。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "前厅",
+      "description" : "生与死的问题？",
+      "essential" : [ "ability" ],
+      "required" : [ "winter", "grail" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.killes.open",
+    "label" : "基尔太太和基尔先生",
+    "desc" : "助产士基尔太太身材高大，神情阴郁。殡葬师基尔先生身材瘦小，言辞戏谑。十年来，她一直把村民们接引到这个世界上，而他也为他们的离去塑造摇篮。但她会切削，而他也会画画。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.killes.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "基尔太太和基尔先生",
+      "Description" : "助产士基尔太太身材高大，神情阴郁。殡葬师基尔先生身材瘦小，言辞戏谑。十年来，她一直把村民们接引到这个世界上，而他也为他们的离去塑造摇篮。但她会切削，而他也会画画。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "前厅",
+      "description" : "基尔一家看到你从街上走来，就把茶壶烧上水了。",
+      "essential" : [ "ability" ],
+      "required" : [ "winter", "grail" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.killes.open.friend",
+    "label" : "基尔太太和基尔先生",
+    "desc" : "助产士基尔太太身材高大，神情阴郁。殡葬师基尔先生身材瘦小，言辞戏谑。十年来，她一直把村民们接引到这个世界上，而他也为他们的离去塑造摇篮。但她会切削，而他也会画画。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.postoffice.closed.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "邮局[锁定]",
+      "Description" : "邮局的女局长那里可能有些寄给我的东西——只要我知道该问她要些什么。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "邮局柜台",
+      "description" : "一个权力之地，一个知识之地，位于国王陛下的庇护之下。",
+      "essential" : [ ],
+      "required" : [ "journal", "readable" ],
+      "forbidden" : [ "soaked", "reluctant" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.postoffice.closed",
+    "label" : "邮局[锁定]",
+    "desc" : "邮局的女局长那里可能有些寄给我的东西——只要我知道该问她要些什么。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.postoffice.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "邮局",
+      "Description" : "邮局的女局长打开了通往更广阔世界的大门。她的左手是闪电（或者说，电报机），右手是雷鸣（或者说，布兰库格唯一的电话机）。在她面前是收银机，能接收大面额的货币并退回等价的零钱。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "给予",
+      "description" : "你给邮局的女局长带来了什么？",
+      "essential" : [ ],
+      "required" : [ "post.ready", "pence", "tally" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.postoffice.open",
+    "label" : "邮局",
+    "desc" : "邮局的女局长打开了通往更广阔世界的大门。她的左手是闪电（或者说，电报机），右手是雷鸣（或者说，布兰库格唯一的电话机）。在她面前是收银机，能接收大面额的货币并退回等价的零钱。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.rectory.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "village.rectory",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.rectory.closed.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "教区长的住宅[锁定]",
+      "Description" : "提摩西牧师生性热情好客，但他的管家特伦斯护主甚笃。她不希望他天真的神学热情让他与新王的人发生冲突。 [你需要一次引见，或者一位准则为<b>灯</b>、<b>启</b>或<b>穹</b>的熟人——也许是一位对神学或诗歌感兴趣的人。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "敲门砖",
+      "description" : "我需要一位熟人来把我介绍给提摩西牧师——也许是某个和他一样对神学或诗歌感兴趣的人。",
+      "essential" : [ "introduction" ],
+      "required" : [ "lantern", "knock", "sky" ],
+      "forbidden" : [ "introduction.blacksmith.start", "introduction.coffinmaker.start", "introduction.midwife.start" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.rectory.closed",
+    "label" : "教区长的住宅[锁定]",
+    "desc" : "提摩西牧师生性热情好客，但他的管家特伦斯护主甚笃。她不希望他天真的神学热情让他与新王的人发生冲突。 [你需要一次引见，或者一位准则为<b>灯</b>、<b>启</b>或<b>穹</b>的熟人——也许是一位对神学或诗歌感兴趣的人。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.rectory.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "教区长的住宅",
+      "Description" : "提摩西牧师的话语总是跑在他前面，但他的思想最后总能跟上。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "书房",
+      "description" : "信仰的问题？",
+      "essential" : [ "ability" ],
+      "required" : [ "lantern", "knock" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.rectory.open",
+    "label" : "教区长的住宅",
+    "desc" : "提摩西牧师的话语总是跑在他前面，但他的思想最后总能跟上。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.rectory.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "教区长的住宅",
+      "Description" : "提摩西牧师的话语总是跑在他前面，但他的思想最后总能跟上。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "书房",
+      "description" : "提摩西牧师总是很高兴能见到你。",
+      "essential" : [ "ability" ],
+      "required" : [ "lantern", "knock" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.rectory.open.friend",
+    "label" : "教区长的住宅",
+    "desc" : "提摩西牧师的话语总是跑在他前面，但他的思想最后总能跟上。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.smithy.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "village.smithy",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.smithy.closed.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "铁匠铺[锁定]",
+      "Description" : "邓齐尔·史密斯的工作比他需要干的多，所以他很少向陌生人敞开大门。 [你需要一次引荐，或者一位准则为<b>刃</b>、<b>铸</b>或<b>心</b>的熟人——某个从事类似行业的人，或某个能够唤起他对藏红花蛋糕的秘密热情的人。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "烟雾缭绕的房间",
+      "description" : "我需要一位熟人来介绍我认识邓齐尔——某个从事类似行业的人，或者某个能唤起他对藏红花蛋糕那私密热爱的人。",
+      "essential" : [ "introduction" ],
+      "required" : [ "edge", "forge", "heart" ],
+      "forbidden" : [ "introduction.rector.start", "introduction.coffinmaker.start", "introduction.midwife.start", "reluctant" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.smithy.closed",
+    "label" : "铁匠铺[锁定]",
+    "desc" : "邓齐尔·史密斯的工作比他需要干的多，所以他很少向陌生人敞开大门。 [你需要一次引荐，或者一位准则为<b>刃</b>、<b>铸</b>或<b>心</b>的熟人——某个从事类似行业的人，或某个能够唤起他对藏红花蛋糕的秘密热情的人。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.smithy.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "铁匠铺",
+      "Description" : "邓齐尔·史密斯，结实如同橡树，被烟熏得漆黑。他永远不会超越他的父亲，他也不再是一名军人。但他仍然有他的手艺。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "烟雾缭绕的房间",
+      "description" : "务实的问题？",
+      "essential" : [ "ability" ],
+      "required" : [ "edge", "forge", "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.smithy.open",
+    "label" : "铁匠铺",
+    "desc" : "邓齐尔·史密斯，结实如同橡树，被烟熏得漆黑。他永远不会超越他的父亲，他也不再是一名军人。但他仍然有他的手艺。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.smithy.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "铁匠铺",
+      "Description" : "邓齐尔·史密斯，结实如同橡树，被烟熏得漆黑。他永远不会超越他的父亲，他也不再是一名军人。但他仍然有他的手艺。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "烟雾缭绕的房间",
+      "description" : "邓齐尔欢迎你进屋时不会微笑，但这只是因为他是邓齐尔。",
+      "essential" : [ "ability" ],
+      "required" : [ "edge", "forge", "heart" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.smithy.open.friend",
+    "label" : "铁匠铺",
+    "desc" : "邓齐尔·史密斯，结实如同橡树，被烟熏得漆黑。他永远不会超越他的父亲，他也不再是一名军人。但他仍然有他的手艺。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.sweetbones.closed.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "甜美的骨头[锁定]",
+      "Description" : "1930年大复辟后，新王的特务来到这些地区寻找他的敌人……而他们的手段并不温柔。从那时起，当地人就对外来者持猜疑态度。甜美的骨头里没有人会和我说话。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "茫茫多的不善面孔",
+      "description" : "交际？还是贿赂？",
+      "essential" : [ ],
+      "required" : [ "pence", "assistance", "xcho", "xsha", "xmet" ],
+      "forbidden" : [ "reluctant" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.sweetbones.closed",
+    "label" : "甜美的骨头[锁定]",
+    "desc" : "1930年大复辟后，新王的特务来到这些地区寻找他的敌人……而他们的手段并不温柔。从那时起，当地人就对外来者持猜疑态度。甜美的骨头里没有人会和我说话。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/village.sweetbones.png",
+    "sourceFile" : "workstations_village.json",
+    "fields" : {
+      "Label" : "“甜美的骨头”",
+      "Description" : "自克伦威尔时代以来，“甜美的骨头”就一直是布兰库格的公共场所。它的历史声名显赫，但啤酒却不值一提。那些寻找隐秘的工作或协助的客人常聚集在它的包间里。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "我",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "ability" ],
+      "forbidden" : [ "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "我的",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "pence", "soaked", "soiled" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "village.sweetbones.open",
+    "label" : "“甜美的骨头”",
+    "desc" : "自克伦威尔时代以来，“甜美的骨头”就一直是布兰库格的公共场所。它的历史声名显赫，但啤酒却不值一提。那些寻找隐秘的工作或协助的客人常聚集在它的包间里。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visit.return.png",
+    "sourceFile" : "incidents.json",
+    "fields" : {
+      "Label" : "访客是时候走了"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visit.return",
+    "label" : "访客是时候走了",
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.agdistis.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.agdistis",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.aladim.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.aladim",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.arthur.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.arthur",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.arun.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.arun",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.azita.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.azita",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.chaima.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.chaima",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.connie.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.connie",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.coquille.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.coquille",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.corso.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.corso",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.dagmar.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.dagmar",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.douglas.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.douglas",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.ehsan.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.ehsan",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.embarking.sendoffstage.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.embarking.sendoffstage",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.box.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.box",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.consultation.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.consultation",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.consultation.numa.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.consultation.numa",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.curse.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.curse",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.heist.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.heist",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.hunt.changing.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.hunt.changing",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.intrusion.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.intrusion",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.lost.find.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.lost.find",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.mob.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.mob",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.mystical.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.mystical",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.numa.grail.a.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.numa.grail.a",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.numa.grail.b.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.numa.grail.b",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.numa.moon.a.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.numa.moon.a",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.numa.moon.b.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.numa.moon.b",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.numa.winter.a.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.numa.winter.a",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.numa.wood.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.numa.wood",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.observe.scaly.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.observe.scaly",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.omen.dawn.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.omen.dawn",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.omen.horizon.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.omen.horizon",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.opera.apollo.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.opera.apollo",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.opera.wings.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.opera.wings",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.pan.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.pan",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.project.ingenious.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.project.ingenious",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.project.solar.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.project.solar",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.revolution.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.revolution",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.rising.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.rising",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.rite.awakening.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.rite.awakening",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.rite.renewal.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.rite.renewal",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.stalk.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.stalk",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.for.wound.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.for.wound",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.fraser.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.fraser",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.hokobald.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.hokobald",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.morgen.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.morgen",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.olympe.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.olympe",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.serena.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.serena",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.stanislav.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.stanislav",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.yvette.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.yvette",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitor.zachary.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitor.zachary",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visitorpatrol.png",
+    "sourceFile" : "visitors_correspondence_auctions.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visitorpatrol",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/visits.png",
+    "sourceFile" : "incidents.json",
+    "fields" : {
+      "Label" : "访问",
+      "Description" : "访客来了又去。"
+    },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "visits",
+    "label" : "访问",
+    "desc" : "访客来了又去。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/wc.setup.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "wc.setup",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.png",
+    "sourceFile" : "_aspects.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.clouds.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.clouds",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.fog.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.fog",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.gale.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.gale",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.hail.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.hail",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.numa.png",
+    "sourceFile" : "celestial_recipes_time.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.numa",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.rain.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.rain",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.snow.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.snow",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.storm.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.storm",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/weather.enactor.sunny.png",
+    "sourceFile" : "celestial_recipes_weather.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "weather.enactor.sunny",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.beachcombing.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "拾滩",
+      "Description" : "漫步于海洋的边缘。如果我有些沙里淘金的本事，兴许就能找到些为海所弃之物。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart", "moon", "rose" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "heart", "moon", "rose" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.beachcombing",
+    "label" : "拾滩",
+    "desc" : "漫步于海洋的边缘。如果我有些沙里淘金的本事，兴许就能找到些为海所弃之物。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.caves.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "海蚀洞",
+      "Description" : "穿过较浅的隧道，小心别溅起水花。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "scale", "moon" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "scale", "moon" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.caves",
+    "label" : "海蚀洞",
+    "desc" : "穿过较浅的隧道，小心别溅起水花。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.corals.deeplight.png",
+    "sourceFile" : "workstations_legacy.json",
+    "fields" : {
+      "Label" : "幽光珊瑚礁",
+      "Description" : "浪潮鲜少触及的荒野。",
+      "Aspects" : "5difficulty.prentice10difficulty.scholar15difficulty.keepere.bosk"
+    },
+    "aspects" : {
+      "difficulty.prentice" : 5,
+      "difficulty.scholar" : 10,
+      "difficulty.keeper" : 15,
+      "e.bosk" : 1
+    },
+    "slots" : [ {
+      "label" : "魂质",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "nectar", "rose", "scale", "moon" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "技艺",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "nectar", "rose", "scale", "moon" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "回忆",
+      "description" : null,
+      "essential" : [ "memory" ],
+      "required" : [ "nectar", "rose", "scale", "moon" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "+",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "ability" ],
+      "forbidden" : [ "fatigued" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "+",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "memory" ],
+      "forbidden" : [ "fatigued" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.corals.deeplight",
+    "label" : "幽光珊瑚礁",
+    "desc" : "浪潮鲜少触及的荒野。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.moor.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "行于荒野",
+      "Description" : "爬上村庄背后长长的荒野地带，迎接风的拍击。如果我知道要找什么，我兴许会在岩石之间翻找到一些东西。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "heart", "scale", "rose" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "heart", "rose", "scale" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.moor",
+    "label" : "行于荒野",
+    "desc" : "爬上村庄背后长长的荒野地带，迎接风的拍击。如果我知道要找什么，我兴许会在岩石之间翻找到一些东西。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.nests.png",
+    "sourceFile" : "workstations_gathering.json",
+    "fields" : {
+      "Label" : "海鸥栖息地",
+      "Description" : "偷走海鸟的蛋，或者找到某样被海鸟偷走的东西。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "努力",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ "scale", "sky", "rose" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "知识",
+      "description" : null,
+      "essential" : [ "skill" ],
+      "required" : [ "scale", "sky", "rose" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.nests",
+    "label" : "海鸥栖息地",
+    "desc" : "偷走海鸟的蛋，或者找到某样被海鸟偷走的东西。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.sea.beach.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "海涯",
+      "Description" : "海洋永远饥渴；海洋永不入眠；海洋来者不拒。[在此丢弃物品；或放生兽类；亦或是游泳。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "目的",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "thing", "beast", "penny", "ability" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.sea.beach",
+    "label" : "海涯",
+    "desc" : "海洋永远饥渴；海洋永不入眠；海洋来者不拒。[在此丢弃物品；或放生兽类；亦或是游泳。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.sea.boathouse.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "布兰库格船库",
+      "Description" : "船去了，海还在。当然，一切在这里都是如此运作的。[在此丢弃物品；或放生兽类；亦或是游泳。]"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "目的",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "thing", "beast", "ability" ],
+      "forbidden" : [ "fatigued", "malady" ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.sea.boathouse",
+    "label" : "布兰库格船库",
+    "desc" : "船去了，海还在。当然，一切在这里都是如此运作的。[在此丢弃物品；或放生兽类；亦或是游泳。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.sea.crane.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "装卸区吊台",
+      "Description" : "很久以前，这里曾是供给品进入监狱的路线，也是囚徒从未能由此脱逃的路线。[在此丢弃物品，或放生兽类。]",
+      "Comments" : "The only sea workstation which doesn't accept Abilities - prisoners couldn't swim to freedom."
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "物品",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "thing", "beast" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.sea.crane",
+    "label" : "装卸区吊台",
+    "desc" : "很久以前，这里曾是供给品进入监狱的路线，也是囚徒从未能由此脱逃的路线。[在此丢弃物品，或放生兽类。]"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/world.tree.gate.png",
+    "sourceFile" : "workstations_unusual.json",
+    "fields" : {
+      "Label" : "伯爵紫杉",
+      "Description" : "自诺曼征服以来，它便一直等候着你。不敬之人甚至可能说它是棵<i>自杀树</i>。"
+    },
+    "aspects" : { },
+    "slots" : [ {
+      "label" : "魂质",
+      "description" : null,
+      "essential" : [ "ability" ],
+      "required" : [ ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    }, {
+      "label" : "日记",
+      "description" : null,
+      "essential" : [ ],
+      "required" : [ "journal" ],
+      "forbidden" : [ ],
+      "greedy" : false,
+      "consumes" : false
+    } ],
+    "id" : "world.tree.gate",
+    "label" : "伯爵紫杉",
+    "desc" : "自诺曼征服以来，它便一直等候着你。不敬之人甚至可能说它是棵<i>自杀树</i>。"
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/wt.memorylocus.png",
+    "sourceFile" : "temporary_verbs",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "wt.memorylocus",
+    "label" : null,
+    "desc" : null
+  }, {
+    "imagePath" : null,
+    "rowenariumImageSrc" : "/rowenarium/static/bhimages/verbs/x.png",
+    "sourceFile" : "_aspects.json",
+    "fields" : { },
+    "aspects" : { },
+    "slots" : [ ],
+    "id" : "x",
+    "label" : null,
+    "desc" : null
+  } ]
+}

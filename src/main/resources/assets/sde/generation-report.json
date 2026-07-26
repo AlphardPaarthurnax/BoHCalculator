@@ -1,0 +1,17 @@
+{
+  "generatedAt" : "2026-07-26T03:23:46.241702100Z",
+  "counts" : {
+    "elements" : 3621,
+    "recipes" : 4078,
+    "verbs" : 278,
+    "aspects" : 1028,
+    "cards" : 1734,
+    "crafts" : 556,
+    "workstations" : 110,
+    "otherRecipes" : 3522,
+    "otherVerbs" : 168
+  },
+  "failedPages" : [ ],
+  "downloadedImages" : [ ],
+  "missingImages" : [ ]
+}

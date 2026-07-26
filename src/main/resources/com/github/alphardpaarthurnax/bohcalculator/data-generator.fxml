@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.ScrollPane?>
@@ -14,25 +15,23 @@
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.DataGeneratorController"
       spacing="12">
-    <padding>
-        <Insets top="12" left="12" right="12" bottom="12"/>
-    </padding>
+    <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
 
-    <Label text="数据生成器" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
-
-    <HBox spacing="12" alignment="CENTER_LEFT">
-        <Button fx:id="generateAspectsBtn" text="生成 Aspects JSON" onAction="#onGenerateAspects"/>
-        <Label fx:id="aspectsStatus" style="-fx-font-size: 13px; -fx-text-fill: gray;"/>
-    </HBox>
+    <Label text="完整 SDE 数据生成器" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label wrapText="true"
+           text="从 Rowenarium 抓取全部 Elements、Recipes、Verbs，再派生 Aspects、Cards、Crafts、Workstations、OtherRecipes、OtherVerbs。仅 Aspects、Cards、Workstations 检查和下载正常图片；过程、失败页面和缺图均显示在下方。"/>
 
     <HBox spacing="8" alignment="CENTER_LEFT">
-        <Label text="线程数:" style="-fx-font-size: 13px;"/>
-        <TextField fx:id="threadCountField" prefWidth="60" style="-fx-font-size: 13px;"/>
-        <Button fx:id="generateCardsBtn" text="生成 Cards JSON" onAction="#onGenerateCards"/>
-        <Label fx:id="cardsStatus" style="-fx-font-size: 13px; -fx-text-fill: gray;"/>
+        <Label text="并发线程："/>
+        <TextField fx:id="threadCountField" prefWidth="60"/>
+        <Button fx:id="generateAllButton" text="生成完整 SDE" onAction="#onGenerateAll"/>
+        <Label fx:id="generationStatus" style="-fx-font-weight: bold;"/>
     </HBox>
+    <CheckBox fx:id="refreshAllCheckbox"
+              text="强制重新抓取所有页面（不复用现有 SDE，耗时和网络量很大）"/>
 
-    <ProgressBar fx:id="cardsProgress" prefWidth="600" progress="0"/>
+    <ProgressBar fx:id="generationProgress" prefWidth="700" progress="0"/>
+    <Label fx:id="summaryLabel" wrapText="true"/>
 
     <ScrollPane fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
         <TextFlow fx:id="logFlow" lineSpacing="1"/>

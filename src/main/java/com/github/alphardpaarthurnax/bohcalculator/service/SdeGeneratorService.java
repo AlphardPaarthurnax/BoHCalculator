@@ -1,347 +1,463 @@
 package com.github.alphardpaarthurnax.bohcalculator.service;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.alphardpaarthurnax.bohcalculator.model.Aspect;
 import com.github.alphardpaarthurnax.bohcalculator.model.Card;
-import org.jsoup.Jsoup;
+import com.github.alphardpaarthurnax.bohcalculator.model.CatalogItem;
+import com.github.alphardpaarthurnax.bohcalculator.model.Element;
+import com.github.alphardpaarthurnax.bohcalculator.model.Recipe;
+import com.github.alphardpaarthurnax.bohcalculator.model.SdeGenerationReport;
+import com.github.alphardpaarthurnax.bohcalculator.model.Verb;
+import com.github.alphardpaarthurnax.bohcalculator.model.Workstation;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.io.InputStream;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.AtomicMoveNotSupportedException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
-import java.util.concurrent.CountDownLatch;
+import java.util.Set;
+import java.util.concurrent.CompletionService;
+import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiConsumer;
-import java.util.stream.Collectors;
+import java.util.function.BiFunction;
+import java.util.stream.Stream;
 
 public class SdeGeneratorService {
-
-    private static final String ASPECTS_CONTENT_DIR = "src/main/resources/assets/content/aspects";
-    private static final String OTHER_CONTENT_DIR = "src/main/resources/assets/content/other";
-    private static final String ELEMENTS_IMAGES_DIR = "src/main/resources/assets/images/elements";
-    private static final String SDE_DIR = "src/main/resources/assets/sde";
-    private static final String ASPECTS_SDE_FILE = "aspects.json";
-    private static final String CARDS_SDE_FILE = "cards.json";
-    private static final String IMAGES_CLASSPATH_PREFIX = "/assets/images/";
-    private static final String ROWENARIUM_URL = "https://uadaf.theevilroot.xyz/rowenarium/element/";
+    static final Path IMAGE_DIR = Path.of("src/main/resources/assets/images");
+    static final Path SDE_DIR = Path.of("src/main/resources/assets/sde");
 
     private final ObjectMapper objectMapper;
+    private final RowenariumClient client;
+    private final RowenariumParser parser;
 
     public SdeGeneratorService() {
-        this.objectMapper = new ObjectMapper();
+        this(new ObjectMapper(), new RowenariumClient(), new RowenariumParser());
     }
 
-    public void generateAspects(BiConsumer<Integer, String> progressCallback) throws Exception {
-        progressCallback.accept(0, "Loading aspect JSON files...");
-
-        List<Aspect> allAspects = new ArrayList<>();
-        Path aspectsDir = Paths.get(ASPECTS_CONTENT_DIR);
-        if (Files.isDirectory(aspectsDir)) {
-            List<Path> jsonFiles;
-            try (var stream = Files.list(aspectsDir)) {
-                jsonFiles = stream.filter(p -> p.toString().endsWith(".json")).sorted().collect(Collectors.toList());
-            }
-            for (Path jsonFile : jsonFiles) {
-                String fileName = jsonFile.getFileName().toString();
-                try (InputStream is = Files.newInputStream(jsonFile)) {
-                    Map<String, List<Aspect>> data = objectMapper.readValue(is,
-                            new TypeReference<Map<String, List<Aspect>>>() {});
-                    List<Aspect> elements = data.get("elements");
-                    if (elements != null) {
-                        for (Aspect a : elements) {
-                            a.setSourceFile(fileName);
-                        }
-                        allAspects.addAll(elements);
-                    }
-                } catch (Exception e) {
-                    progressCallback.accept(0, "WARN: Failed to parse " + fileName);
-                }
-            }
-        }
-
-        progressCallback.accept(0, "Resolving images for " + allAspects.size() + " aspects...");
-
-        List<Aspect> validAspects = new ArrayList<>();
-        for (Aspect a : allAspects) {
-            if (a.getId() != null && !a.getId().isEmpty()) {
-                String imageName = resolveAspectImageName(a.getId());
-                Path imageFile = Paths.get("src/main/resources/assets/images/aspects", imageName + ".png");
-                if (Files.exists(imageFile)) {
-                    a.setImagePath(IMAGES_CLASSPATH_PREFIX + "aspects/" + imageName + ".png");
-                    validAspects.add(a);
-                }
-            }
-        }
-
-        Map<String, List<Aspect>> wrapper = new LinkedHashMap<>();
-        wrapper.put("aspects", validAspects);
-
-        Files.createDirectories(Paths.get(SDE_DIR));
-        Path outFile = Paths.get(SDE_DIR, ASPECTS_SDE_FILE);
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(outFile.toFile(), wrapper);
-
-        progressCallback.accept(100, "Generated " + ASPECTS_SDE_FILE + " with " + validAspects.size() + " aspects.");
+    SdeGeneratorService(ObjectMapper objectMapper, RowenariumClient client, RowenariumParser parser) {
+        this.objectMapper = objectMapper;
+        this.client = client;
+        this.parser = parser;
     }
 
-    public void generateCards(int threadCount, BiConsumer<Double, String> progressCallback) throws Exception {
-        progressCallback.accept(0.0, "Loading other JSON files...");
+    public SdeGenerationReport generateAll(int requestedThreads,
+                                           BiConsumer<Double, String> progressCallback) throws Exception {
+        return generateAll(requestedThreads, false, progressCallback);
+    }
 
-        List<Aspect> rawCards = new ArrayList<>();
-        Path otherDir = Paths.get(OTHER_CONTENT_DIR);
-        if (Files.isDirectory(otherDir)) {
-            List<Path> jsonFiles;
-            try (var stream = Files.list(otherDir)) {
-                jsonFiles = stream.filter(p -> p.toString().endsWith(".json")).sorted().collect(Collectors.toList());
-            }
-            for (Path jsonFile : jsonFiles) {
-                String fileName = jsonFile.getFileName().toString();
-                try (InputStream is = Files.newInputStream(jsonFile)) {
-                    Map<String, List<Aspect>> data = objectMapper.readValue(is,
-                            new TypeReference<Map<String, List<Aspect>>>() {});
-                    List<Aspect> elements = data.get("elements");
-                    if (elements != null) {
-                        for (Aspect a : elements) {
-                            a.setSourceFile(fileName);
-                        }
-                        rawCards.addAll(elements);
-                    }
-                } catch (Exception e) {
-                    progressCallback.accept(0.0, "WARN: Failed to parse " + fileName);
-                }
-            }
+    public SdeGenerationReport generateAll(int requestedThreads, boolean refreshAll,
+                                           BiConsumer<Double, String> progressCallback) throws Exception {
+        int threadCount = Math.max(1, Math.min(requestedThreads, 32));
+        BiConsumer<Double, String> progress = progressCallback != null
+                ? progressCallback : (value, message) -> { };
+
+        progress.accept(0.0, "从 Rowenarium 获取完整索引...");
+        Document indexDocument = client.fetch("element", "xmet");
+        List<String> elementIds = parser.parseIndex(indexDocument, "element");
+        List<String> recipeIds = parser.parseIndex(indexDocument, "recipe");
+        List<String> verbIds = parser.parseIndex(indexDocument, "verb");
+        progress.accept(0.01, "索引：Element " + elementIds.size()
+                + "，Recipe " + recipeIds.size() + "，Verb " + verbIds.size());
+
+        List<String> failedPages = new ArrayList<>();
+        Map<String, Element> elementCache = refreshAll ? Map.of()
+                : loadExisting("elements.json", "elements", Element.class);
+        Map<String, Recipe> recipeCache = refreshAll ? Map.of()
+                : loadExisting("recipes.json", "recipes", Recipe.class);
+        Map<String, Verb> verbCache = refreshAll ? Map.of()
+                : loadExisting("verbs.json", "verbs", Verb.class);
+
+        List<Element> elements = fetchAll("Element", "element", elementIds, elementCache, threadCount, 0.01, 0.43,
+                parser::parseElement, failedPages, progress);
+        List<Recipe> recipes = fetchAll("Recipe", "recipe", recipeIds, recipeCache, threadCount, 0.43, 0.90,
+                parser::parseRecipe, failedPages, progress);
+        List<Verb> verbs = fetchAll("Verb", "verb", verbIds, verbCache, threadCount, 0.90, 0.96,
+                parser::parseVerb, failedPages, progress);
+
+        progress.accept(0.961, "按 Rowenarium 字段派生九类数据...");
+        for (Element element : elements) {
+            element.setImagePath(null);
+            ElementClassificationPolicy.classify(element);
         }
+        recipes.forEach(recipe -> {
+            recipe.setImagePath(null);
+            recipe.setRowenariumImageSrc(null);
+        });
+        verbs.forEach(verb -> verb.setImagePath(null));
 
-        int total = rawCards.size();
-        progressCallback.accept(0.0, "Fetching " + total + " cards from Rowenarium (" + threadCount + " threads)...");
+        List<Aspect> aspects = new ArrayList<>(elements.stream()
+                .filter(Element::isAspect)
+                .map(this::toAspect)
+                .sorted(displayComparator())
+                .toList());
+        List<Card> cards = new ArrayList<>(elements.stream()
+                .filter(ElementClassificationPolicy::isCard)
+                .map(this::toCard)
+                .sorted(displayComparator())
+                .toList());
+        List<Recipe> crafts = recipes.stream().filter(this::isCraft).sorted(idComparator()).toList();
+        List<Recipe> otherRecipes = recipes.stream().filter(recipe -> !isCraft(recipe)).sorted(idComparator()).toList();
+        List<Workstation> workstations = deriveWorkstations(verbs, crafts);
+        Set<String> workstationIds = workstations.stream().map(Workstation::getId).collect(java.util.stream.Collectors.toSet());
+        List<Verb> otherVerbs = verbs.stream()
+                .filter(verb -> !workstationIds.contains(verb.getId()))
+                .sorted(idComparator())
+                .toList();
 
-        List<Card> cards = new ArrayList<>();
-        AtomicInteger completed = new AtomicInteger(0);
-        AtomicInteger successCount = new AtomicInteger(0);
+        List<String> downloadedImages = new ArrayList<>();
+        List<String> missingImages = new ArrayList<>();
+        Map<String, List<Path>> localImages = indexLocalImages();
+        resolveImages(aspects, "aspects", threadCount, localImages, downloadedImages, missingImages,
+                0.962, 0.975, progress);
+        resolveImages(cards, "cards", threadCount, localImages, downloadedImages, missingImages,
+                0.975, 0.989, progress);
+        resolveImages(workstations, "workstations", threadCount, localImages, downloadedImages, missingImages,
+                0.989, 0.997, progress);
 
-        ExecutorService executor = Executors.newFixedThreadPool(threadCount);
+        syncImageMetadata(elements, Stream.concat(aspects.stream(), cards.stream()).toList());
+        syncImageMetadata(verbs, workstations);
+        aspects.removeIf(item -> !ElementClassificationPolicy.hasNormalImage(item.getRowenariumImageSrc()));
+        cards.removeIf(item -> !ElementClassificationPolicy.hasNormalImage(item.getRowenariumImageSrc()));
 
-        for (Aspect raw : rawCards) {
-            if (raw.getId() == null || raw.getId().isEmpty()) {
-                completed.incrementAndGet();
+        elements.sort(idComparator());
+        recipes.sort(idComparator());
+        verbs.sort(idComparator());
+
+        Map<String, Integer> counts = new LinkedHashMap<>();
+        counts.put("elements", elements.size());
+        counts.put("recipes", recipes.size());
+        counts.put("verbs", verbs.size());
+        counts.put("aspects", aspects.size());
+        counts.put("cards", cards.size());
+        counts.put("crafts", crafts.size());
+        counts.put("workstations", workstations.size());
+        counts.put("otherRecipes", otherRecipes.size());
+        counts.put("otherVerbs", otherVerbs.size());
+        SdeGenerationReport report = new SdeGenerationReport(
+                Instant.now().toString(), counts, List.copyOf(failedPages),
+                List.copyOf(downloadedImages), List.copyOf(missingImages));
+
+        Files.createDirectories(SDE_DIR);
+        writeWrapped("elements.json", "elements", elements);
+        writeWrapped("recipes.json", "recipes", recipes);
+        writeWrapped("verbs.json", "verbs", verbs);
+        writeWrapped("aspects.json", "aspects", aspects);
+        writeWrapped("cards.json", "cards", cards);
+        writeWrapped("crafts.json", "crafts", crafts);
+        writeWrapped("workstations.json", "workstations", workstations);
+        writeWrapped("other-recipes.json", "otherRecipes", otherRecipes);
+        writeWrapped("other-verbs.json", "otherVerbs", otherVerbs);
+        writeValue("generation-report.json", report);
+
+        String status = report.complete() ? "九类 SDE 生成完成" : "SDE 已生成，但有页面抓取失败";
+        progress.accept(1.0, status + "；" + counts + "；下载图片 " + downloadedImages.size()
+                + "；缺图 " + missingImages.size() + "；失败页面 " + failedPages.size());
+        return report;
+    }
+
+    private boolean isCraft(Recipe recipe) {
+        String id = recipe.getId() != null ? recipe.getId().toLowerCase(Locale.ROOT) : "";
+        return id.startsWith("craft.") || id.startsWith("remove.");
+    }
+
+    private List<Workstation> deriveWorkstations(List<Verb> verbs, List<Recipe> crafts) {
+        Map<String, List<String>> craftIdsByVerb = new HashMap<>();
+        for (Recipe craft : crafts) {
+            if (!craft.isCraftable()) {
                 continue;
             }
-            executor.submit(() -> {
+            for (String verbId : craft.getVerbIds()) {
+                craftIdsByVerb.computeIfAbsent(verbId, ignored -> new ArrayList<>()).add(craft.getId());
+            }
+        }
+        List<Workstation> result = new ArrayList<>();
+        for (Verb verb : verbs) {
+            List<String> craftIds = craftIdsByVerb.get(verb.getId());
+            if (craftIds == null || craftIds.isEmpty()) {
+                continue;
+            }
+            Workstation workstation = new Workstation();
+            copyCommon(verb, workstation);
+            workstation.setAspects(new LinkedHashMap<>(verb.getAspects()));
+            workstation.setSlots(new ArrayList<>(verb.getSlots()));
+            workstation.setRecipeIds(craftIds.stream().sorted().toList());
+            result.add(workstation);
+        }
+        result.sort(displayComparator());
+        return result;
+    }
+
+    private void resolveImages(List<? extends CatalogItem> items, String targetFolder, int threadCount,
+                               Map<String, List<Path>> localImages, List<String> downloaded,
+                               List<String> missing, double phaseStart, double phaseEnd,
+                               BiConsumer<Double, String> progress) throws InterruptedException, IOException {
+        Map<String, List<CatalogItem>> downloads = new LinkedHashMap<>();
+        for (CatalogItem item : items) {
+            item.setImagePath(null);
+            if (!ElementClassificationPolicy.hasNormalImage(item.getRowenariumImageSrc())) {
+                if ("workstations".equals(targetFolder)) {
+                    usePlaceholder(item, true);
+                }
+                continue;
+            }
+            String fileName = imageFileName(item.getRowenariumImageSrc());
+            if (fileName == null || fileName.equalsIgnoreCase("_x.png")) {
+                continue;
+            }
+            List<Path> matches = localImages.getOrDefault(fileName.toLowerCase(Locale.ROOT), List.of());
+            if (!matches.isEmpty()) {
+                item.setImagePath(toResourcePath(matches.getFirst()));
+            } else {
+                downloads.computeIfAbsent(fileName, ignored -> new ArrayList<>()).add(item);
+            }
+        }
+
+        progress.accept(phaseStart, targetFolder + "：需从网站下载 " + downloads.size() + " 张图片");
+        if (downloads.isEmpty()) {
+            progress.accept(phaseEnd, targetFolder + "：图片检查完成");
+            return;
+        }
+        Path targetDir = IMAGE_DIR.resolve(targetFolder).normalize();
+        Files.createDirectories(targetDir);
+        ExecutorService executor = Executors.newFixedThreadPool(threadCount);
+        CompletionService<ImageDownloadResult> completion = new ExecutorCompletionService<>(executor);
+        downloads.forEach((fileName, owners) -> completion.submit(() -> {
+            CatalogItem owner = owners.getFirst();
+            Path target = targetDir.resolve(fileName).normalize();
+            if (!target.startsWith(targetDir)) {
+                return new ImageDownloadResult(fileName, null, "非法图片文件名", false);
+            }
+            try {
+                byte[] bytes = client.downloadImage(owner.getRowenariumImageSrc());
+                Path temporary = targetDir.resolve(fileName + ".tmp");
+                Files.write(temporary, bytes);
+                moveAtomically(temporary, target);
+                return new ImageDownloadResult(fileName, target, null, false);
+            } catch (RowenariumClient.ImageUnavailableException exception) {
+                return new ImageDownloadResult(fileName, null, null, true);
+            } catch (Exception exception) {
+                return new ImageDownloadResult(fileName, null, exception.getMessage(), false);
+            }
+        }));
+
+        try {
+            for (int completed = 1; completed <= downloads.size(); completed++) {
+                ImageDownloadResult result = completion.take().get();
+                double overall = phaseStart + (phaseEnd - phaseStart) * completed / downloads.size();
+                if (result.placeholder()) {
+                    downloads.get(result.fileName()).forEach(item -> {
+                        usePlaceholder(item, "workstations".equals(targetFolder));
+                    });
+                } else if (result.error() == null) {
+                    String resourcePath = toResourcePath(result.path());
+                    downloads.get(result.fileName()).forEach(item -> item.setImagePath(resourcePath));
+                    downloaded.add(targetFolder + "/" + result.fileName());
+                } else {
+                    missing.add(targetFolder + "/" + result.fileName() + "：" + result.error());
+                }
+                if (completed == downloads.size() || completed % 10 == 0) {
+                    progress.accept(overall, targetFolder + " 图片 [" + completed + "/" + downloads.size() + "]");
+                }
+            }
+        } catch (java.util.concurrent.ExecutionException impossible) {
+            throw new IllegalStateException("Unexpected image task failure", impossible);
+        } finally {
+            executor.shutdownNow();
+        }
+    }
+
+    private void usePlaceholder(CatalogItem item, boolean workstation) {
+        String source = item.getRowenariumImageSrc();
+        int slash = source != null ? source.lastIndexOf('/') : -1;
+        if (slash >= 0) {
+            item.setRowenariumImageSrc(source.substring(0, slash + 1) + "_x.png");
+        } else if (workstation) {
+            item.setRowenariumImageSrc("/rowenarium/static/bhimages/verbs/_x.png");
+        }
+        item.setImagePath(workstation ? "/assets/images/verbs/_x.png" : null);
+    }
+
+    private void syncImageMetadata(List<? extends CatalogItem> targets,
+                                   List<? extends CatalogItem> resolvedItems) {
+        Map<String, CatalogItem> byId = new HashMap<>();
+        targets.forEach(item -> byId.put(item.getId(), item));
+        for (CatalogItem resolved : resolvedItems) {
+            CatalogItem target = byId.get(resolved.getId());
+            if (target != null) {
+                target.setRowenariumImageSrc(resolved.getRowenariumImageSrc());
+            }
+        }
+    }
+
+    private <T extends CatalogItem> List<T> fetchAll(String displayKind, String urlKind, List<String> ids,
+                                                       Map<String, T> cache, int threadCount,
+                                                       double phaseStart, double phaseEnd,
+                                                       BiFunction<Document, String, T> pageParser,
+                                                       List<String> failures,
+                                                       BiConsumer<Double, String> progress) throws InterruptedException {
+        List<T> results = new ArrayList<>(ids.size());
+        List<String> fetchIds = new ArrayList<>();
+        for (String id : ids) {
+            T cached = cache.get(id);
+            if (cached != null) {
+                results.add(cached);
+            } else {
+                fetchIds.add(id);
+            }
+        }
+        int cachedCount = results.size();
+        progress.accept(phaseStart, displayKind + " 共 " + ids.size() + "；复用 " + cachedCount
+                + "，需抓取 " + fetchIds.size());
+        if (fetchIds.isEmpty()) {
+            progress.accept(phaseEnd, displayKind + " 已全部复用");
+            return results;
+        }
+        ExecutorService executor = Executors.newFixedThreadPool(threadCount);
+        CompletionService<FetchResult<T>> completion = new ExecutorCompletionService<>(executor);
+        for (String id : fetchIds) {
+            completion.submit(() -> {
                 try {
-                    Card card = fetchCardFromRowenarium(raw);
-                    if (card != null) {
-                        synchronized (cards) {
-                            cards.add(card);
-                        }
-                        int sc = successCount.incrementAndGet();
-                        progressCallback.accept((double) completed.incrementAndGet() / total,
-                                "[" + completed.get() + "/" + total + "] " + card.getId() + " OK (" + card.getAspects().size() + " aspects)");
-                    } else {
-                        int c = completed.incrementAndGet();
-                        progressCallback.accept((double) c / total,
-                                "[" + c + "/" + total + "] " + raw.getId() + " SKIPPED (no aspects)");
-                    }
-                } catch (Exception e) {
-                    int c = completed.incrementAndGet();
-                    progressCallback.accept((double) c / total,
-                            "[" + c + "/" + total + "] " + raw.getId() + " FAILED: " + e.getMessage());
+                    return new FetchResult<>(id, pageParser.apply(client.fetch(urlKind, id), id), null);
+                } catch (Exception exception) {
+                    return new FetchResult<>(id, null, exception);
                 }
             });
         }
-
-        executor.shutdown();
-        while (!executor.isTerminated()) {
-            Thread.sleep(200);
+        try {
+            for (int completed = 1; completed <= fetchIds.size(); completed++) {
+                FetchResult<T> result = completion.take().get();
+                double overall = phaseStart + (phaseEnd - phaseStart) * (cachedCount + completed) / ids.size();
+                if (result.error() == null) {
+                    results.add(result.value());
+                } else {
+                    failures.add(urlKind + "/" + result.id() + "：" + result.error().getMessage());
+                }
+                if (completed == fetchIds.size() || completed % 20 == 0) {
+                    progress.accept(overall, displayKind + " [新增 " + completed + "/" + fetchIds.size() + "]");
+                }
+            }
+        } catch (java.util.concurrent.ExecutionException impossible) {
+            throw new IllegalStateException("Unexpected fetch task failure", impossible);
+        } finally {
+            executor.shutdownNow();
         }
-
-        cards.sort((a, b) -> {
-            String la = a.getDisplayName();
-            String lb = b.getDisplayName();
-            return java.text.Collator.getInstance(java.util.Locale.CHINA).compare(la, lb);
-        });
-
-        Map<String, List<Card>> wrapper = new LinkedHashMap<>();
-        wrapper.put("cards", cards);
-
-        Files.createDirectories(Paths.get(SDE_DIR));
-        Path outFile = Paths.get(SDE_DIR, CARDS_SDE_FILE);
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(outFile.toFile(), wrapper);
-
-        progressCallback.accept(1.0, "Generated " + CARDS_SDE_FILE + " with " + cards.size() + " cards.");
+        return results;
     }
 
-    private Card fetchCardFromRowenarium(Aspect raw) {
-        String id = raw.getId();
+    private <T extends CatalogItem> Map<String, T> loadExisting(String fileName, String rootKey, Class<T> type) {
+        Path file = SDE_DIR.resolve(fileName);
+        if (!Files.isRegularFile(file)) {
+            return Map.of();
+        }
         try {
-            Document doc = Jsoup.connect(ROWENARIUM_URL + id).timeout(10000).get();
+            JsonNode values = objectMapper.readTree(file.toFile()).path(rootKey);
+            var listType = objectMapper.getTypeFactory().constructCollectionType(List.class, type);
+            List<T> items = objectMapper.convertValue(values, listType);
+            Map<String, T> byId = new LinkedHashMap<>();
+            items.forEach(item -> byId.put(item.getId(), item));
+            return byId;
+        } catch (Exception ignored) {
+            return Map.of();
+        }
+    }
 
-            // Parse aspects
-            Map<String, Integer> aspects = new LinkedHashMap<>();
-            Elements refs = doc.select("p.content-field:has(strong.field-title:containsOwn(Aspects:)) span.element-ref.ref-list a.element-ref.ref");
-            for (org.jsoup.nodes.Element ref : refs) {
-                org.jsoup.nodes.Element refIdSpan = ref.selectFirst("span.ref-id");
-                if (refIdSpan == null) continue;
-                String aspectId = refIdSpan.text().trim();
-                if (aspectId.isEmpty()) continue;
-
-                int amount = 1;
-                org.jsoup.nodes.Element amountSpan = ref.selectFirst("span.ref-amount");
-                if (amountSpan != null) {
-                    try {
-                        amount = Integer.parseInt(amountSpan.text().trim());
-                    } catch (NumberFormatException ignored) {}
-                }
-                aspects.put(aspectId, aspects.getOrDefault(aspectId, 0) + amount);
+    private Map<String, List<Path>> indexLocalImages() throws IOException {
+        Map<String, List<Path>> result = new LinkedHashMap<>();
+        if (!Files.isDirectory(IMAGE_DIR)) {
+            return result;
+        }
+        try (Stream<Path> files = Files.walk(IMAGE_DIR)) {
+            for (Path file : files.filter(Files::isRegularFile).sorted().toList()) {
+                result.computeIfAbsent(file.getFileName().toString().toLowerCase(Locale.ROOT),
+                        ignored -> new ArrayList<>()).add(file);
             }
+        }
+        return result;
+    }
 
-            if (aspects.isEmpty()) {
-                return null;
-            }
-
-            // Parse image
-            org.jsoup.nodes.Element imgEl = doc.selectFirst("img.content-image.image-element");
-            String imageFileName = null;
-            if (imgEl != null) {
-                String src = imgEl.attr("src");
-                if (src != null && src.contains("/")) {
-                    imageFileName = src.substring(src.lastIndexOf('/') + 1);
-                }
-            }
-            if (imageFileName == null || imageFileName.isEmpty() || imageFileName.equals("_x.png")) {
-                imageFileName = id + ".png";
-            }
-
-            // Check if image exists locally
-            Path localImage = Paths.get(ELEMENTS_IMAGES_DIR, imageFileName);
-            String imagePath = null;
-            if (Files.exists(localImage)) {
-                imagePath = IMAGES_CLASSPATH_PREFIX + "elements/" + imageFileName;
-            } else {
-                // Try alternative: use id.png
-                localImage = Paths.get(ELEMENTS_IMAGES_DIR, id + ".png");
-                if (Files.exists(localImage)) {
-                    imagePath = IMAGES_CLASSPATH_PREFIX + "elements/" + id + ".png";
-                }
-            }
-
-            if (imagePath == null) {
-                return null;
-            }
-
-            Card card = new Card();
-            card.setId(id);
-            card.setLabel(raw.getLabel());
-            card.setDesc(raw.getDesc());
-            card.setImagePath(imagePath);
-            card.setSourceFile(raw.getSourceFile());
-            card.setAspects(aspects);
-            return card;
-
-        } catch (IOException e) {
+    private String imageFileName(String source) {
+        if (source == null || source.isBlank()) {
             return null;
         }
+        String raw = source.substring(source.lastIndexOf('/') + 1);
+        try {
+            return URLDecoder.decode(raw.replace("+", "%2B"), StandardCharsets.UTF_8);
+        } catch (IllegalArgumentException ignored) {
+            return raw;
+        }
     }
 
-    private static String resolveAspectImageName(String id) {
-        if (id.equals("fee")) {
-            return "pence";
-        }
-        if (id.equals("workstation")) {
-            return "sortgroup";
-        }
-        if (id.equals("ability.setup")) {
-            return "ability";
-        }
-        if (id.equals("lyterion")) {
-            return "r.insects.nectars";
-        }
-        if (id.equals("dissatisfying")) {
-            return "resentment";
-        }
-        if (id.equals("kod")) {
-            return "pentiment";
-        }
-        if (id.equals("reading.correspondence")) {
-            return "reading.knock";
-        }
-        if (id.equals("campable")) {
-            return "mybed";
-        }
-        if (id.startsWith("orderplaced.")) {
-            return "orderplaced";
-        }
-        if (id.startsWith("contains.")) {
-            return "contains";
-        }
-        if (id.startsWith("interest.")) {
-            return id.substring("interest.".length());
-        }
-        if (id.startsWith("relevance.")) {
-            return id.substring("relevance.".length());
-        }
-        if (id.startsWith("inspiring.")) {
-            return id.substring("inspiring.".length());
-        }
-        if (id.startsWith("group")) {
-            return "sortgroup";
-        }
-        if (id.startsWith("h.")) {
-            return "h";
-        }
-        if (id.startsWith("e.")) {
-            return "w." + id.substring("e.".length());
-        }
-        if (id.startsWith("ability.exposed.")) {
-            return "contamination." + id.substring("ability.exposed.".length());
-        }
-        if (id.startsWith("acted.")) {
-            return resolveActed(id);
-        }
-        if (id.startsWith("memories.")) {
-            return resolveMemories(id);
-        }
-        if (id.contains(".likes.")) {
-            return "befriend";
-        }
-        return id;
+    private String toResourcePath(Path image) {
+        return "/assets/images/" + IMAGE_DIR.relativize(image).toString().replace('\\', '/');
     }
 
-    private static String resolveActed(String id) {
-        String afterActed = id.substring("acted.".length());
-        int dotIndex = afterActed.indexOf('.');
-        return dotIndex > 0 ? afterActed.substring(0, dotIndex) : afterActed;
+    private Aspect toAspect(Element element) {
+        Aspect result = new Aspect();
+        copyCommon(element, result);
+        return result;
     }
 
-    private static String resolveMemories(String id) {
-        switch (id) {
-            case "memories.cartographer":
-                return "jm.nyctodromy";
-            case "memories.executioner":
-                return "jm.preservation";
-            case "memories.revolutionary":
-                return "jm.horomachistry";
-            case "memories.archaeologist":
-                return "jm.skolekosophy";
-            case "memories.symurgist":
-                return "jm.birdsong";
-            case "memories.magnate":
-                return "jm.hushery";
-            case "memories.twiceborn":
-                return "jm.illumination";
-            case "memories.prodigal":
-                return "jm.ithastry";
-            case "memories.artist":
-                return "jm.bosk";
-        }
-        return id;
+    private Card toCard(Element element) {
+        Card result = new Card();
+        copyCommon(element, result);
+        result.setAspects(new LinkedHashMap<>(element.getAspects()));
+        return result;
     }
+
+    private void copyCommon(CatalogItem source, CatalogItem target) {
+        target.setId(source.getId());
+        target.setLabel(source.getLabel());
+        target.setDesc(source.getDesc());
+        target.setImagePath(source.getImagePath());
+        target.setRowenariumImageSrc(source.getRowenariumImageSrc());
+        target.setSourceFile(source.getSourceFile());
+        target.setFields(new LinkedHashMap<>(source.getFields()));
+    }
+
+    private <T extends CatalogItem> Comparator<T> displayComparator() {
+        return Comparator.<T, String>comparing(CatalogItem::getDisplayName, String.CASE_INSENSITIVE_ORDER)
+                .thenComparing(CatalogItem::getId);
+    }
+
+    private <T extends CatalogItem> Comparator<T> idComparator() {
+        return Comparator.comparing(CatalogItem::getId, String.CASE_INSENSITIVE_ORDER);
+    }
+
+    private void writeWrapped(String fileName, String key, List<?> values) throws IOException {
+        writeValue(fileName, Map.of(key, values));
+    }
+
+    private void writeValue(String fileName, Object value) throws IOException {
+        Path output = SDE_DIR.resolve(fileName);
+        Path temporary = SDE_DIR.resolve(fileName + ".tmp");
+        objectMapper.writerWithDefaultPrettyPrinter().writeValue(temporary.toFile(), value);
+        moveAtomically(temporary, output);
+    }
+
+    private void moveAtomically(Path source, Path target) throws IOException {
+        try {
+            Files.move(source, target, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.ATOMIC_MOVE);
+        } catch (AtomicMoveNotSupportedException exception) {
+            Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
+        }
+    }
+
+    private record FetchResult<T>(String id, T value, Exception error) { }
+
+    private record ImageDownloadResult(String fileName, Path path, String error, boolean placeholder) { }
 }

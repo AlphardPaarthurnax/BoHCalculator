@@ -2,38 +2,28 @@ package com.github.alphardpaarthurnax.bohcalculator.controller;
 
 import com.github.alphardpaarthurnax.bohcalculator.model.Aspect;
 import com.github.alphardpaarthurnax.bohcalculator.model.Card;
-import com.github.alphardpaarthurnax.bohcalculator.service.AspectDataService;
 import com.github.alphardpaarthurnax.bohcalculator.service.CardDataService;
+import com.github.alphardpaarthurnax.bohcalculator.service.CatalogImageService;
+import com.github.alphardpaarthurnax.bohcalculator.service.CatalogReferenceIndex;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.collections.FXCollections;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
-import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
-import java.io.InputStream;
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class CardBrowserController {
 
@@ -61,14 +51,11 @@ public class CardBrowserController {
     @FXML
     private TableView<AspectEntry> aspectTable;
 
-    private Map<String, Aspect> aspectMap;
+    private final CatalogReferenceIndex references = CatalogReferenceIndex.getInstance();
     private FilteredList<Card> filteredCards;
 
     @FXML
     public void initialize() {
-        aspectMap = AspectDataService.getInstance().getAspects().stream()
-                .collect(Collectors.toMap(Aspect::getId, a -> a));
-
         Collator collator = Collator.getInstance(Locale.CHINA);
         Comparator<Card> cardComparator = (a, b) -> {
             boolean aHasLabel = a.getLabel() != null && !a.getLabel().isEmpty();
@@ -85,33 +72,7 @@ public class CardBrowserController {
 
         cardList.setItems(sortedList);
 
-        cardList.setCellFactory(lv -> new ListCell<Card>() {
-            private final ImageView iv = new ImageView();
-            private final Label label = new Label();
-            private final HBox hbox = new HBox(8);
-
-            {
-                iv.setFitWidth(24);
-                iv.setFitHeight(24);
-                iv.setPreserveRatio(true);
-                hbox.getChildren().addAll(iv, label);
-                hbox.setAlignment(Pos.CENTER_LEFT);
-            }
-
-            @Override
-            protected void updateItem(Card item, boolean empty) {
-                super.updateItem(item, empty);
-                if (empty || item == null) {
-                    setGraphic(null);
-                    setText(null);
-                } else {
-                    iv.setImage(item.getImage());
-                    label.setText(item.getDisplayName());
-                    setGraphic(hbox);
-                    setText(null);
-                }
-            }
-        });
+        cardList.setCellFactory(ignored -> new CatalogListCell<>());
 
         setupAspectTable();
 
@@ -131,8 +92,8 @@ public class CardBrowserController {
                 cardName.setText(newVal.getDisplayName());
                 cardId.setText(newVal.getId() != null ? newVal.getId() : "");
                 cardSource.setText(newVal.getSourceFile() != null ? newVal.getSourceFile() : "");
-                cardDescription.getChildren().setAll(parseDescription(newVal.getDesc()));
-                cardImage.setImage(newVal.getImage());
+                cardDescription.getChildren().setAll(RichDescriptionRenderer.render(newVal.getDesc()));
+                cardImage.setImage(CatalogImageService.imageFor(newVal));
                 populateAspectTable(newVal);
             } else {
                 cardName.setText("");
@@ -149,6 +110,7 @@ public class CardBrowserController {
         }
     }
 
+    @SuppressWarnings("unchecked")
     private void setupAspectTable() {
         TableColumn<AspectEntry, Void> iconCol = new TableColumn<>("图标");
         iconCol.setCellFactory(col -> new TableCell<>() {
@@ -165,7 +127,7 @@ public class CardBrowserController {
                     setGraphic(null);
                 } else {
                     Aspect a = getTableRow().getItem().aspect;
-                    iv.setImage(a != null ? a.getImage() : null);
+                    iv.setImage(a != null ? CatalogImageService.imageFor(a) : null);
                     setGraphic(iv);
                 }
             }
@@ -190,16 +152,16 @@ public class CardBrowserController {
         sourceCol.setPrefWidth(200);
 
         aspectTable.getColumns().addAll(iconCol, nameCol, amountCol, sourceCol);
-        aspectTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+        aspectTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY_FLEX_LAST_COLUMN);
     }
 
     private void populateAspectTable(Card card) {
         List<AspectEntry> entries = new ArrayList<>();
         if (card.getAspects() != null) {
             for (Map.Entry<String, Integer> entry : card.getAspects().entrySet()) {
-                Aspect aspect = aspectMap.get(entry.getKey());
+                Aspect aspect = references.aspects().get(entry.getKey());
                 if (aspect != null) {
-                    entries.add(new AspectEntry(aspect, entry.getValue()));
+                    entries.add(new AspectEntry(entry.getKey(), aspect, entry.getValue()));
                 }
             }
         }
@@ -207,57 +169,19 @@ public class CardBrowserController {
     }
 
     private static class AspectEntry {
+        final String id;
         final Aspect aspect;
         final int amount;
 
-        AspectEntry(Aspect aspect, int amount) {
+        AspectEntry(String id, Aspect aspect, int amount) {
+            this.id = id;
             this.aspect = aspect;
             this.amount = amount;
         }
 
         String getDisplayName() {
-            return aspect != null ? aspect.getDisplayName() : "";
+            return aspect != null ? aspect.getDisplayName() : id;
         }
     }
 
-    private List<Node> parseDescription(String desc) {
-        List<Node> nodes = new ArrayList<>();
-        if (desc == null || desc.isEmpty()) return nodes;
-
-        Pattern pattern = Pattern.compile("<b>(.*?)</b>|<i>(.*?)</i>|<sprite name=(.*?)>");
-        Matcher matcher = pattern.matcher(desc);
-
-        int lastEnd = 0;
-        while (matcher.find()) {
-            if (matcher.start() > lastEnd) {
-                nodes.add(new Text(desc.substring(lastEnd, matcher.start())));
-            }
-            if (matcher.group(1) != null) {
-                Text text = new Text(matcher.group(1));
-                text.setStyle("-fx-font-weight: bold; -fx-font-size: 15px;");
-                nodes.add(text);
-            } else if (matcher.group(2) != null) {
-                Text text = new Text(matcher.group(2));
-                text.setStyle("-fx-fill: #c41d7f; -fx-font-style: italic;");
-                nodes.add(text);
-            } else if (matcher.group(3) != null) {
-                String spriteName = matcher.group(3);
-                ImageView iv = new ImageView();
-                iv.setFitWidth(20);
-                iv.setFitHeight(20);
-                iv.setPreserveRatio(true);
-                iv.setTranslateY(3);
-                InputStream is = getClass().getResourceAsStream("/assets/images/aspects/" + spriteName + ".png");
-                if (is != null) {
-                    iv.setImage(new Image(is));
-                }
-                nodes.add(iv);
-            }
-            lastEnd = matcher.end();
-        }
-        if (lastEnd < desc.length()) {
-            nodes.add(new Text(desc.substring(lastEnd)));
-        }
-        return nodes;
-    }
 }

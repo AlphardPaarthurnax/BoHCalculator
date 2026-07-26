@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.TextFlow?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+ fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.OtherRecipeBrowserController">
+ <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+ <top><VBox spacing="8"><Label fx:id="browserTitle" style="-fx-font-size:17px;-fx-font-weight:bold;"/><TextField fx:id="searchField" promptText="搜索名称、ID、说明或字段内容…"/></VBox></top>
+ <center><SplitPane dividerPositions="0.27"><ListView fx:id="itemList" prefWidth="260"/><ScrollPane fitToWidth="true" hbarPolicy="NEVER"><VBox alignment="TOP_CENTER" spacing="9"><padding><Insets top="14" right="14" bottom="14" left="14"/></padding><ImageView fx:id="itemImage" fitWidth="72" fitHeight="72" preserveRatio="true"/><Label fx:id="itemName" wrapText="true" style="-fx-font-size:20px;-fx-font-weight:bold;"/><Label fx:id="itemId" wrapText="true" style="-fx-text-fill:gray;"/><Label fx:id="itemSource" wrapText="true" style="-fx-text-fill:gray;"/><TextFlow fx:id="itemDescription" lineSpacing="4"/><TableView fx:id="detailTable" prefHeight="430" VBox.vgrow="ALWAYS"/></VBox></ScrollPane></SplitPane></center>
+</BorderPane>

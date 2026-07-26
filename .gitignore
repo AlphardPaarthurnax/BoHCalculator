@@ -1,7 +1,9 @@
 target/
+javafx-run.*.log
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+docs/*.md
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

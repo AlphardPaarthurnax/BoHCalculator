@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 
-<TabPane xmlns="http://javafx.com/javafx"
-         xmlns:fx="http://javafx.com/fxml"
+<TabPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:id="mainTabs"
+         fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.MainController"
          tabClosingPolicy="UNAVAILABLE">
-    <Tab text="性相">
-        <fx:include source="aspect-browser.fxml"/>
+    <Tab fx:id="dataSourceTab" text="数据源" closable="false">
+        <TabPane fx:id="dataSourceTabs" tabClosingPolicy="UNAVAILABLE">
+            <Tab fx:id="elementTab" text="Elements"/>
+            <Tab fx:id="recipeTab" text="Recipes"/>
+            <Tab fx:id="verbTab" text="Verbs"/>
+            <Tab fx:id="otherRecipeTab" text="OtherRecipes"/>
+            <Tab fx:id="otherVerbTab" text="OtherVerbs"/>
+            <Tab fx:id="generatorTab" text="SDE 生成器"/>
+        </TabPane>
     </Tab>
-    <Tab text="卡牌">
-        <fx:include source="card-browser.fxml"/>
-    </Tab>
-    <Tab text="生成器">
-        <fx:include source="data-generator.fxml"/>
-    </Tab>
+    <Tab fx:id="aspectTab" text="Aspects"/>
+    <Tab fx:id="cardTab" text="Cards"/>
+    <Tab fx:id="craftTab" text="Crafts"/>
+    <Tab fx:id="workstationTab" text="Workstations"/>
 </TabPane>
