@@ -36,6 +36,7 @@
             <Tab fx:id="stockWorkstationTab" text="Workstations"/>
         </TabPane>
     </Tab>
+    <Tab fx:id="calculationTab" text="计算"/>
     <Tab fx:id="craftTab" text="Crafts"/>
     <Tab fx:id="workstationTab" text="Workstations"/>
 </TabPane>

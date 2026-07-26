@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.github.alphardpaarthurnax.bohcalculator.model.SkillConfiguration;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -66,25 +67,79 @@ public final class StockRepository {
         return result;
     }
 
-    public void saveQuantities(String fileName, Map<String, Integer> quantities) {
-        ObjectNode root = mapper.createObjectNode();
-        ObjectNode values = root.putObject("quantities");
+    public Map<String, SkillConfiguration> loadSkillConfigurations(String fileName) {
+        JsonNode skills = load(fileName).path("skills");
+        Map<String, SkillConfiguration> result = new LinkedHashMap<>();
+        if (skills.isObject()) {
+            skills.fields().forEachRemaining(entry -> {
+                JsonNode value = entry.getValue();
+                try {
+                    SkillConfiguration configuration = new SkillConfiguration(
+                            value.path("level").asInt(1),
+                            value.path("wisdomId").asText(null),
+                            value.path("attunementId").asText(null),
+                            value.path("harmonized").asBoolean(false));
+                    if (!configuration.isDefault()) {
+                        result.put(entry.getKey(), configuration);
+                    }
+                } catch (IllegalArgumentException ignored) {
+                    // Ignore invalid hand-edited entries while retaining the rest of the stock file.
+                }
+            });
+        }
+        return result;
+    }
+
+    public synchronized void saveQuantities(String fileName, Map<String, Integer> quantities) {
+        ObjectNode root = editableRoot(fileName);
+        ObjectNode values = mapper.createObjectNode();
         quantities.entrySet().stream()
                 .filter(entry -> entry.getKey() != null && !entry.getKey().isBlank())
                 .filter(entry -> entry.getValue() != null && entry.getValue() > 0)
                 .sorted(Map.Entry.comparingByKey())
                 .forEach(entry -> values.put(entry.getKey(), entry.getValue()));
+        root.set("quantities", values);
         save(fileName, root);
     }
 
-    public void saveUnlocked(String fileName, Set<String> unlocked) {
-        ObjectNode root = mapper.createObjectNode();
-        ArrayNode values = root.putArray("unlocked");
+    public synchronized void saveUnlocked(String fileName, Set<String> unlocked) {
+        ObjectNode root = editableRoot(fileName);
+        ArrayNode values = mapper.createArrayNode();
         unlocked.stream()
                 .filter(id -> id != null && !id.isBlank())
                 .sorted(Comparator.naturalOrder())
                 .forEach(values::add);
+        root.set("unlocked", values);
         save(fileName, root);
+    }
+
+    public synchronized void saveSkillConfigurations(
+            String fileName, Map<String, SkillConfiguration> configurations) {
+        ObjectNode root = editableRoot(fileName);
+        ObjectNode skills = mapper.createObjectNode();
+        configurations.entrySet().stream()
+                .filter(entry -> entry.getKey() != null && !entry.getKey().isBlank())
+                .filter(entry -> entry.getValue() != null && !entry.getValue().isDefault())
+                .sorted(Map.Entry.comparingByKey())
+                .forEach(entry -> {
+                    SkillConfiguration configuration = entry.getValue();
+                    ObjectNode value = skills.putObject(entry.getKey());
+                    value.put("level", configuration.level());
+                    if (configuration.wisdomId() != null) {
+                        value.put("wisdomId", configuration.wisdomId());
+                    }
+                    if (configuration.attunementId() != null) {
+                        value.put("attunementId", configuration.attunementId());
+                    }
+                    value.put("harmonized", configuration.harmonized());
+                });
+        root.set("skills", skills);
+        save(fileName, root);
+    }
+
+    private ObjectNode editableRoot(String fileName) {
+        JsonNode existing = load(fileName);
+        return existing instanceof ObjectNode object ? object.deepCopy() : mapper.createObjectNode();
     }
 
     private JsonNode load(String fileName) {

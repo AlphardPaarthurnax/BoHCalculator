@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.CardStockController">
     <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
     <top><VBox spacing="8"><Label text="Cards 库存（只显示数量大于 0 的物品）" style="-fx-font-size: 17px; -fx-font-weight: bold;"/><HBox spacing="8"><TextField fx:id="searchField" promptText="搜索当前库存…" HBox.hgrow="ALWAYS"/><Button text="添加物品…" onAction="#chooseNewItem"/></HBox></VBox></top>
-    <center><SplitPane dividerPositions="0.42"><ListView fx:id="itemList"/><VBox alignment="TOP_CENTER" spacing="12">
-        <padding><Insets top="24" right="20" bottom="20" left="20"/></padding>
-        <ImageView fx:id="itemImage" fitWidth="80" fitHeight="80" preserveRatio="true"/>
-        <Label fx:id="itemName" wrapText="true" style="-fx-font-size: 19px; -fx-font-weight: bold;"/>
-        <Label fx:id="itemId" wrapText="true" style="-fx-text-fill: gray;"/>
-        <Label text="库存数量" style="-fx-font-weight: bold;"/>
-        <HBox alignment="CENTER" spacing="8"><Button text="−" onAction="#decrementQuantity"/><Spinner fx:id="quantitySpinner" prefWidth="130"/><Button text="+" onAction="#incrementQuantity"/></HBox>
-        <Label fx:id="saveStatus" wrapText="true" style="-fx-text-fill: #38761d;"/>
-    </VBox></SplitPane></center>
+    <center><SplitPane dividerPositions="0.42"><ListView fx:id="itemList"/><ScrollPane fitToWidth="true"><VBox alignment="TOP_CENTER" spacing="12">
+            <padding><Insets top="24" right="20" bottom="20" left="20"/></padding>
+            <ImageView fx:id="itemImage" fitWidth="80" fitHeight="80" preserveRatio="true"/>
+            <Label fx:id="itemName" wrapText="true" style="-fx-font-size: 19px; -fx-font-weight: bold;"/>
+            <Label fx:id="itemId" wrapText="true" style="-fx-text-fill: gray;"/>
+            <Label text="库存数量" style="-fx-font-weight: bold;"/>
+            <HBox alignment="CENTER" spacing="8"><Button text="−" onAction="#decrementQuantity"/><Spinner fx:id="quantitySpinner" prefWidth="130"/><Button text="+" onAction="#incrementQuantity"/></HBox>
+            <Label fx:id="saveStatus" wrapText="true" style="-fx-text-fill: #38761d;"/>
+            <VBox fx:id="skillPanel" spacing="9" maxWidth="520" visible="false" managed="false"
+                  style="-fx-background-color: #f5f7fa; -fx-background-radius: 8; -fx-border-color: #cfd8e3; -fx-border-radius: 8;">
+                <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+                <Separator/>
+                <Label text="Skill 设置" style="-fx-font-size: 17px; -fx-font-weight: bold;"/>
+                <HBox alignment="CENTER_LEFT" spacing="8">
+                    <Label text="等级" minWidth="82"/>
+                    <Spinner fx:id="skillLevelSpinner" prefWidth="110" editable="true"/>
+                    <Label text="每级令原有基础性相与技艺 +1" style="-fx-text-fill: #657386;"/>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="8">
+                    <Label text="呈递至" minWidth="82"/>
+                    <ComboBox fx:id="wisdomChoice" prefWidth="210" promptText="选择原有伟大之术"/>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="8">
+                    <Label text="调和魂质" minWidth="82"/>
+                    <ComboBox fx:id="attunementChoice" prefWidth="210" promptText="选择魂质"/>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="8">
+                    <Button text="呈递" onAction="#presentSkill"/>
+                    <Button fx:id="cancelPresentationButton" text="取消呈递" onAction="#cancelPresentation"/>
+                    <Button fx:id="harmonizeButton" text="调和" onAction="#harmonizeSkill"/>
+                    <Button fx:id="cancelHarmonizeButton" text="取消调和" onAction="#cancelHarmonization"/>
+                </HBox>
+                <Label fx:id="skillStateLabel" wrapText="true" style="-fx-text-fill: #45566c;"/>
+                <Label text="当前有效性相" style="-fx-font-weight: bold;"/>
+                <FlowPane fx:id="effectiveAspectsPane" hgap="8" vgap="7"/>
+            </VBox>
+        </VBox></ScrollPane></SplitPane></center>
 </BorderPane>

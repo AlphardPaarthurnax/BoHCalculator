@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.github.alphardpaarthurnax.bohcalculator.controller.CalculationController">
+    <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+    <top>
+        <VBox spacing="5">
+            <Label text="合成路径计算器" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+            <Label text="以当前库存和已解锁工作台为起点，计算多级配方；数量归零的库存不会参与计算。" style="-fx-text-fill: #5f6b7a;"/>
+            <Separator/>
+        </VBox>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.36">
+            <VBox spacing="10" prefWidth="390">
+                <padding><Insets top="10" right="10" bottom="0" left="0"/></padding>
+                <Label text="需求" style="-fx-font-size: 17px; -fx-font-weight: bold;"/>
+                <HBox spacing="7">
+                    <Button text="+ Card" onAction="#addCardGoal"/>
+                    <Button text="+ Thing" onAction="#addThingGoal"/>
+                    <Button text="+ Aspect" onAction="#addAspectGoal"/>
+                </HBox>
+                <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS" style="-fx-background-color: transparent;">
+                    <VBox fx:id="goalRows" spacing="7">
+                        <padding><Insets top="4" right="4" bottom="4" left="4"/></padding>
+                    </VBox>
+                </ScrollPane>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Button fx:id="calculateButton" text="计算最优路径" onAction="#calculate" defaultButton="true"
+                            style="-fx-font-size: 15px; -fx-font-weight: bold;"/>
+                    <ProgressIndicator fx:id="progressIndicator" prefWidth="24" prefHeight="24" maxWidth="24" maxHeight="24"/>
+                </HBox>
+                <Label fx:id="statusLabel" wrapText="true" style="-fx-text-fill: #475569;"/>
+            </VBox>
+            <ScrollPane fitToWidth="true" pannable="true" style="-fx-background-color: #f3f5f7;">
+                <VBox fx:id="resultContent" spacing="12">
+                    <padding><Insets top="14" right="14" bottom="14" left="14"/></padding>
+                </VBox>
+            </ScrollPane>
+        </SplitPane>
+    </center>
+</BorderPane>

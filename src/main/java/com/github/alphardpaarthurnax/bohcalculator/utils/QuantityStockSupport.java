@@ -42,6 +42,10 @@ public abstract class QuantityStockSupport<T extends CatalogItem> {
 
     protected abstract void setQuantity(String id, int amount);
 
+    protected void onItemShown(T item) {
+        // Subclasses can expose item-specific stock controls.
+    }
+
     @FXML
     public void initialize() {
         quantitySpinner.setValueFactory(
@@ -147,6 +151,7 @@ public abstract class QuantityStockSupport<T extends CatalogItem> {
                 quantitySpinner.getValueFactory().setValue(quantity(item.getId()));
             }
             saveStatus.setText("");
+            onItemShown(item);
         } finally {
             updatingSpinner = false;
         }

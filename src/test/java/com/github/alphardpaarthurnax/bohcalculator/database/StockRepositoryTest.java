@@ -1,6 +1,7 @@
 package com.github.alphardpaarthurnax.bohcalculator.database;
 
 import com.github.alphardpaarthurnax.bohcalculator.model.Card;
+import com.github.alphardpaarthurnax.bohcalculator.model.SkillConfiguration;
 import javafx.collections.FXCollections;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -56,5 +57,22 @@ class StockRepositoryTest {
         unlocked.setUnlocked(card.getId(), false);
         assertTrue(repository.loadQuantities("cards.json").isEmpty());
         assertTrue(repository.loadUnlocked("books.json").isEmpty());
+    }
+
+    @Test
+    void skillConfigurationSurvivesQuantityUpdatesInSameFile() {
+        StockRepository repository = new StockRepository(temporaryDirectory);
+        SkillConfiguration configuration = new SkillConfiguration(
+                4, "w.illumination", "a.xpho", true);
+
+        repository.saveSkillConfigurations("cards.json", Map.of("s.test", configuration));
+        repository.saveQuantities("cards.json", Map.of("s.test", 1));
+
+        assertEquals(Map.of("s.test", 1), repository.loadQuantities("cards.json"));
+        assertEquals(configuration, repository.loadSkillConfigurations("cards.json").get("s.test"));
+
+        repository.saveSkillConfigurations("cards.json", Map.of());
+        assertTrue(repository.loadSkillConfigurations("cards.json").isEmpty());
+        assertEquals(Map.of("s.test", 1), repository.loadQuantities("cards.json"));
     }
 }

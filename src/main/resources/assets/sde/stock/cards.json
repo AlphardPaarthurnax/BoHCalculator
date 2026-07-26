@@ -1,5 +1,116 @@
 {
   "quantities" : {
-    "_reply" : 1
+    "crown" : 1,
+    "halfcrown" : 1,
+    "incident.numa.grail.a" : 1,
+    "mpho" : 1,
+    "s.anbary.lapidary" : 1,
+    "s.auroralcontemplations" : 1,
+    "s.disciplines.thehammer" : 1,
+    "s.edictsliminal" : 1,
+    "s.fucine" : 1,
+    "s.furs.feathers" : 1,
+    "s.glaziery.lightsmithing" : 1,
+    "s.hyksos" : 1,
+    "s.maggephenemysteries" : 1,
+    "s.ouranoscopy" : 1,
+    "s.pearl.tide" : 1,
+    "s.pentiments.precursors" : 1,
+    "s.preliminalmeter" : 1,
+    "s.raggedcrossroads" : 1,
+    "s.sights.sensations" : 1,
+    "s.skystories" : 1,
+    "s.snowstories" : 1,
+    "s.transformations.liberations" : 1,
+    "s.watchmansparadoxes" : 1,
+    "spintria.gold" : 1,
+    "spintria.iron" : 1,
+    "tenshillingnote" : 1,
+    "threepence" : 1,
+    "twopence" : 1,
+    "xere" : 1,
+    "xfet2" : 1,
+    "xhea" : 2,
+    "xmet" : 1,
+    "xpho" : 3,
+    "xsha2" : 1,
+    "xtri" : 2,
+    "xwis2" : 1
+  },
+  "skills" : {
+    "s.auroralcontemplations" : {
+      "level" : 4,
+      "wisdomId" : "w.illumination",
+      "attunementId" : "a.xpho",
+      "harmonized" : false
+    },
+    "s.disciplines.thehammer" : {
+      "level" : 3,
+      "wisdomId" : "w.nyctodromy",
+      "attunementId" : "a.xsha",
+      "harmonized" : true
+    },
+    "s.edictsliminal" : {
+      "level" : 1,
+      "wisdomId" : "w.skolekosophy",
+      "attunementId" : "a.xere",
+      "harmonized" : false
+    },
+    "s.furs.feathers" : {
+      "level" : 1,
+      "wisdomId" : "w.bosk",
+      "attunementId" : "a.xhea",
+      "harmonized" : false
+    },
+    "s.glaziery.lightsmithing" : {
+      "level" : 1,
+      "wisdomId" : "w.illumination",
+      "attunementId" : "a.xmet",
+      "harmonized" : false
+    },
+    "s.maggephenemysteries" : {
+      "level" : 2,
+      "harmonized" : false
+    },
+    "s.ouranoscopy" : {
+      "level" : 3,
+      "wisdomId" : "w.horomachistry",
+      "attunementId" : "a.xfet",
+      "harmonized" : false
+    },
+    "s.preliminalmeter" : {
+      "level" : 2,
+      "wisdomId" : "w.ithastry",
+      "attunementId" : "a.xwis",
+      "harmonized" : false
+    },
+    "s.sights.sensations" : {
+      "level" : 1,
+      "wisdomId" : "w.hushery",
+      "attunementId" : "a.xwis",
+      "harmonized" : true
+    },
+    "s.skystories" : {
+      "level" : 2,
+      "wisdomId" : "w.horomachistry",
+      "attunementId" : "a.xfet",
+      "harmonized" : true
+    },
+    "s.snowstories" : {
+      "level" : 1,
+      "wisdomId" : "w.birdsong",
+      "attunementId" : "a.xtri",
+      "harmonized" : false
+    },
+    "s.transformations.liberations" : {
+      "level" : 1,
+      "wisdomId" : "w.ithastry",
+      "attunementId" : "a.xpho",
+      "harmonized" : false
+    },
+    "s.watchmansparadoxes" : {
+      "level" : 2,
+      "harmonized" : false
+    }
   }
 }

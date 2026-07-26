@@ -16,7 +16,7 @@ public final class QuantityStockStore<T extends CatalogItem> {
         this(fileName, catalog, new StockRepository());
     }
 
-    QuantityStockStore(String fileName, ObservableList<T> catalog, StockRepository repository) {
+    public QuantityStockStore(String fileName, ObservableList<T> catalog, StockRepository repository) {
         this.fileName = fileName;
         this.catalog = catalog;
         this.repository = repository;

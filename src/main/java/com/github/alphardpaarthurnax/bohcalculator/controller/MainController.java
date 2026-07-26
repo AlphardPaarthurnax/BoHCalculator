@@ -34,6 +34,7 @@ public class MainController {
     @FXML private Tab stockThingTab;
     @FXML private Tab stockBookTab;
     @FXML private Tab stockWorkstationTab;
+    @FXML private Tab calculationTab;
     @FXML private Tab craftTab;
     @FXML private Tab workstationTab;
     @FXML private Tab otherRecipeTab;
@@ -59,6 +60,7 @@ public class MainController {
         resources.put(stockThingTab, "thing-stock.fxml");
         resources.put(stockBookTab, "book-stock.fxml");
         resources.put(stockWorkstationTab, "workstation-stock.fxml");
+        resources.put(calculationTab, "calculation.fxml");
         resources.put(craftTab, "craft-browser.fxml");
         resources.put(workstationTab, "workstation-browser.fxml");
         resources.put(otherRecipeTab, "other-recipe-browser.fxml");
