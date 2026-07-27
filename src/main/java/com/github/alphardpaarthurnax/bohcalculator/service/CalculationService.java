@@ -1,6 +1,7 @@
 package com.github.alphardpaarthurnax.bohcalculator.service;
 
 import com.github.alphardpaarthurnax.bohcalculator.craft.CraftPathPlanner;
+import com.github.alphardpaarthurnax.bohcalculator.craft.ReadingRecipeFactory;
 import com.github.alphardpaarthurnax.bohcalculator.model.Aspect;
 import com.github.alphardpaarthurnax.bohcalculator.model.CalculationGoal;
 import com.github.alphardpaarthurnax.bohcalculator.model.CatalogItem;
@@ -57,13 +58,16 @@ public final class CalculationService {
     }
 
     public CraftPlanResult calculate(List<CalculationGoal> goals) {
+        List<Recipe> recipes = new ArrayList<>(craftData.getCrafts());
+        recipes.addAll(readingRecipes());
         CraftPathPlanner planner = new CraftPathPlanner(
                 planningElements(), aspectData.getAspects(),
-                craftData.getCrafts(), workstationData.getWorkstations());
+                recipes, workstationData.getWorkstations());
         CraftPlanResult result = planner.plan(goals, inventory(), unlockedWorkstations());
         List<String> warnings = new ArrayList<>(result.warnings());
-        warnings.add("最优顺序：先选择缺口最少的路径，再比较合成步骤数和被消耗物品数。");
+        warnings.add("路径优先级：先保证可完成并减少缺口，再避免消耗当前无法补充的库存，最后比较步骤数与总消耗。 ");
         warnings.add("已解锁的 Books、Wallarts、Comforts 按各 1 份可用物品计算；Cards、Things 使用库存数量。");
+        warnings.add("只有库存中标记为“已精通”的 Books 才能重读；书籍和投入的魂质不会被消耗，每种回忆同时最多保留 1 张。");
         return new CraftPlanResult(result.complete(), result.goals(), result.steps(),
                 result.missing(), warnings);
     }
@@ -137,8 +141,16 @@ public final class CalculationService {
         items.addAll(comfortData.getComforts());
         items.addAll(workstationData.getWorkstations());
         items.addAll(craftData.getCrafts());
+        items.addAll(readingRecipes());
         items.addAll(elementData.getElements());
         return items;
+    }
+
+    private List<Recipe> readingRecipes() {
+        List<com.github.alphardpaarthurnax.bohcalculator.model.Book> masteredBooks = bookData.getBooks().stream()
+                .filter(book -> bookStock.isMastered(book.getId()))
+                .toList();
+        return new ReadingRecipeFactory().create(masteredBooks, workstationData.getWorkstations());
     }
 
     private void putPositive(Map<String, Integer> target, String id, int amount) {

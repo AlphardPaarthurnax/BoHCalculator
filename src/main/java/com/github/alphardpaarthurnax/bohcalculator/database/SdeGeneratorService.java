@@ -82,6 +82,11 @@ public class SdeGeneratorService {
         List<String> failedPages = new ArrayList<>();
         Map<String, Element> elementCache = refreshAll ? Map.of()
                 : loadExisting("elements.json", "elements", Element.class);
+        if (!refreshAll) {
+            elementCache.entrySet().removeIf(entry ->
+                    entry.getValue().getAspects().getOrDefault("readable", 0) > 0
+                            && !entry.getValue().isReadingMemoryChecked());
+        }
         Map<String, Recipe> recipeCache = refreshAll ? Map.of()
                 : loadExisting("recipes.json", "recipes", Recipe.class);
         Map<String, Verb> verbCache = refreshAll ? Map.of()
@@ -472,6 +477,9 @@ public class SdeGeneratorService {
     private <T extends Card> T toCard(Element element, T result) {
         copyCommon(element, result);
         result.setAspects(new LinkedHashMap<>(element.getAspects()));
+        if (result instanceof Book book) {
+            book.setReadingMemoryId(element.getReadingMemoryId());
+        }
         return result;
     }
 

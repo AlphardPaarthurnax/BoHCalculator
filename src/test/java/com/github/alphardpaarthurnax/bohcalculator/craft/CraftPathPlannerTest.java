@@ -64,6 +64,34 @@ class CraftPathPlannerTest {
         assertEquals(Map.of("B", 1), result.goals().getFirst().sources());
     }
 
+    @Test
+    void preservesAOneOffInventoryItemWhenACurrentlyRenewableInputCanBeUsed() {
+        Element rare = element("rare", Map.of());
+        Element renewable = element("renewable", Map.of());
+        Element seed = element("seed", Map.of());
+        Element resultElement = element("result", Map.of());
+
+        Recipe spendRare = recipe("make.result.rare", Map.of("rare", 1), Map.of("result", 1));
+        Recipe spendRenewable = recipe("make.result.renewable", Map.of("renewable", 1), Map.of("result", 1));
+        Recipe replenish = recipe("make.renewable", Map.of("seed", 1), Map.of("renewable", 1));
+        List<Recipe> recipes = List.of(spendRare, spendRenewable, replenish);
+
+        Workstation desk = new Workstation();
+        desk.setId("desk");
+        desk.setRecipeIds(recipes.stream().map(Recipe::getId).toList());
+        desk.setSlots(List.of(slot("材料")));
+        CraftPathPlanner planner = new CraftPathPlanner(
+                List.of(rare, renewable, seed, resultElement), List.of(), recipes, List.of(desk));
+
+        CraftPlanResult result = planner.plan(
+                List.of(new CalculationGoal(CalculationGoalType.ELEMENT, "result", 1)),
+                Map.of("rare", 1, "renewable", 1, "seed", 1), Set.of("desk"));
+
+        assertTrue(result.complete());
+        assertEquals("make.result.renewable", result.steps().getLast().recipeId());
+        assertEquals("renewable", result.steps().getLast().placements().getFirst().elementId());
+    }
+
     private CraftPathPlanner planner(boolean includeC) {
         Element a = element("A", Map.of());
         Element b = element("B", Map.of("edge", 5));

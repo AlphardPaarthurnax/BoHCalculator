@@ -1,6 +1,7 @@
 package com.github.alphardpaarthurnax.bohcalculator.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -14,6 +15,10 @@ public class Element extends CatalogItem {
     private boolean unique;
     private boolean normalImage;
     private String manifestationType;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String readingMemoryId;
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
+    private boolean readingMemoryChecked;
 
     public Map<String, Integer> getAspects() {
         return aspects;
@@ -69,5 +74,21 @@ public class Element extends CatalogItem {
 
     public void setManifestationType(String manifestationType) {
         this.manifestationType = manifestationType;
+    }
+
+    public String getReadingMemoryId() {
+        return readingMemoryId;
+    }
+
+    public void setReadingMemoryId(String readingMemoryId) {
+        this.readingMemoryId = readingMemoryId;
+    }
+
+    public boolean isReadingMemoryChecked() {
+        return readingMemoryChecked;
+    }
+
+    public void setReadingMemoryChecked(boolean readingMemoryChecked) {
+        this.readingMemoryChecked = readingMemoryChecked;
     }
 }

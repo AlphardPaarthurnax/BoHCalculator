@@ -42,6 +42,12 @@ public final class CraftPathPlanner {
     private final Map<String, List<Recipe>> producers = new HashMap<>();
     private final Map<String, Workstation> workstations = new LinkedHashMap<>();
     private final Map<String, List<String>> aspectContributors = new HashMap<>();
+    private final Set<String> currentlyRenewable = new HashSet<>();
+    private final Set<String> renewabilityChecked = new HashSet<>();
+    private final Set<String> initialInventoryIds = new HashSet<>();
+    private Map<String, Integer> initialInventory = Map.of();
+    private Set<String> planningUnlockedWorkstations = Set.of();
+    private boolean probingRenewability;
     private int expansions;
 
     public CraftPathPlanner(
@@ -68,10 +74,16 @@ public final class CraftPathPlanner {
     public CraftPlanResult plan(
             List<CalculationGoal> goals,
             Map<String, Integer> initialInventory,
-        Set<String> unlockedWorkstations) {
+            Set<String> unlockedWorkstations) {
         expansions = 0;
         Map<String, Integer> normalizedInventory = new LinkedHashMap<>(initialInventory);
         normalizedInventory.replaceAll((id, amount) -> memoryLimited(id, amount));
+        this.initialInventory = new LinkedHashMap<>(normalizedInventory);
+        this.planningUnlockedWorkstations = Set.copyOf(unlockedWorkstations);
+        initialInventoryIds.clear();
+        initialInventoryIds.addAll(normalizedInventory.keySet());
+        currentlyRenewable.clear();
+        renewabilityChecked.clear();
         PlanState state = new PlanState(normalizedInventory);
         for (CalculationGoal goal : goals) {
             Attempt attempt = goal.type() == CalculationGoalType.ELEMENT
@@ -265,6 +277,9 @@ public final class CraftPathPlanner {
                 if (placed.consumed()) {
                     candidate.remove(placed.elementId(), 1);
                     candidate.consumed++;
+                    if (sacrificeRisk(placed.elementId()) > 0) {
+                        candidate.nonRenewableConsumed++;
+                    }
                 }
             }
             for (Map.Entry<String, Integer> effect : recipe.getEffects().entrySet()) {
@@ -349,7 +364,10 @@ public final class CraftPathPlanner {
                 .map(Map.Entry::getKey)
                 .filter(id -> exact.containsKey(id) || aspects.keySet().stream()
                         .anyMatch(aspect -> contribution(id, aspect) > 0))
-                .sorted(Comparator.comparingInt((String id) -> placementUtility(id, exact, aspects)).reversed())
+                .sorted(Comparator
+                        .comparingInt(this::sacrificeRisk)
+                        .thenComparing(Comparator.comparingInt(
+                                (String id) -> placementUtility(id, exact, aspects)).reversed()))
                 .limit(MAX_PLACEMENT_CANDIDATES)
                 .toList();
         PlacementSearch search = new PlacementSearch(recipe, workstation, state, candidates, exact, aspects);
@@ -600,10 +618,54 @@ public final class CraftPathPlanner {
     }
 
     private int memoryLimited(String id, int requested) {
+        return isMemory(id) ? Math.min(1, requested) : requested;
+    }
+
+    private boolean isMemory(String id) {
         Element element = elements.get(id);
-        return element != null && element.getAspects().getOrDefault("memory", 0) > 0
-                ? Math.min(1, requested)
-                : requested;
+        return element != null && element.getAspects().getOrDefault("memory", 0) > 0;
+    }
+
+    private void detectCurrentlyRenewable(String id) {
+        if (!renewabilityChecked.add(id) || !producers.containsKey(id)) {
+            return;
+        }
+        int previousExpansions = expansions;
+        probingRenewability = true;
+        try {
+            expansions = 0;
+            Map<String, Integer> probeInventory = new LinkedHashMap<>(initialInventory);
+            int target;
+            if (isMemory(id)) {
+                // 回忆同时只能存在一张。移除当前这张后重新获取一张，
+                // 才能正确判断它是否能通过重读等方式再生。
+                probeInventory.remove(id);
+                target = 1;
+            } else {
+                target = initialInventory.getOrDefault(id, 0) + 1;
+            }
+            Attempt attempt = acquireElement(id, target,
+                    new PlanState(probeInventory), planningUnlockedWorkstations,
+                    new LinkedHashSet<>(), 0);
+            if (attempt.complete) {
+                currentlyRenewable.add(id);
+            }
+        } finally {
+            probingRenewability = false;
+            expansions = previousExpansions;
+        }
+    }
+
+    private boolean isCurrentlyRenewable(String id) {
+        if (probingRenewability) {
+            return producers.containsKey(id);
+        }
+        detectCurrentlyRenewable(id);
+        return currentlyRenewable.contains(id);
+    }
+
+    private int sacrificeRisk(String id) {
+        return initialInventoryIds.contains(id) && !isCurrentlyRenewable(id) ? 1 : 0;
     }
 
     private Map<String, Integer> positiveEffects(Recipe recipe) {
@@ -638,6 +700,9 @@ public final class CraftPathPlanner {
         int currentMissing = missingScore(current.state.missing);
         if (candidateMissing != currentMissing) {
             return candidateMissing < currentMissing ? candidate : current;
+        }
+        if (candidate.state.nonRenewableConsumed != current.state.nonRenewableConsumed) {
+            return candidate.state.nonRenewableConsumed < current.state.nonRenewableConsumed ? candidate : current;
         }
         if (candidate.state.steps.size() != current.state.steps.size()) {
             return candidate.state.steps.size() < current.state.steps.size() ? candidate : current;
@@ -693,24 +758,27 @@ public final class CraftPathPlanner {
         private final List<CraftPlanMissing> missing;
         private final List<String> warnings;
         private int consumed;
+        private int nonRenewableConsumed;
 
         private PlanState(Map<String, Integer> inventory) {
-            this(new LinkedHashMap<>(inventory), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), 0);
+            this(new LinkedHashMap<>(inventory), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), 0, 0);
             this.inventory.entrySet().removeIf(entry -> entry.getValue() == null || entry.getValue() <= 0);
         }
 
         private PlanState(Map<String, Integer> inventory, List<CraftPlanStep> steps,
-                          List<CraftPlanMissing> missing, List<String> warnings, int consumed) {
+                          List<CraftPlanMissing> missing, List<String> warnings,
+                          int consumed, int nonRenewableConsumed) {
             this.inventory = inventory;
             this.steps = steps;
             this.missing = missing;
             this.warnings = warnings;
             this.consumed = consumed;
+            this.nonRenewableConsumed = nonRenewableConsumed;
         }
 
         private PlanState copy() {
             return new PlanState(new LinkedHashMap<>(inventory), new ArrayList<>(steps),
-                    new ArrayList<>(missing), new ArrayList<>(warnings), consumed);
+                    new ArrayList<>(missing), new ArrayList<>(warnings), consumed, nonRenewableConsumed);
         }
 
         private int quantity(String id) {

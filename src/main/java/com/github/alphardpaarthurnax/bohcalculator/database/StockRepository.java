@@ -54,7 +54,11 @@ public final class StockRepository {
     }
 
     public Set<String> loadUnlocked(String fileName) {
-        JsonNode unlocked = load(fileName).path("unlocked");
+        return loadIds(fileName, "unlocked");
+    }
+
+    public Set<String> loadIds(String fileName, String fieldName) {
+        JsonNode unlocked = load(fileName).path(fieldName);
         Set<String> result = new LinkedHashSet<>();
         if (unlocked.isArray()) {
             unlocked.forEach(value -> {
@@ -103,13 +107,17 @@ public final class StockRepository {
     }
 
     public synchronized void saveUnlocked(String fileName, Set<String> unlocked) {
+        saveIds(fileName, "unlocked", unlocked);
+    }
+
+    public synchronized void saveIds(String fileName, String fieldName, Set<String> ids) {
         ObjectNode root = editableRoot(fileName);
         ArrayNode values = mapper.createArrayNode();
-        unlocked.stream()
+        ids.stream()
                 .filter(id -> id != null && !id.isBlank())
                 .sorted(Comparator.naturalOrder())
                 .forEach(values::add);
-        root.set("unlocked", values);
+        root.set(fieldName, values);
         save(fileName, root);
     }
 

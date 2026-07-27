@@ -49,6 +49,31 @@ class RowenariumParserTest {
     }
 
     @Test
+    void parsesTheRepeatReadingMemoryFromElementTriggers() {
+        Document document = page("""
+                <div id="data-page">
+                  <p class="content-field"><strong class="field-title">Aspects:</strong>
+                    <a href="/rowenarium/element/readable"><span class="ref-id">readable</span></a></p>
+                  <p class="content-field"><strong class="field-title">Triggered by:</strong><ul>
+                    <li><span class="xtrigger">
+                      <a href="/rowenarium/element/mastering.edge"><span class="ref-id">mastering.edge</span></a>
+                      <a href="/rowenarium/element/x.lesson"><span class="ref-amount">Spawn 2</span><span class="ref-id">x.lesson</span></a>
+                    </span></li>
+                    <li><span class="xtrigger">
+                      <a href="/rowenarium/element/reading.edge"><span class="ref-id">reading.edge</span></a>
+                      <a href="/rowenarium/element/mem.revelation"><span class="ref-amount">Spawn 1</span><span class="ref-id">mem.revelation</span></a>
+                    </span></li>
+                  </ul></p>
+                </div>
+                """);
+
+        Element element = parser.parseElement(document, "t.example");
+
+        assertTrue(element.isReadingMemoryChecked());
+        assertEquals("mem.revelation", element.getReadingMemoryId());
+    }
+
+    @Test
     void parsesRecipeRequirementsEffectsAndVerbs() {
         Document document = page("""
                 <meta name="twitter:image" content="/rowenarium/static/bhimages/elements/result.png">

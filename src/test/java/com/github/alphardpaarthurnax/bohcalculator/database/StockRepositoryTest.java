@@ -75,4 +75,14 @@ class StockRepositoryTest {
         assertTrue(repository.loadSkillConfigurations("cards.json").isEmpty());
         assertEquals(Map.of("s.test", 1), repository.loadQuantities("cards.json"));
     }
+
+    @Test
+    void masteredBooksSurviveUnlockedUpdatesInSameFile() {
+        StockRepository repository = new StockRepository(temporaryDirectory);
+        repository.saveIds("books.json", "mastered", Set.of("book.mastered"));
+        repository.saveUnlocked("books.json", Set.of("book.mastered", "book.unread"));
+
+        assertEquals(Set.of("book.mastered"), repository.loadIds("books.json", "mastered"));
+        assertEquals(Set.of("book.mastered", "book.unread"), repository.loadUnlocked("books.json"));
+    }
 }

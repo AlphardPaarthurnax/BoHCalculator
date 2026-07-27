@@ -39,6 +39,8 @@ public final class RowenariumParser {
         result.setNoArtNeeded(parseBoolean(findField(document, "No Art Needed?")));
         result.setUnique(parseBoolean(findField(document, "Unique?")));
         result.setManifestationType(fieldText(findField(document, "Manifestation type")));
+        result.setReadingMemoryId(parseReadingMemoryId(findField(document, "Triggered by")));
+        result.setReadingMemoryChecked(true);
         ElementClassificationPolicy.classify(result);
         return result;
     }
@@ -247,6 +249,42 @@ public final class RowenariumParser {
                 .filter(value -> !value.isEmpty())
                 .distinct()
                 .toList();
+    }
+
+    /**
+     * A mastered readable emits its repeatable Memory through an element
+     * XTrigger such as: reading.edge -> Spawn 1 mem.revelation.
+     */
+    private String parseReadingMemoryId(org.jsoup.nodes.Element field) {
+        if (field == null) {
+            return null;
+        }
+        org.jsoup.nodes.Element triggerContainer = field;
+        if (triggerContainer.select("span.xtrigger").isEmpty()) {
+            org.jsoup.nodes.Element sibling = field.nextElementSibling();
+            while (sibling != null && !sibling.hasClass("content-field")) {
+                if (!sibling.select("span.xtrigger").isEmpty()) {
+                    triggerContainer = sibling;
+                    break;
+                }
+                sibling = sibling.nextElementSibling();
+            }
+        }
+        for (org.jsoup.nodes.Element trigger : triggerContainer.select("span.xtrigger")) {
+            List<String> ids = trigger.select("span.ref-id").stream()
+                    .map(org.jsoup.nodes.Element::text)
+                    .map(String::trim)
+                    .filter(value -> !value.isBlank())
+                    .toList();
+            if (ids.size() < 2 || !ids.getFirst().startsWith("reading.")) {
+                continue;
+            }
+            org.jsoup.nodes.Element amount = trigger.selectFirst("span.ref-amount");
+            if (amount != null && amount.text().trim().toLowerCase(Locale.ROOT).startsWith("spawn")) {
+                return ids.get(1);
+            }
+        }
+        return null;
     }
 
     private boolean parseBoolean(org.jsoup.nodes.Element field) {
